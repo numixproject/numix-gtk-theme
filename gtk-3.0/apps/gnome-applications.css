@@ -86,7 +86,7 @@ WnckPager, WnckTasklist {
 
 .nautilus-desktop.nautilus-canvas-item {
     color: white;
-    text-shadow: 1px 1px black;
+    text-shadow: 1 1 black;
 }
 
 .nautilus-desktop.nautilus-canvas-item:active {
@@ -147,10 +147,6 @@ NautilusQueryEditor .toolbar {
     background-color: shade(@toolbar_bg_color, 0.9);
 }
 
-NautilusQueryEditor .toolbar:nth-child(2) {
-    border-color: shade(@toolbar_bg_color, 0.8);
-}
-
 NautilusNotebook.notebook NautilusQueryEditor .primary-toolbar.toolbar {
     border-top-width: 0;
 }
@@ -163,6 +159,16 @@ NautilusNotebook.notebook NautilusQueryEditor .primary-toolbar.toolbar:only-chil
 
 .toolbar NautilusPathBar .button {
     padding: 1px 5px;
+}
+
+/* inactive pane */
+.nautilus-inactive-pane .view {
+    background-color: shade(@theme_base_color, 0.9);
+}
+
+/* pane separator */
+NautilusWindow .pane-separator {
+    background-color: shade(@theme_bg_color, 0.8);
 }
 
 /******************
@@ -318,4 +324,11 @@ GucharmapChartable:focus,
 GucharmapChartable:selected {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
+}
+
+/***********************
+ * gnome control center *
+ ***********************/
+CcShellItemView.view {
+    background-color: @theme_bg_color;
 }
