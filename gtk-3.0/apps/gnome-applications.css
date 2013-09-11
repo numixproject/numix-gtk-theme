@@ -155,6 +155,46 @@ NautilusQueryEditor .primary-toolbar.toolbar:only-child {
     border-bottom-color: shade(@toolbar_bg_color, 0.8);
 }
 
+NautilusPathBar.linked .button {
+    box-shadow: inset -1px 0 shade(@toolbar_bg_color, 0.9);
+}
+
+NautilusPathBar.linked .button:active {
+    box-shadow: inset -1px 0 shade(@toolbar_bg_color, 0.9),
+                inset 1px 0 alpha(@dark_shadow, 0.07),
+                inset 0 1px alpha(@dark_shadow, 0.08),
+                inset 0 -1px alpha(@dark_shadow, 0.05);
+}
+
+NautilusWindow .notebook {
+    border-width: 0;
+    border-style: none;
+}
+
+NautilusWindow .notebook tab {
+    border-width: 1px;
+    border-style: solid;
+
+    box-shadow: 0 0,
+                0 0,
+                0 0,
+                inset 0 -1px shade(@theme_base_color, 0.75);
+}
+
+NautilusWindow .notebook tab:active {
+    box-shadow: none;
+}
+
+NautilusWindow .notebook tab:first-child,
+NautilusWindow .notebook tab:first-child:active {
+    border-left-width: 0;
+}
+
+NautilusWindow .notebook tab:last-child,
+NautilusWindow .notebook tab:last-child:active {
+    border-right-width: 0;
+}
+
 /******************
  * gnome terminal *
  ******************/
