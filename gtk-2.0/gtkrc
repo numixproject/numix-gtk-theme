@@ -1,6 +1,6 @@
 # Numix GTK Theme
 
-gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#d64937\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#dedede\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
+gtk-color-scheme = "bg_color:#dedede\nfg_color:#555555\nbase_color:#f9f9f9\ntext_color:#333333\nselected_bg_color:#d64937\nselected_fg_color:#f9f9f9\ntooltip_bg_color:#2d2d2d\ntooltip_fg_color:#dedede\ntitlebar_bg_color:#2d2d2d\ntitlebar_fg_color:#dcdcdc\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
 
 # Default Style
 
@@ -45,8 +45,8 @@ style "murrine-default" {
 	GtkRange::stepper_spacing = 0
 	GtkRange::trough-under-steppers = 1
 
-	GtkScale::slider-length = 15
-	GtkScale::slider-width = 15
+	GtkScale::slider-length = 16
+	GtkScale::slider-width = 16
 	GtkScale::trough-side-details = 1
 
 	GtkScrollbar::activate-slider = 1
@@ -200,7 +200,7 @@ style "murrine-scrollbar" {
 
 	engine "murrine" {
 		roundness = 0
-		contrast = 0.00
+		contrast = 0.0
 		border_shades = { 0.9, 0.9 }
 		trough_shades = { 0.97, 0.97 }
 		trough_border_shades = { 1.0, 1.0 }
@@ -222,7 +222,7 @@ style "murrine-scale" = "murrine-thin" {
 	bg[INSENSITIVE] = shade (0.95, @bg_color)
 
 	engine "murrine" {
-		roundness = 7
+		roundness = 8
 		gradient_shades = { 1.08, 1.08, 1.08, 1.08 }
 		border_shades = { 1.0, 1.0 }
 		trough_shades = { 1.08, 1.08 }
@@ -388,34 +388,34 @@ style "murrine-menubaritem" {
 # Toolbars
 
 style "murrine-toolbar" = "murrine-thin" {
-	bg[NORMAL] = @toolbar_bg_color
-	bg[PRELIGHT] = shade (1.02, @toolbar_bg_color)
+	bg[NORMAL] = @bg_color
+	bg[PRELIGHT] = shade (1.02, @bg_color)
 	bg[SELECTED] = @selected_bg_color
-	bg[ACTIVE] = shade (0.9, @toolbar_bg_color)
-	bg[INSENSITIVE] = @toolbar_bg_color
+	bg[ACTIVE] = shade (0.9, @bg_color)
+	bg[INSENSITIVE] = @bg_color
 
-	fg[NORMAL] = @toolbar_fg_color
-	fg[PRELIGHT] = @toolbar_fg_color
+	fg[NORMAL] = @fg_color
+	fg[PRELIGHT] = @fg_color
 	fg[SELECTED] = @selected_fg_color
-	fg[ACTIVE] = @toolbar_fg_color
-	fg[INSENSITIVE] = mix (0.5, @toolbar_bg_color, @toolbar_fg_color)
+	fg[ACTIVE] = @fg_color
+	fg[INSENSITIVE] = mix (0.5, @bg_color, @fg_color)
 
 	engine "murrine" {
 	}
 }
 
 style "murrine-toolbutton" = "murrine-button" {
-	bg[NORMAL] = shade (1.08, @toolbar_bg_color)
-	bg[PRELIGHT] = shade (1.10, @toolbar_bg_color)
+	bg[NORMAL] = shade (1.08, @bg_color)
+	bg[PRELIGHT] = shade (1.10, @bg_color)
 	bg[SELECTED] = @selected_bg_color
-	bg[ACTIVE] = shade (0.95, @toolbar_bg_color)
-	bg[INSENSITIVE] = shade (0.85, @toolbar_bg_color)
+	bg[ACTIVE] = shade (0.95, @bg_color)
+	bg[INSENSITIVE] = shade (0.85, @bg_color)
 
-	fg[NORMAL] = @toolbar_fg_color
-	fg[PRELIGHT] = @toolbar_fg_color
+	fg[NORMAL] = @fg_color
+	fg[PRELIGHT] = @fg_color
 	fg[SELECTED] = @selected_fg_color
-	fg[ACTIVE] = @toolbar_fg_color
-	fg[INSENSITIVE] = mix (0.5, @toolbar_bg_color, @toolbar_fg_color)
+	fg[ACTIVE] = @fg_color
+	fg[INSENSITIVE] = mix (0.5, @bg_color, @fg_color)
 
 	engine "murrine" {
 	}
@@ -433,7 +433,7 @@ style "murrine-panel" = "murrine-thin" {
 	bg[NORMAL] = @panel_bg_color
 	bg[PRELIGHT] =  mix (0.21, @panel_fg_color, @panel_bg_color)
 	bg[SELECTED] =  mix (0.21, @panel_fg_color, @panel_bg_color)
-	bg[ACTIVE] = shade (0.9, @panel_bg_color)
+	bg[ACTIVE] = shade (0.8, @panel_bg_color)
 	bg[INSENSITIVE] = @panel_bg_color
 
 	fg[NORMAL] = @panel_fg_color
@@ -456,6 +456,7 @@ style "murrine-panel" = "murrine-thin" {
 
 	engine "murrine" {
 		roundness = 0
+		contrast = 0.0
 	}
 }
 
@@ -595,17 +596,17 @@ style "chromium-toolbar-button" {
 }
 
 style "chrome-gtk-frame" {
-	ChromeGtkFrame::frame-color = @menubar_bg_color
-	ChromeGtkFrame::inactive-frame-color = @menubar_bg_color
+	ChromeGtkFrame::frame-color = @titlebar_bg_color
+	ChromeGtkFrame::inactive-frame-color = @titlebar_bg_color
 
 	ChromeGtkFrame::frame-gradient-size = 0
-	ChromeGtkFrame::frame-gradient-color = @menubar_bg_color
+	ChromeGtkFrame::frame-gradient-color = @titlebar_bg_color
 
-	ChromeGtkFrame::incognito-frame-color = @menubar_bg_color
-	ChromeGtkFrame::incognito-inactive-frame-color = @menubar_bg_color
+	ChromeGtkFrame::incognito-frame-color = @titlebar_bg_color
+	ChromeGtkFrame::incognito-inactive-frame-color = @titlebar_bg_color
 
 	ChromeGtkFrame::incognito-frame-gradient-size = 0
-	ChromeGtkFrame::incognito-frame-gradient-color = @menubar_bg_color
+	ChromeGtkFrame::incognito-frame-gradient-color = @titlebar_bg_color
 
 	ChromeGtkFrame::scrollbar-trough-color = @bg_color
 	ChromeGtkFrame::scrollbar-slider-normal-color =  mix (0.21, @fg_color, @bg_color)

@@ -1178,13 +1178,13 @@ GtkLevelBar.vertical {
     border-width: 1px;
     border-radius: 2px;
 
-    -GtkRange-slider-width: 15;
+    -GtkRange-slider-width: 16;
     -GtkRange-trough-border: 1;
-    -GtkScale-slider-length: 15;
+    -GtkScale-slider-length: 16;
 }
 
 .scale.slider {
-    border-radius: 7px;
+    border-radius: 8px;
     background-color: shade(@theme_bg_color, 1.08);
     background-image: none;
     color: transparent;
@@ -1216,9 +1216,9 @@ GtkLevelBar.vertical {
 }
 
 .scale.trough {
-    border-width: 6px 0;
+    border-width: 7px 0;
     border-color: transparent;
-    border-radius: 7px;
+    border-radius: 8px;
     background-color: shade(@theme_bg_color, 1.08);
     background-image: none;
     /* we will draw the border using box shadow for now */
@@ -1229,7 +1229,7 @@ GtkLevelBar.vertical {
 }
 
 .scale.trough.vertical {
-    border-width: 0 6px;
+    border-width: 0 7px;
     box-shadow: inset 1 0 shade(@theme_bg_color, 0.8),
                 inset 0 1 shade(@theme_bg_color, 0.8),
                 inset -1 0 shade(@theme_bg_color, 0.8),
@@ -2670,7 +2670,6 @@ GtkOverlay.osd {
 }
 
 .osd .scale.slider {
-    border-radius: 7px;
     background-color: shade(@osd_bg, 1.08);
     background-image: none;
     color: transparent;
