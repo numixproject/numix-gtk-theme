@@ -4,11 +4,11 @@
 @define-color desktop_item_text_shadow alpha(black, 0.8);
 
 /* default color scheme */
-@define-color bg_color #dedede;
+@define-color bg_color #e7e7e7;
 @define-color fg_color #555555;
 @define-color base_color #f9f9f9;
 @define-color text_color #333333;
-@define-color selected_bg_color #d64937;
+@define-color selected_bg_color #1a80b6;
 @define-color selected_fg_color #f9f9f9;
 @define-color tooltip_bg_color #2d2d2d;
 @define-color tooltip_fg_color #dcdcdc;
@@ -48,8 +48,8 @@
 /* widget colors */
 @define-color titlebar_bg_color @dark_bg_color;
 @define-color titlebar_fg_color @dark_fg_color;
-@define-color menubar_bg_color @dark_bg_color;
-@define-color menubar_fg_color @dark_fg_color;
+@define-color menubar_bg_color @bg_color;
+@define-color menubar_fg_color @fg_color;
 @define-color toolbar_bg_color @theme_bg_color;
 @define-color toolbar_fg_color @theme_fg_color;
 @define-color menu_bg_color @dark_bg_color;

@@ -1,4 +1,4 @@
-# Name: Numix Openbox theme
+# Name: Numix Frost Openbox theme
 # Author: Satyajit Sahoo <satyajit.happy@gmail.com>
 # License: GPL-3.0+
 
@@ -17,7 +17,7 @@ menu.items.text.color: #dcdcdc
 menu.items.disabled.text.color: #888888
 
 menu.items.active.bg: flat solid
-menu.items.active.bg.color: #d64937
+menu.items.active.bg.color: #1a80b6
 menu.items.active.text.color: #f9f9f9
 
 menu.separator.color: #262626
@@ -49,7 +49,7 @@ window.active.button.unpressed.image.color: #dcdcdc
 
 window.active.button.pressed.bg: flat solid
 window.active.button.pressed.bg.color: #2d2d2d
-window.active.button.pressed.image.color: #d64937
+window.active.button.pressed.image.color: #1a80b6
 
 window.active.button.disabled.bg: flat solid
 window.active.button.disabled.bg.color: #2d2d2d
@@ -79,7 +79,7 @@ window.inactive.button.unpressed.image.color: #888888
 
 window.inactive.button.pressed.bg: flat solid
 window.inactive.button.pressed.bg.color: #2d2d2d
-window.inactive.button.pressed.image.color: #d64937
+window.inactive.button.pressed.image.color: #1a80b6
 
 window.inactive.button.disabled.bg: flat solid
 window.inactive.button.disabled.bg.color: #2d2d2d
@@ -97,7 +97,7 @@ osd.label.bg.color: #2d2d2d
 osd.label.text.color: #dcdcdc
 
 osd.hilight.bg: flat solid
-osd.hilight.bg.color: #d64937
+osd.hilight.bg.color: #1a80b6
 
 osd.unhilight.bg: flat solid
 osd.unhilight.bg.color: #888888
@@ -114,7 +114,7 @@ osd.button.focused.bg: flat solid border
 osd.button.focused.bg.color: #303030
 osd.button.focused.*.border.color: #1e1e1e
 
-osd.button.focused.box.color: #d64937
+osd.button.focused.box.color: #1a80b6
 
 
 # Fonts
