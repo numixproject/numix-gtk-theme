@@ -84,15 +84,23 @@ NemoPlacesTreeView:hover {
 
 NemoPlacesTreeView:selected:hover {
 	color: @theme_selected_fg_color;
-	text-shadow: 1 1 1 @theme_selected_bg_color;
+	text-shadow: 1px 1px 1px @theme_selected_bg_color;
 
 }
 
 /*********************
  * Toolbar           *
  *********************/
-NemoWindow GtkToolbar .button {
+NemoToolbar .button.image-button {
 padding: 6px 8px;
+}
+
+/*********************
+ * Menubar           *
+ *********************/
+NemoWindow .menubar {
+ background-color @bg_color;
+	color @fg_color;
 }
 
 /*********************
