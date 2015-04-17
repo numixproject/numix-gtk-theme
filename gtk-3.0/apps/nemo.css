@@ -2,77 +2,97 @@
  * desktop icons *
  *****************/
 .nemo-canvas-item {
-    border-radius: 2px;
+	border-radius: 2px;
 }
 
 .nemo-desktop.nemo-canvas-item {
-    color: white;
-    text-shadow: 1px 1px black;
+	color: white;
+	text-shadow: 1px 1px black;
 }
 
 .nemo-desktop.nemo-canvas-item:active {
-    color: @theme_fg_color;
+	color: @theme_fg_color;
 }
 
 .nemo-desktop.nemo-canvas-item:selected {
-    color: @theme_selected_fg_color;
+	color: @theme_selected_fg_color;
 }
 
 .nemo-desktop.nemo-canvas-item:active,
 .nemo-desktop.nemo-canvas-item:prelight,
 .nemo-desktop.nemo-canvas-item:selected {
-    text-shadow: none;
+	text-shadow: none;
 }
 
 /***********************
  * pathbar breadcrumbs *
  ***********************/
 NemoPathbarButton {
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: shade(@toolbar_bg_color, 1.08);
-    background-image: none;
-    color: @toolbar_fg_color;
+	border-color: shade(@toolbar_bg_color, 0.8);
+	background-color: shade(@toolbar_bg_color, 1.08);
+	background-image: none;
+	color: @toolbar_fg_color;
 
-    -NemoPathbarButton-border-radius: 2px;
+	-NemoPathbarButton-border-radius: 2px;
 }
 
 NemoPathbarButton:active {
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: shade(@toolbar_bg_color, 0.95);
-    background-image: none;
+	border-color: shade(@toolbar_bg_color, 0.8);
+	background-color: shade(@toolbar_bg_color, 0.95);
+	background-image: none;
 }
 
 NemoPathbarButton:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
-    background-color: shade(@toolbar_bg_color, 1.10);
-    background-image: none;
+	border-color: shade(@toolbar_bg_color, 0.7);
+	background-color: shade(@toolbar_bg_color, 1.10);
+	background-image: none;
 }
 
 NemoPathbarButton:active:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
+	border-color: shade(@toolbar_bg_color, 0.7);
 }
 
 /*********************************
  * sidebar disk space indicators *
  *********************************/
+/* sidebar */
+
+NemoWindow NemoIconView {
+	background-color: @base_color;
+}
+
 NemoPlacesTreeView {
-    -NemoPlacesTreeView-disk-full-bg-color: shade(@toolbar_bg_color, 0.8);
-    -NemoPlacesTreeView-disk-full-fg-color: @theme_selected_bg_color;
-    -NemoPlacesTreeView-disk-full-bar-width: 1px;
-    -NemoPlacesTreeView-disk-full-bar-radius: 1px;
-    -NemoPlacesTreeView-disk-full-bottom-padding: 2px;
-    -NemoPlacesTreeView-disk-full-max-length: 70px;
+	-NemoPlacesTreeView-disk-full-bg-color: shade(@toolbar_bg_color, 0.8);
+	-NemoPlacesTreeView-disk-full-fg-color: @theme_selected_bg_color;
+	-NemoPlacesTreeView-disk-full-bar-width: 2px;
+	-NemoPlacesTreeView-disk-full-bar-radius: 2px;
+	-NemoPlacesTreeView-disk-full-bottom-padding: 1px;
+	-NemoPlacesTreeView-disk-full-max-length: 70px;
 }
 
 NemoPlacesTreeView:selected {
-    -NemoPlacesTreeView-disk-full-bg-color: @theme_selected_fg_color;
-    -NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 1.4);
+	-NemoPlacesTreeView-disk-full-bg-color: @theme_selected_fg_color;
+	-NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 1.4);
+	color: @theme_selected_bg_color;
+	border-color: transparent;
 }
 
 NemoPlacesTreeView:hover {
+	color: @theme_selected_bg_color;
+
 }
 
 NemoPlacesTreeView:selected:hover {
+	color: @theme_selected_fg_color;
+	text-shadow: 1 1 1 @theme_selected_bg_color;
+
+}
+
+/*********************
+ * Toolbar           *
+ *********************/
+NemoWindow GtkToolbar .button {
+padding: 6px 8px;
 }
 
 /*********************
@@ -80,14 +100,14 @@ NemoPlacesTreeView:selected:hover {
  *********************/
 
 .section-bg {
-    background-color: @theme_base_color;
-    box-shadow: inset 0 3px white,
-                inset -2px 0 @border,
-                inset 0 -2px @border,
-                inset 0 2px shade(@border, 1.15),
-                inset 2px 0 @border,
-                inset -1px 0 shade(@theme_bg_color, 0.93),
-                inset 1px 0 shade(@theme_bg_color, 0.93),
-                inset 0 1px @theme_bg_color,
-                inset 0 -1px shade(@theme_bg_color, 0.85);
+	background-color: @theme_base_color;
+	box-shadow: inset 0 3px white,
+	inset -2px 0 @border,
+	inset 0 -2px @border,
+	inset 0 2px shade(@border, 1.15),
+	inset 2px 0 @border,
+	inset -1px 0 shade(@theme_bg_color, 0.93),
+	inset 1px 0 shade(@theme_bg_color, 0.93),
+	inset 0 1px @theme_bg_color,
+	inset 0 -1px shade(@theme_bg_color, 0.85);
 }
