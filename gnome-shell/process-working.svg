@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 48" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="0" transform="matrix(.2824 0 0 .2824 146.92015 -382.52444)" fill="none" stroke="#fff" stroke-linecap="round" color="#000" stroke-width="7.082">
+  <path d="m -477.76072,1373.3569 0,9.4717" opacity="0.6"/>
+  <path d="m -461.0171,1380.2922 -7.23427,7.3824" opacity="0.7"/>
+  <path d="m -454.08163,1397.0359 -9.47165,0" opacity="0.8"/>
+  <path d="m -461.01709,1413.7796 -6.93831,-7.0864" opacity="0.9"/>
+  <path d="m -477.76074,1420.715 9e-5,-9.4716"/>
+  <path d="m -494.50442,1413.7796 6.79048,-6.9384" opacity="0.3"/>
+  <path d="m -501.43987,1397.0359 9.47174,0" opacity="0.4"/>
+  <path d="m -494.5044,1380.2922 6.64243,6.9384" opacity="0.5"/>
+ </g>
+ <use width="400" height="400" xlink:href="#0" id="1" transform="matrix(.70711 .70711 -.70711 .70711 36 -4.97056)"/>
+ <use width="400" height="400" xlink:href="#1" id="2" transform="matrix(.70711 .70711 -.70711 .70711 43.03248 -21.90969)"/>
+ <use width="400" height="400" xlink:href="#2" id="3" transform="matrix(.70711 .70711 -.70711 .70711 50.08199 -38.90462)"/>
+ <use width="400" height="400" xlink:href="#3" id="4" transform="matrix(.70711 .70711 -.70711 .70711 -38.92 -31.87214)"/>
+ <use width="400" height="400" xlink:href="#4" id="5" transform="matrix(.70711 .70711 -.70711 .70711 52.98663 2.08905)"/>
+ <use width="400" height="400" xlink:href="#5" id="6" transform="matrix(.70711 .70711 -.70711 .70711 60.01303 -14.91294)"/>
+ <use width="400" height="400" xlink:href="#6" transform="matrix(.70711 .70711 -.70711 .70711 67.0224 -31.85913)"/>
+</svg>

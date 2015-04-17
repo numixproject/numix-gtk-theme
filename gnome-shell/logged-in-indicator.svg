@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="0">
+   <stop stop-color="#fff"/>
+   <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient cx="47.43" cy="167.17" gradientTransform="matrix(2.59193 0 0 .57582 -20.68706 48.40049)" xlink:href="#0" id="1" r="37" gradientUnits="userSpaceOnUse"/>
+  <radialGradient cx="49.07" cy="242.5" gradientTransform="matrix(3.42184 0 0 .03365 -61.309 138.5071)" r="37.01" id="2" xlink:href="#0" gradientUnits="userSpaceOnUse"/>
+ </defs>
+ <g transform="matrix(1.62133 0 0 1.62133 -17.83461 -158.8901)">
+  <rect width="182.23" x="12.597" y="76.16" rx="8.864" ry="3.459" height="71.12" opacity="0.372" fill="url(#1)"/>
+  <path connector-curvature="0" d="m 194.80022,146.83551 -182.559919,0" opacity="0.35" fill="none" stroke="url(#2)" stroke-width="0.612"/>
+ </g>
+</svg>
