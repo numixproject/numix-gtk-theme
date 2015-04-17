@@ -1,0 +1,270 @@
+.slingshot .popup-menu-content {
+    padding: 0;
+}
+
+.slingshot .separator {
+    background-color: #484848;
+}
+
+/*--- Entries ---*/
+
+.slingshot .entry,
+.slingshot .entry:hover {
+    border-image: url("../misc-assets/entry.svg") 7;
+    background-gradient-direction: vertical;
+    background-gradient-start: transparent;
+    background-gradient-end: transparent;
+    border: 0 transparent;
+    box-shadow: inset 0 0 transparent;
+    border-radius: 0;
+    height: 22px;
+    width: 220px;
+    color: #dcdcdc;
+    caret-color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: normal;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #1a80b6;
+    padding: 4px 12px 3px 12px;
+}
+
+.slingshot .entry:focus {
+    border-image: url("../misc-assets/entry-focused.svg") 7;
+    background-gradient-direction: vertical;
+    background-gradient-start: transparent;
+    background-gradient-end: transparent;
+    box-shadow: inset 0 0 transparent;
+    border-radius: 0;
+    height: 22px;
+    width: 220px;
+    color: #dcdcdc;
+    caret-color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: normal;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #1a80b6;
+    padding: 4px 12px 3px 12px;
+}
+
+/*--- Buttons ---*/
+
+.slingshot .button {
+    border-image: url("../buttons/button.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border: 0 transparent;
+    box-shadow: inset 0 0 transparent;
+    border-radius: 0;
+    font-size: 8pt;
+    padding: 6px;
+    padding-top: 7px;
+}
+
+.slingshot .button:hover {
+    border-image: url("../buttons/button-hover.svg") 7;
+}
+
+.slingshot .button:active {
+    border-image: url("../buttons/button-pressed.svg") 7;
+}
+
+.slingshot .button:checked {
+    border-image: url("../buttons/button-focused.svg") 7;
+    background-color: transparent;
+    box-shadow: inset 0 0 transparent;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/*--- App Buttons ---*/
+
+.slingshot .button.app {
+    border-image: none;
+    border-width: 0;
+    font-size: 9pt;
+    padding: 0;
+}
+
+.slingshot .app:hover {
+    border-image: url("../background-assets/hover.svg") 4;
+    background-gradient-direction: vertical;
+    background-gradient-end: transparent;
+    background-gradient-start: transparent;
+    background-color: transparent;
+    color: #fff;
+}
+
+.slingshot .app:focus {
+    border-image: url("../background-assets/hover.svg") 4;
+    background-gradient-direction: vertical;
+    background-gradient-end: transparent;
+    background-gradient-start: transparent;
+    background-color: transparent;
+    color: #fff;
+}
+
+
+/*--- Sidebar Buttons ---*/
+
+.slingshot .sidebar {
+    padding-left: 8px;
+    padding-right: 0;
+}
+
+.slingshot .sidebar .button {
+    border-image: none;
+    padding: 5px;
+    border-radius: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-color: transparent;
+    font-size: 9pt;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.slingshot .sidebar .button:hover {
+    border-image: url("../misc-assets/highlighted-2.svg") 6;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    color: #dcdcdc;
+}
+
+.slingshot .sidebar .button:active,
+.slingshot .sidebar .button:hover:active {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: inset 0 0 0 transparent;
+    color: #dcdcdc;
+}
+
+.slingshot .sidebar .button:checked,
+.slingshot .sidebar .button:hover:checked,
+.slingshot .sidebar .button:active:checked {
+    border-image: url("../misc-assets/highlighted-2.svg") 6;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    color: #dcdcdc;
+}
+
+.slingshot .entry,
+.slingshot .sidebar .button {
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+
+/*--- Linked Buttons ---*/
+
+
+/* Middle button */
+
+.slingshot .linked .button {
+    border-image: url("../buttons/linked-button-middle.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #dcdcdc;
+}
+
+.slingshot .linked .button:hover {
+    border-image: url("../buttons/linked-button-middle-hover.svg") 7;
+}
+
+.slingshot .linked .button:active {
+    border-image: url("../buttons/linked-button-middle-pressed.svg") 7;
+}
+
+.slingshot .linked .button:checked {
+    border-image: url("../buttons/linked-button-middle-checked.svg") 7;
+    color: #dcdcdc;
+}
+
+
+/* Leftmost button */
+
+.slingshot .linked .button:first-child {
+    border-image: url("../buttons/linked-button-left.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 6px;
+    color: #dcdcdc;
+}
+
+.slingshot .linked .button:hover:first-child {
+    border-image: url("../buttons/linked-button-left-hover.svg") 7;
+}
+
+.slingshot .linked .button:active:first-child {
+    border-image: url("../buttons/linked-button-left-pressed.svg") 7;
+}
+
+.slingshot .linked .button:checked:first-child {
+    border-image: url("../buttons/linked-button-left-checked.svg") 7;
+    color: #dcdcdc;
+}
+
+
+/* Rightmost button */
+
+.slingshot .linked .button:last-child {
+    border-image: url("../buttons/linked-button-right.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border-right-width: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 6px;
+    color: #dcdcdc;
+}
+
+.slingshot .linked .button:hover:last-child {
+    border-image: url("../buttons/linked-button-right-hover.svg") 7;
+}
+
+.slingshot .linked .button:active:last-child,
+.slingshot .linked .button:active:hover:last-child {
+    border-image: url("../buttons/linked-button-right-pressed.svg") 7;
+    border-right-width: 0;
+}
+
+.slingshot .linked .button:checked:last-child {
+    border-image: url("../buttons/linked-button-right-checked.svg") 7;
+    color: #fff;
+}
+
+
+/* Linked single button */
+
+.slingshot .linked .button:only-child {
+    border-image: url("../buttons/button.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border-width: 0;
+    box-shadow: none;
+    border-radius: 0;
+    color: #dcdcdc;
+}
+
+.slingshot .linked .button:hover:only-child {
+    border-image: url("../buttons/button-hover.svg") 7;
+}
+
+.slingshot .linked .button:active:only-child {
+    border-image: url("../buttons/button-pressed.svg") 7;
+}
+
+.slingshot .linked .button:checked:only-child {
+    border-image: url("../buttons/button-pressed.svg") 7;
+    color: #dcdcdc;
+}

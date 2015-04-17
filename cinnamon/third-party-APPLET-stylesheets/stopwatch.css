@@ -1,0 +1,71 @@
+.stopwatch-ready,
+.stopwatch-ready:hover,
+.stopwatch-running,
+.stopwatch-running:hover,
+.stopwatch-paused,
+.stopwatch-day-exceeded,
+.stopwatch-running-day-exceeded,
+.stopwatch-paused-day-exceeded {
+    background-color: transparent;
+    padding: 3px 5px;
+}
+
+/*---top panel---*/
+
+.panel-top .stopwatch-ready:hover {
+    border-image: url("../panel-assets/top-item-hover.svg") 4;
+}
+
+.panel-top .stopwatch-running {
+    border-image: url("../panel-assets/top-item-active.svg") 4;
+}
+
+.panel-top .stopwatch-running:hover {
+    border-image: url("../panel-assets/top-item-active-hover.svg") 4;
+}
+
+.panel-top .stopwatch-paused {
+    border-image: url("../panel-assets/attention.svg") 4;
+}
+
+.panel-top .stopwatch-day-exceeded {
+    border-image: url("../panel-assets/attention.svg") 4;
+}
+
+.panel-top .stopwatch-running-day-exceeded {
+    border-image: url("../panel-assets/attention.svg") 4;
+}
+
+.panel-top .stopwatch-paused-day-exceeded {
+    border-image: url("../panel-assets/attention.svg") 4;
+}
+
+/*---bottom panel---*/
+
+.panel-bottom .stopwatch-ready:hover {
+    border-image: url("../panel-assets/bottom-item-hover.svg") 4;
+}
+
+.panel-bottom .stopwatch-running {
+    border-image: url("../panel-assets/bottom-item-active.svg") 4;
+}
+
+.panel-bottom .stopwatch-running:hover {
+    border-image: url("../panel-assets/bottom-item-active-hover.svg") 4;
+}
+
+.panel-bottom .stopwatch-paused {
+    border-image: url("../panel-assets/attention.svg") 4;
+}
+
+.panel-bottom .stopwatch-day-exceeded {
+    border-image: url("../panel-assets/attention.svg") 4;
+}
+
+.panel-bottom .stopwatch-running-day-exceeded {
+    border-image: url("../panel-assets/attention.svg") 4;
+}
+
+.panel-bottom .stopwatch-paused-day-exceeded {
+    border-image: url("../panel-assets/attention.svg") 4;
+}

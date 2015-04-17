@@ -1,0 +1,56 @@
+.menu-main-box {
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 0;
+}
+
+/*---fixes for stylized & classic layouts---*/
+
+.menu-main-box-stylized,
+.menu-main-box-classic {
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.menu-categories-box-stylized,
+.menu-categories-box-classic {
+    padding-left: 10px;
+}
+
+.menu-search-box-stylized,
+.menu-search-box-classic {
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.menu-top-box-stylized,
+.menu-top-box-classic {
+    padding-left: 10px;
+}
+
+/*---buttons---*/
+
+.menu-control-button {
+    border-image: url("../buttons/button.svg") 7;
+    padding: 8px;
+}
+
+.menu-control-button-selected {
+    border-image: url("../buttons/button-hover.svg") 7;
+    padding: 8px;
+}
+
+.menu-control-button:open {
+    border-image: url("../buttons/button-focused.svg") 7;
+    padding: 8px;
+    color: #fff;
+}
+
+.menu-control-button-selected:open {
+    border-image: url("../buttons/button-focused.svg") 7;
+    padding: 8px;
+    color: #fff;
+}

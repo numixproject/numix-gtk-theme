@@ -1,0 +1,1984 @@
+@import url(third-party-APPLET-stylesheets/weather.css);
+@import url(third-party-APPLET-stylesheets/system-tray-collapsible.css);
+@import url(third-party-APPLET-stylesheets/configurable-menu.css);
+@import url(third-party-APPLET-stylesheets/slingshot.css);
+@import url(third-party-APPLET-stylesheets/xcenter.css);
+@import url(third-party-APPLET-stylesheets/stopwatch.css);
+@import url(third-party-DESKLET-stylesheets/sticky-notes.css);
+@import url(third-party-DESKLET-stylesheets/reddit-reader.css);
+@import url(third-party-DESKLET-stylesheets/calculator.css);
+@import url(third-party-EXTENSION-stylesheets/g-tile.css);
+
+stage {
+    font-family: Droid Sans, sans-serif;
+    font-size: 9pt;
+}
+
+.cinnamon-link {
+    color: #1a80b6;
+    text-decoration: underline;
+}
+
+.cinnamon-link:hover {
+    color: #dcdcdc;
+}
+
+.label-shadow {
+    color: rgba(0, 0, 0, 0);
+}
+/* ===================================================================
+ * Scrollbars
+ * ===================================================================*/
+
+StScrollBar {
+    padding: 3px;
+    padding-right: 6px;
+}
+
+StScrollView.vfade {
+    -st-vfade-offset: 0;
+}
+
+StScrollView.hfade {
+    -st-hfade-offset: 0;
+}
+
+StScrollView StScrollBar {
+    min-width: 8px;
+    min-height: 16px;
+}
+
+StScrollBar StBin#trough {
+    background-color: transparent;
+}
+
+StScrollBar StButton#vhandle,
+StScrollBar StButton#hhandle {
+    border-image: url("control-assets/scroll-handle.svg") 3;
+}
+
+ StScrollBar StButton#vhandle:hover,
+ StScrollBar StButton#hhandle:hover,
+ StScrollBar StButton#vhandle:active,
+ StScrollBar StButton#hhandle:active,
+ StScrollBar StButton#vhandle:focus,
+ StScrollBar StButton#hhandle:focus {
+    border-image: url("control-assets/scroll-handle-hover.svg") 3;
+}
+/* ===================================================================
+ * Tooltips
+ * ===================================================================*/
+
+#Tooltip {
+    border-radius: 2px;
+    padding: 2px 6px;
+    background-color: #2d2d2d;
+    border: 1px solid #484848;
+    color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: normal;    
+    text-align: center;
+}   
+/* ===================================================================
+ * Switchers + Checkboxes + Radio buttons
+ * ===================================================================*/
+
+/*---switchers---*/
+
+.toggle-switch {
+    width: 36px;
+    height: 18px;
+}
+
+.toggle-switch-us {
+    background-image: url("control-assets/off.svg");
+    background-size: contain;
+}
+.toggle-switch-us:checked {
+    background-image: url("control-assets/on.svg");
+    background-size: contain;
+}
+
+.toggle-switch-intl {
+    background-image: url("control-assets/off.svg");
+    background-size: contain;
+}
+.toggle-switch-intl:checked {
+    background-image: url("control-assets/on.svg");
+    background-size: contain;
+}
+
+/*---checkboxes---*/
+
+.check-box CinnamonGenericContainer {
+    spacing: .2em;
+    min-height: 16px;
+}
+
+.check-box StLabel {
+    padding-top: 1px;
+}
+
+.check-box StBin {
+    width: 16px;
+    height: 16px;
+    background-image: url("control-assets/checkbox.svg");
+}
+
+.check-box:focus StBin {
+    background-image: url("control-assets/checkbox-focused.svg");
+}
+
+.check-box:checked StBin {
+    background-image: url("control-assets/checkbox-checked.svg");
+}
+
+.check-box:focus:checked StBin {
+    background-image: url("control-assets/checkbox-checked-focused.svg");
+}
+
+/*---radio buttons---*/
+
+.radiobutton CinnamonGenericContainer {
+    spacing: .2em;
+    min-height: 16px;
+}
+
+.radiobutton StLabel {
+    padding-top: 1px;
+}
+
+.radiobutton StBin {
+    width: 16px;
+    height: 16px;
+    background-image: url("control-assets/radiobutton.svg");
+}
+
+.radiobutton:focus StBin {
+    background-image: url("control-assets/radiobutton-focus.svg");
+}
+
+.radiobutton:checked StBin {
+    background-image: url("control-assets/radiobutton-checked.svg");
+}
+
+.radiobutton:focus:checked StBin {
+    background-image: url("control-assets/radiobutton-checked-focused.svg");
+}
+/* ===================================================================
+ * PopupMenu (popupMenu.js) 
+ * ===================================================================*/
+
+.popup-menu-boxpointer {
+    -arrow-background-color: #2d2d2d;
+    -arrow-border-width: 1px;
+    -arrow-border-color: #484848;
+    -arrow-border-radius: 2px;
+    -arrow-base: 16px;
+    -arrow-rise: 8px;
+    -boxpointer-gap: 2px;
+}
+
+.popup-menu {
+    min-width: 100px;
+}
+
+.popup-menu StEntry {
+    border-image: url("misc-assets/entry.svg") 7;
+    background-gradient-direction: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 22px;
+    width: 220px;
+    color: #dcdcdc;
+    caret-color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: normal;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #1a80b6;
+    padding: 4px 12px 3px 12px;
+}
+
+.popup-menu StEntry:focus {
+    border-image: url("misc-assets/entry-focused.svg") 6;
+    background-gradient-direction: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 22px;
+    width: 220px;
+    color: #dcdcdc;
+    caret-color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: normal;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #1a80b6;
+    padding: 4px 12px 3px 12px;
+}
+
+.popup-submenu-menu-item:open {
+    color: #dcdcdc;
+}
+
+.popup-sub-menu {
+    border-image: url("background-assets/submenu-bg.svg") 4;
+    padding: 0.5em 0em;
+}
+
+.popup-sub-menu .popup-menu-item:ltr {
+    padding-right: 0em;
+}
+
+.popup-sub-menu .popup-menu-item:rtl {
+    padding-left: 0em;
+}
+
+.popup-sub-menu StScrollBar {
+    padding: 4px;
+}
+
+.popup-combo-menu {
+    background-color: #2d2d2d;
+    border-width: 1px;
+    border-color: #484848;
+    border-radius: 2px;
+    padding: .6em 0;
+    color: #dcdcdc;
+}
+/* The remaining popup-menu sizing is all done in ems, so that if you
+ * override .popup-menu.font-size, everything else will scale with it.
+ */
+ 
+.popup-menu-content {
+    padding: .6em 0;
+    color: #dcdcdc;
+}
+
+.popup-menu-item {
+    padding: .4em 1.5em;
+    spacing: 1em;
+}
+
+.popup-menu-item:active {
+    border-image: url("background-assets/hover.svg") 4;
+    color: #fff;
+}
+
+.popup-sub-menu .popup-menu-item {
+    padding-left: 2.2em;
+}
+
+.popup-menu-item:insensitive {
+    color: rgba(255, 255, 255, .3);
+}
+
+.popup-combobox-item {
+    spacing: 1em;
+}
+
+.popup-separator-menu-item {
+    background-color: #484848;
+    height: 1px;
+}
+
+.popup-alternating-menu-item:alternate {
+    font-weight: bold;
+}
+
+.popup-slider-menu-item {
+    border-image: url("misc-assets/slider.svg") 7;
+    min-width: 15em;
+    height: 16px;
+    -slider-height: 2px;
+    -slider-background-color: transparent;
+    -slider-border-color: transparent;
+    -slider-active-background-color: #1a80b6;
+    -slider-active-border-color: transparent;
+    -slider-border-width: 0;
+    -slider-handle-radius: 5px;
+}
+
+.popup-device-menu-item {
+    spacing: .5em;
+}
+
+.popup-inactive-menu-item {
+    color: rgba(255, 255, 255, .3);
+}
+
+.popup-subtitle-menu-item {
+}
+
+.popup-menu-icon {
+    icon-size: 16px;
+}
+/* ===================================================================
+ * Panel (panel.js)
+ * ===================================================================*/
+
+#panel {
+}
+
+#panelLeft, #panelCenter {
+    spacing: 4px;
+}
+
+/*---panel-edit-mode---*/
+#panelLeft:dnd,
+#panelCenter:dnd,
+#panelRight:dnd {
+}
+
+.panel-top #panelLeft:dnd {
+    border-image: url("panel-assets/DND-top-left.svg") 4;
+}
+
+.panel-top #panelCenter:dnd {
+    border-image: url("panel-assets/DND-top-center.svg") 4;
+}
+
+.panel-top #panelRight:dnd {
+    border-image: url("panel-assets/DND-top-right.svg") 4;
+}
+
+.panel-bottom #panelLeft:dnd {
+    border-image: url("panel-assets/DND-bottom-left.svg") 4;
+}
+
+.panel-bottom #panelCenter:dnd {
+    border-image: url("panel-assets/DND-bottom-center.svg") 4;
+}
+
+.panel-bottom #panelRight:dnd {
+    border-image: url("panel-assets/DND-bottom-right.svg") 4;
+}
+
+#panelLeft:ltr {
+    padding-right: 4px;
+}
+
+#panelLeft:rtl {
+    padding-left: 4px;
+}
+
+#panelRight:ltr {
+    padding-left: 0;
+    spacing: 0;
+}
+
+#panelRight:rtl {
+    padding-right: 0;
+    spacing: 0;
+}
+
+.panel-top {
+    border-image: url("panel-assets/panel-top.svg") 4;
+    color: #dcdcdc;
+    font-size: 9pt;
+    height: 25px;
+}
+
+.panel-bottom {
+    border-image: url("panel-assets/panel-bottom.svg") 4;
+    color: #dcdcdc;
+    font-size: 9pt;
+    height: 25px;
+}
+
+.panel-status-button {
+    -natural-hpadding: 4px;
+    -minimum-hpadding: 4px;
+    padding: 0 2px;
+    font-weight: bold;
+    color: #dcdcdc; 
+    height: 25px;
+}
+
+.panel-status-button:hover,
+.panel-status-button:active {
+}
+
+.panel-top .panel-status-button:hover {
+    border-image: url("panel-assets/top-item-hover.svg") 4;
+}
+
+.panel-bottom .panel-status-button:hover {
+    border-image: url("panel-assets/bottom-item-hover.svg") 4;
+}
+
+.system-status-icon {
+    icon-size: 16px;
+    padding-left: 0;
+    padding-right: 0; 
+    spacing: 0;
+    margin: 0;
+}
+
+.panel-bottom .system-status-icon {
+    padding-top: 1px;
+}
+
+.panel-bottom #appMenuIcon {
+    padding-top: 1px;
+}
+
+#appMenu {
+}
+
+#appMenuIcon {
+}
+
+#iconLabelButton {
+    color: #dcdcdc;
+    padding: 0;
+}
+
+.panel-button #appMenuIcon {
+    app-icon-bottom-clip: 0;
+}
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon {
+    app-icon-bottom-clip: 0;
+}
+
+.panel-button {
+    -natural-hpadding: 6px;
+    -minimum-hpadding: 2px;
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+.panel-button:hover {
+}
+
+.panel-button:active,
+.panel-button:focus {
+}
+
+.panel-button:active > .system-status-icon,
+.panel-button:checked > .system-status-icon,
+.panel-button:focus > .system-status-icon {
+    icon-shadow: rgba(0,0,0,0) 0 2px 2px;
+}
+
+.panel-menu {
+}
+
+.popup-menu-item-dot {
+}
+/* ===================================================================
+ * Expo view
+ * ===================================================================*/
+
+.expo-background {
+    background-color: #222;
+}
+
+.expo-workspace-thumbnail-frame {
+    border: 4px transparent;
+    border-image: url("expo-scale-assets/workspace-shadow.svg") 6;
+}
+
+.expo-workspace-thumbnail-frame#active {
+    border: 4px transparent;
+    border-image: url("expo-scale-assets/workspace-shadow.svg") 6;
+}
+
+.workspace-thumbnails {
+    spacing: 26px;
+    padding-left: 10px;
+    padding-right: 9px;
+}
+
+.workspace-thumbnails .workspace-overview-background-shade {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+}
+
+.workspace-overview-background-shade {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.workspace-add-button {
+    border-image: url("background-assets/add-workspace-bg.svg") 3;
+    background-image: url("expo-scale-assets/plus.svg");
+    background-size: 25px 24px;
+    height: 200px;
+    width: 35px;
+}
+
+.workspace-add-button:hover {  
+    border-image: url("background-assets/add-workspace-bg.svg") 3;
+    background-image: url("expo-scale-assets/plus-hover.svg");
+    background-size: 25px 24px;
+    height: 200px;
+    width: 35px;
+}
+
+.workspace-close-button {
+    background-image: url("control-assets/close.svg");
+    height: 41px;
+    width: 41px;
+    -cinnamon-close-overlap: 28px;
+}
+
+.workspace-close-button:hover,
+.workspace-close-button:active { 
+    background-image: url("control-assets/close.svg");
+}
+
+.expo-workspaces-name-entry {
+    border-image: url("expo-scale-assets/workspace-name.svg") 6;
+    height: 15px;
+    padding: 10px 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+.expo-workspaces-name-entry#selected {
+    border-image: url("expo-scale-assets/workspace-name-focused.svg") 6;
+    height: 15px;
+    padding: 10px 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.expo-workspaces-name-entry:focus,
+.expo-workspaces-name-entry#selected:focus {
+    border-image: url("expo-scale-assets/workspace-name-pressed.svg") 12;
+    height: 15px;
+    padding: 10px 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #dcdcdc;
+    selected-color: #fff;
+    caret-color: #dcdcdc;
+    caret-size: 1px;
+    selection-background-color: #1a80b6;
+}
+
+.window-close-area {
+    border-image: url("background-assets/workspace-close-area-bg.svg") 7;
+    background-image: url("expo-scale-assets/trash.svg");
+    background-size: 24px 30px;
+    height: 100px;
+    width: 350px;
+}
+
+.workspace-osd {
+    border-image: url("background-assets/popup.svg") 7;
+    padding: 12px 17px;
+    color: #dcdcdc;
+    font-weight: bold;
+    font-size: 20pt;    
+}
+/* ===================================================================
+ * Scale view
+ * ===================================================================*/
+
+.window-caption {
+    border-image: url("expo-scale-assets/window-name.svg") 6;
+    color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: bold;
+    padding: 6px 8px;
+    -cinnamon-caption-spacing: 10px;
+}
+
+.window-caption#selected {
+    border-image: url("expo-scale-assets/window-name-focused.svg") 6;
+    font-weight: bold;
+    color: #fff;
+    spacing: 25px;
+}
+
+.window-close {
+    background-image: url("control-assets/close.svg");
+    height: 41px;
+    width: 41px;
+    -cinnamon-close-overlap: 22px;
+}
+
+.window-close:hover,
+.window-close:active {
+    background-image: url("control-assets/close.svg");
+}
+/* ===================================================================
+* Desklets (desklet.js)
+* ===================================================================*/
+
+.desklet {
+    color: #dcdcdc;
+}
+
+.desklet-with-borders {
+    border-image: url("background-assets/popup.svg") 7;
+    color: #dcdcdc;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.desklet-with-borders-and-header {
+    border-image: url("background-assets/desklet-body.svg") 7;
+    color: #dcdcdc;
+    padding: 8px;
+}
+
+.desklet-header { 
+    border-image: url("background-assets/desklet-header.svg") 11;
+    padding: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 9pt;
+    font-weight: normal;
+    text-shadow: none;
+    color: #dcdcdc;
+}
+
+.desklet-drag-placeholder { 
+    border: 0 solid #ccc;
+    border-radius: 0;
+    background: none;
+}
+
+.xkcd-box {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.photoframe-box {
+    border-image: url("background-assets/popup.svg") 7;
+    padding: 4px;
+}
+ 
+.clock-desklet-label {
+    font-weight: bold;
+    padding: 10px;
+    color: #dcdcdc;
+}
+ 
+.clock-desklet-label {
+    color: #dcdcdc;
+} 
+/* ===================================================================
+ * Date applet 
+ * ===================================================================*/
+
+.calendar {
+    padding: 6px 18px 8px 18px;
+    spacing-rows: 5px;
+    spacing-columns: 5px;
+}
+
+.datemenu-date-label {
+    padding: .5em 0 .5em 0;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    color: #dcdcdc;
+}
+
+.calendar-month-label {
+    padding-top: 2px;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #888;
+}
+
+.calendar-change-month-back,
+.calendar-change-month-forward:rtl {
+    background-image: url("control-assets/calendar-arrow-left.svg");
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+}
+
+.calendar-change-month-back:hover {
+    background-image: url("control-assets/calendar-arrow-left-hover.svg");
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+}
+
+.calendar-change-month-forward,
+.calendar-change-month-back:rtl {
+    background-image: url("control-assets/calendar-arrow-right.svg");
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+}
+
+.calendar-change-month-forward:hover {
+    background-image: url("control-assets/calendar-arrow-right-hover.svg");
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+}
+
+.calendar-day-base {
+    font-size: 9pt;
+    text-align: center;
+    width: 26px;
+    height: 26px;
+}
+
+.calendar-day-base:active {
+}
+
+.calendar-day-heading {
+    font-size: 9pt;
+    color: #dcdcdc;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    height: 15px;
+}
+
+.calendar-week-number {
+    color: rgba(255, 255, 255, .3);
+    font-size: 8pt;
+    height: 16px;
+    width: 12px;
+    padding-top: 7px;
+    padding-right: 6px;
+}
+
+.calendar-day {
+}
+
+.calendar-day-top {
+}
+
+.calendar-day-left {
+}
+
+.calendar-work-day {
+    border-image: url("misc-assets/calendar-work-day.svg") 6;
+    border: none;
+    color: #dcdcdc;
+}
+
+.calendar-nonwork-day {
+    border-image: url("misc-assets/calendar-nonwork-day.svg") 6;
+    border: none;
+    color: #dcdcdc;
+}
+
+.calendar-today {
+    border-image: url("misc-assets/calendar-today.svg") 6;
+    color: #fff;
+    font-weight: bold;
+}
+
+.calendar-other-month-day {
+    border-image: url("misc-assets/calendar-other-month-day.svg") 6;
+    color: rgba(255, 255, 255, .3);
+}
+/* ===================================================================
+ * Notification Applet
+ * ===================================================================*/
+
+.notification-applet-padding {
+    padding: .5em 1em;
+}
+/* ===================================================================
+ * Notifications
+ * ===================================================================*/
+
+#notification {
+    border-image: url("background-assets/popup.svg") 7;
+    padding: 8px 8px 8px 8px;
+    spacing-rows: 10px;
+    spacing-columns: 10px;
+    margin-from-right-edge-of-screen: 6px;
+    opacity: 255px;
+    mouseover-opacity: 255px;
+    width: 34em;
+    color: #dcdcdc;
+    font-size: 10pt;
+}
+
+#notification.multi-line-notification {
+    padding: 8px 8px 8px 8px;
+    color: #dcdcdc;
+}
+
+.notification-with-image {
+    min-height: 159px;
+    color: rgb(70,70,70);
+}
+
+#notification-scrollview {
+    max-height: 100em;
+}
+
+#notification-scrollview > .top-shadow, #notification-scrollview > .bottom-shadow {
+    height: 10em;
+}
+
+#notification-body {
+    spacing: 5px;
+}
+
+#notification-actions {
+    spacing: 10px;
+}
+
+#notification StEntry {
+    border-image: url("misc-assets/entry.svg") 7;
+    background-gradient-direction: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 22px;
+    width: 220px;
+    color: #dcdcdc;
+    caret-color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: normal;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #1a80b6;
+    padding: 4px 12px 3px 12px;
+}
+
+#notification StEntry:focus {
+    border-image: url("misc-assets/entry-focused.svg") 6;
+    background-gradient-direction: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 22px;
+    width: 220px;
+    color: #dcdcdc;
+    caret-color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: normal;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #1a80b6;
+    padding: 4px 12px 3px 12px;
+}
+/* ===================================================================
+ * Alt Tab
+ * ===================================================================*/
+
+#altTabPopup {
+    padding: 0;
+    spacing: 6px;
+}
+
+.switcher-list {
+    border-image: url("background-assets/popup.svg") 7;
+    color: #dcdcdc;
+    padding: 20px;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+.switcher-list-item-container {
+    spacing: 8px;
+}
+
+.thumbnail-scroll-gradient-left {
+}
+
+.thumbnail-scroll-gradient-right {
+}
+
+.switcher-list .item-box {
+    padding: 8px;
+}
+
+.switcher-list .item-box:outlined {
+    padding: 8px;
+}
+
+.switcher-list .item-box:selected {
+    border-image: url("background-assets/hover.svg") 7;
+    color: #dcdcdc;
+}
+
+.switcher-list .thumbnail-box {
+    padding: 0;
+    spacing: 0;
+}
+
+.switcher-list .thumbnail { 
+    width: 256px;
+}
+
+.switcher-list .separator {
+    width: 1px;
+    background: red;
+}
+
+.switcher-arrow {
+    border-color: transparent;
+    color: #dcdcdc;
+}
+
+.switcher-arrow:highlighted {
+    border-color: transparent;
+}
+
+.switcher-preview-backdrop {
+   background-color: transparent;
+}
+/* ===================================================================
+ * Hot corners
+ * ===================================================================*/
+
+.ripple-box {
+    width: 104px;
+    height: 104px;
+    background-image: url("misc-assets/corner-ripple.svg");
+}
+
+.ripple-box:rtl {
+    background-image: url("misc-assets/corner-ripple.svg");
+}
+/* ===================================================================
+ * Buttons
+ * ===================================================================*/
+
+/*---modal dialog---*/
+
+.modal-dialog-button {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #dcdcdc;
+    font-weight: bold;
+}
+
+.modal-dialog-button:hover {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-hover.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #dcdcdc;
+}
+
+.modal-dialog-button:focus {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-focused.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #fff;
+}
+
+.modal-dialog-button:active,
+.modal-dialog-button:pressed {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-pressed.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #dcdcdc;
+}
+
+.modal-dialog-button:focus:hover {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-focused-hover.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #fff;
+}
+
+.modal-dialog-button:focus:active,
+.modal-dialog-button:focus:pressed {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-focused-pressed.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #fff;
+}
+
+.modal-dialog-button:disabled {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-insensitive.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: rgba(255, 255, 255, .3);
+}
+
+/*---notification---*/
+
+.notification-button {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #dcdcdc;
+    font-weight: bold;
+    -st-natural-width: 80px;
+}
+
+.notification-button:hover {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-hover.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #dcdcdc;
+    -st-natural-width: 80px;
+}
+
+.notification-button:focus {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-focused.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    min-width: 24px;
+    color: #fff;
+    -st-natural-width: 80px;
+}
+
+.notification-button:active,
+.notification-button:pressed {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-pressed.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #dcdcdc;
+    -st-natural-width: 80px;
+}
+
+.notification-button:focus:hover {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-focused-hover.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #fff;
+    -st-natural-width: 80px;
+}
+
+.notification-button:focus:active,
+.notification-button:focus:pressed {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-focused-pressed.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #fff;
+    -st-natural-width: 80px;
+}
+
+.notification-button:insensitive {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-insensitive.svg") 7;
+    padding: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: rgba(255, 255, 255, .3);
+    -st-natural-width: 80px;
+}
+
+/*---notification icon button---*/
+
+.notification-icon-button {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button.svg") 7;
+    padding: 6px;
+    color: #dcdcdc;
+}
+
+.notification-icon-button:hover {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-hover.svg") 7;
+    padding: 6px;
+    color: #dcdcdc;
+}
+
+.notification-icon-button:focus {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-focused.svg") 7;
+    padding: 6px;
+    color: #fff;
+}
+
+.notification-icon-button:active,
+.notification-icon-button:pressed {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-pressed.svg") 7;
+    padding: 6px;
+    color: #dcdcdc;
+}
+
+.notification-icon-button:focus:hover {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-focused-hover.svg") 7;
+    padding: fff;
+    color: #dcdcdc;
+}
+
+.notification-icon-button:focus:active,
+.notification-icon-button:focus:pressed {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-focused-pressed.svg") 7;
+    padding: 6px;
+    color: #fff;
+}
+
+.notification-icon-button:disabled {
+    background-color: transparent;
+    background-gradient-direction: none;
+    border: none;
+    border-radius: 0;
+    border-image: url("buttons/button-insensitive.svg") 7;
+    padding: 6px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.notification-icon-button > StIcon {
+    icon-size: 16px;
+}
+/* ===================================================================
+ * Modal dialogs
+ * ===================================================================*/
+
+.modal-dialog {
+    border-image: url("background-assets/popup.svg") 7;
+    padding: 0;
+    border-radius: 0;
+    padding: 0;
+    color: #dcdcdc;   
+}
+
+.modal-dialog > * {
+    padding: 12px;
+    padding-bottom: 0;
+    border-radius: 0;
+}
+ 
+.modal-dialog-button-box,
+.modal-dialog > .modal-dialog-button-box {
+    border-image: url("background-assets/buttonbox-bg.svg") 8;
+    spacing: 0;
+    margin: 0;
+    padding: 16px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+/* ===================================================================
+ * Run dialog
+ * ===================================================================*/
+
+.run-dialog .modal-dialog-button,
+.run-dialog .modal-dialog-button:hover,
+.run-dialog .modal-dialog-button:focus,
+.run-dialog .modal-dialog-button:active,
+.run-dialog .modal-dialog-button:pressed,
+.run-dialog .modal-dialog-button:focus:hover,
+.run-dialog .modal-dialog-button:focus:active,
+.run-dialog .modal-dialog-button:focus:pressed, 
+.run-dialog .modal-dialog-button:insensitive {
+    border-image: none;
+}
+
+.run-dialog > .modal-dialog-button-box {
+    background-color: transparent;
+    border-image: none;
+    box-shadow: none;
+    padding: 0;
+    height: 0;
+}
+
+.run-dialog > * {
+    border-image: url("background-assets/popup.svg") 7;
+    padding: 10px;
+}
+
+.run-dialog-label {
+    font-size: 0;
+}
+
+.run-dialog-error-box {
+    padding-top: 15px;
+    spacing: 5px;
+}
+
+.run-dialog-completion-box { 
+    padding-left: 15px;
+    font-size: 10px;
+}
+
+.run-dialog-entry {
+    border-image: url("misc-assets/entry.svg") 7;
+    background-gradient-direction: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 22px;
+    width: 220px;
+    color: #dcdcdc;
+    caret-color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: normal;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #1a80b6;
+    padding: 4px 12px 3px 12px;
+}
+
+.run-dialog-entry:focus {
+    border-image: url("misc-assets/entry-focused.svg") 6;
+    background-gradient-direction: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 22px;
+    width: 220px;
+    color: #dcdcdc;
+    caret-color: #dcdcdc;
+    font-size: 9pt;
+    font-weight: normal;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #1a80b6;
+    padding: 4px 12px 3px 12px;
+}
+
+.run-dialog-completion-box { 
+    padding-left: 15px;
+    font-size: 10px;
+}
+/* ===================================================================
+ * Lightbox + flashspot
+ * ===================================================================*/
+
+.lightbox {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.flashspot {
+    background-color: rgba(255, 255, 255, .6);
+}
+/* ===================================================================
+ * About Dialog (applet.js and desklet.js)
+ * ===================================================================*/
+
+.about-content {
+    width: 550px;
+    height: 250px;
+    spacing: 8px;
+    padding-bottom: 24px;
+}
+
+.about-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.about-uuid {
+    font-size: 10px;
+    color: rgba(255, 255, 255, .3);
+}
+
+.about-icon {
+    padding-right: 20px;
+    padding-bottom: 14px;
+}
+
+.about-scrollBox {
+    background-color: #333;
+    border: 1px solid #484848;
+    border-radius: 2px;
+    padding: 4px;
+    padding-right: 0;
+}
+
+.about-scrollBox-innerBox {
+    padding: 1.2em;
+    spacing: 1.2em;
+}
+
+.about-description {
+    padding-top: 4px;
+    padding-bottom: 16px;
+}
+
+.about-version {
+    padding-left: 7px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, .3);
+}
+/* ===================================================================
+ * Looking Glass dialog
+ * ===================================================================*/
+
+#LookingGlassDialog {
+    border-image: url("background-assets/popup.svg") 7;
+    padding: 10px;
+    color: #dcdcdc;
+}
+/* ===================================================================
+ * Magnifier
+ * ===================================================================*/
+
+.magnifier-zoom-region {
+    border: 2px solid rgba(128, 0, 0, 255);
+}
+
+.magnifier-zoom-region.full-screen {
+    border-width: 0;
+}
+/* ===================================================================
+ * On screen keyboard
+ * ===================================================================*/
+
+#keyboard {
+    border-image: url("background-assets/keyboard-bg.svg") 7;
+}
+
+.keyboard-layout {
+    spacing: 8px;
+    padding: 12px;
+}
+
+.keyboard-row {
+    spacing: 15px;
+}
+
+.keyboard-key {
+    border-image: url("buttons/button.svg") 7;
+    padding: 16px;
+    color: #dcdcdc;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.keyboard-key:hover {
+    border-image: url("buttons/button-hover.svg") 7;
+    padding: 16px;
+}
+
+.keyboard-key:checked,
+.keyboard-key:active {
+    border-image: url("buttons/button-pressed.svg") 7;
+    padding: 16px;
+}
+
+.keyboard-key:grayed {
+    border-image: url("buttons/button-insensitive.svg") 7;
+    padding: 16px;
+    color: rgba(255, 255, 255, .3);
+}
+
+.keyboard-subkeys {
+    padding: 0;
+    -arrow-background-color: #2d2d2d;
+    -arrow-border-width: 1px;
+    -arrow-border-color: #484848;
+    -arrow-border-radius: 2px;
+    -arrow-base: 16px;
+    -arrow-rise: 8px;
+    -boxpointer-gap: 2px;
+}
+/* ===================================================================
+ * Menu (menu.js)
+ * ===================================================================*/
+
+.menu-favorites-box {
+    border-image: url("misc-assets/entry.svg") 4;
+    padding: 0.5em;
+    margin: auto;
+}
+
+.menu-favorites-button {
+    padding: 10px;
+}
+
+.menu-favorites-button:hover {
+    border-image: url("background-assets/hover.svg") 4;
+}
+
+.menu-places-box {
+    margin: auto;
+    padding: 8px;
+    border: 0 solid transparent;  
+}
+
+.menu-places-button {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;    
+}
+
+.menu-categories-box {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;    
+}
+
+.menu-applications-inner-box {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+.menu-applications-outer-box {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+.menu-application-button {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px; 
+    max-width: 10px;   
+}
+
+.menu-application-button-selected {
+    border-image: url("background-assets/hover.svg") 4;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    color: #fff; 
+}
+
+.menu-application-button-label:ltr { 
+    padding-left: 5px;
+}
+
+.menu-application-button-label:rtl { 
+    padding-right: 5px;
+}
+
+.menu-application-button:highlighted {
+    border-image: url("misc-assets/highlighted.svg") 4;
+}
+
+.menu-application-button-selected:highlighted {
+    border-image: url("background-assets/hover.svg") 4;
+}
+
+.menu-category-button {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+}
+
+.menu-category-button-greyed {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px; 
+    color: rgba(255, 255, 255, .3);
+    font-style: normal;
+}
+
+.menu-category-button-selected {
+    border-image: url("background-assets/hover.svg") 8;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px; 
+    color: #fff; 
+}
+
+.menu-category-button-label:ltr { 
+    padding-left: 5px       
+}
+
+.menu-category-button-label:rtl { 
+    padding-right: 5px       
+}
+
+.menu-category-button-button:hover {
+}
+
+/* Name and description of the currently hovered item in the menu
+ * This appears on the bottom right hand corner of the menu*/
+ 
+.menu-selected-app-box {
+    padding-right: 30px;
+    padding-left: 28px;
+    text-align: right;
+}
+
+.menu-selected-app-title {
+    font-weight: bold;
+}
+
+.menu-selected-app-description {
+    max-width: 150px;
+}
+
+.menu-search-box {
+   padding-left: 30px;
+}
+
+.menu-search-entry-icon {
+    icon-size: 16px;
+    color: #dcdcdc;
+}
+
+/* Context menu (at the moment only for favorites) */
+.menu-context-menu {
+}
+/* ===================================================================
+ * Window list (windowList.js)
+ * ===================================================================*/
+ 
+.window-list-box {
+    spacing: 3px;
+    padding: 0;
+}
+
+.window-list-item-label {
+    width: 15em;
+    min-width: 5px;
+}
+
+.window-list-item-box {
+    color: #dcdcdc;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.window-list-item-box:hover,
+.window-list-item-box:active,
+.window-list-item-box:checked,
+.window-list-item-box:focus,
+.window-list-item-box:checked:hover,
+.window-list-item-box:focus:hover,
+.window-list-item-box:active:hover,
+.window-list-item-demands-attention,
+.window-list-item-demands-attention:hover {
+}
+
+/*-----top panel-----*/
+
+.panel-top .window-list-item-box:hover  {   
+    font-weight: bold;
+    border-image: url("panel-assets/top-item-hover.svg") 4;
+}
+
+.panel-top .window-list-item-box:active,
+.panel-top .window-list-item-box:checked,
+.panel-top .window-list-item-box:focus  {
+    font-weight: bold;
+    border-image: url("panel-assets/top-item-active.svg") 4;
+    color: #fff;
+}
+
+.panel-top .window-list-item-box:checked:hover,
+.panel-top .window-list-item-box:focus:hover,
+.panel-top .window-list-item-box:active:hover  {     
+    font-weight: bold;
+    border-image: url("panel-assets/top-item-active-hover.svg") 4;
+    color: #fff;
+}
+
+.panel-top .window-list-item-demands-attention {
+    border-image: url("panel-assets/attention.svg") 4;
+}
+
+.panel-top .window-list-item-demands-attention:hover {
+    border-image: url("panel-assets/attention-hover.svg") 4;
+}
+
+/*-----bottom panel-----*/
+
+.panel-bottom .window-list-item-box:hover {
+    font-weight: bold;
+    border-image: url("panel-assets/bottom-item-hover.svg") 4;
+}
+
+.panel-bottom .window-list-item-box:active,
+.panel-bottom .window-list-item-box:checked,
+.panel-bottom .window-list-item-box:focus  {
+    font-weight: bold;
+    border-image: url("panel-assets/bottom-item-active.svg") 4;
+    color: #fff;
+}
+
+.panel-bottom .window-list-item-box:checked:hover,
+.panel-bottom .window-list-item-box:focus:hover,
+.panel-bottom .window-list-item-box:active:hover  {     
+    font-weight: bold;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
+    color: #fff;
+}
+
+.panel-bottom .window-list-item-demands-attention {
+    border-image: url("panel-assets/attention.svg") 4;
+}
+
+.panel-bottom .window-list-item-demands-attention:hover {
+    border-image: url("panel-assets/attention-hover.svg") 4;
+}
+/* ===================================================================
+ * Sound Applet (status/volume.js)
+ * ===================================================================*/
+ 
+.sound-button-container {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.sound-button {
+    border-image: url("buttons/button.svg") 7;  
+    width: 22px;
+    height: 22px;
+    padding: 4px;
+}
+
+.sound-button:hover {
+    border-image: url("buttons/button-hover.svg") 7;
+}
+
+.sound-button:active {
+    border-image: url("buttons/button-pressed.svg") 7;
+}
+
+.sound-button StIcon {
+    icon-size: 16px;
+}
+
+.sound-track-infos {
+    padding: 5px;
+    padding-left: 18px;
+}
+
+.sound-track-info {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.sound-track-info StIcon {
+    icon-size: 16px;
+}
+
+.sound-track-info StLabel {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.sound-track-box {
+    max-width: 220px;
+}
+
+.sound-track-cover {
+    padding: 10px;
+}
+
+.sound-seek-box {
+    padding-left: 20px;
+}
+
+.sound-seek-box .popup-menu-item {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.sound-seek-box .popup-menu-item:active {
+    border-image: url("background-assets/hover.svg") 4;
+}
+
+.sound-seek-box StLabel {
+    padding-top: 3px;
+}
+
+.sound-seek-box StIcon {
+   icon-size: 16px;
+}
+
+.sound-seek-slider {
+   width: 122px;
+} 
+
+.sound-volume-menu-item {
+    padding: .4em 1.5em;
+}
+
+.sound-volume-menu-item StIcon {
+    icon-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.sound-playback-control {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* ===================================================================
+ * Workspace Switcher applet (workspaceSwitcher.js)
+ * ===================================================================*/
+ 
+#workspaceSwitcher {
+    spacing: 0;
+}
+
+.workspace-button {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #dcdcdc;
+    font-weight: bold;
+}
+
+.panel-bottom .workspace-button {
+    padding-top: 1px;
+}
+
+/*---top panel---*/
+
+.panel-top .workspace-button:outlined {
+    border-image: url("panel-assets/top-item-active.svg") 4;
+    color: #fff;
+}
+
+.panel-top .workspace-button:hover {
+    border-image: url("panel-assets/top-item-hover.svg") 4;
+}
+
+.panel-top .workspace-button:outlined:hover {
+    border-image: url("panel-assets/top-item-active-hover.svg") 4;
+    color: #fff;
+}
+
+/*---bottom panel---*/
+
+.panel-bottom .workspace-button:outlined {
+    border-image: url("panel-assets/bottom-item-active.svg") 4;
+    color: #fff;
+}
+
+.panel-bottom .workspace-button:hover {
+    border-image: url("panel-assets/bottom-item-hover.svg") 4;
+}
+
+.panel-bottom .workspace-button:outlined:hover {
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
+    color: #fff;
+}
+/* ===================================================================
+ * Panel Launchers Applet (panelLaunchers.js)
+ * ===================================================================*/
+
+#panel-launchers-box {
+}
+
+.panel-launcher {
+    margin: 0;
+    padding: 0 4px;
+}
+
+.panel-launcher:hover {
+}
+
+.panel-top .panel-launcher:hover {
+    border-image: url("panel-assets/top-item-hover.svg") 4;
+}
+
+.panel-bottom .panel-launcher:hover {
+    border-image: url("panel-assets/bottom-item-hover.svg") 4;
+}
+
+.panel-launcher-add-dialog-content-box {
+    padding: 6px;
+    spacing: 20px;
+}
+
+.panel-launcher-add-dialog-content-box-left {
+    padding: 6px;
+    spacing: 20px;
+}
+
+.panel-launcher-add-dialog-content-box-right {
+    padding: 6px;
+    spacing: 10px;
+}
+/* ===================================================================
+ * Hot corners
+ * ===================================================================*/
+ 
+#overview-corner {
+    background-image: url("control-assets/hotcorner-icon.svg");
+}
+
+#overview-corner:hover {    
+    background-image: url("control-assets/hotcorner-icon-hover.svg");
+}
+/* ===================================================================
+ * Applets (applet.js) 
+ * ===================================================================*/
+ 
+.applet-separator {
+    background-image: url("panel-assets/panel-separator.svg");
+    background-repeat: repeat;
+    width: 9px;
+    padding: 0;
+}
+
+.applet-separator-line {
+} 
+
+.applet-box {
+    font-weight: bold;
+    color: #dcdcdc;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.applet-box:hover,
+.applet-box:active {
+}
+
+.panel-top .applet-box:hover {
+    font-weight: bold;
+    color: #dcdcdc; 
+    border-image: url("panel-assets/top-item-hover.svg") 4;
+}
+
+.panel-bottom .applet-box:hover {
+    border-image: url("panel-assets/bottom-item-hover.svg") 4;
+}
+
+.applet-label {
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+.applet-label:hover {
+    font-weight: bold;
+}
+
+.applet-icon {
+    icon-size: 16px;
+}
+
+.applet-icon:hover,
+.applet-box:hover > .applet-icon {
+}
+/* ===================================================================
+ * User Applet
+ * ===================================================================*/
+
+.user-box {
+    padding: .4em 1.5em;
+    padding-bottom: .6em;
+    spacing: 10px;
+}
+
+.user-icon {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 0 solid transparent;
+    border-radius: 0;
+    padding: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.user-label {
+    color: #dcdcdc;
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 0;
+}
+/* ===================================================================
+ * Snap/Tile OSD Popup
+ * ===================================================================*/
+
+.snap-osd {
+    border-image: url("background-assets/popup.svg") 7;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 10px;
+    color: #dcdcdc;
+    text-align: center;     
+}

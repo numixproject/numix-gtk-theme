@@ -1,0 +1,10 @@
+{ 
+   "cinnamon-theme": {
+   "name": "Numix Frost",
+   "author": ["zagortenay333", "lots0logs"],
+   "version": "",
+   "type":   "custom",
+   "thumbnail": "thumbnail.png", 
+   "url": "" 
+    }
+}

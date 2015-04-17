@@ -1,0 +1,94 @@
+#sticky-scrollview StScrollBar {
+    padding: 0;
+    padding-left: 6px;
+}
+
+.sticky-button {
+    border-image: url("../buttons/button.svg") 7;
+    background-gradient-direction: none;
+    height: 24px;
+    width: 24px;
+    color: #dcdcdc;
+}
+
+.sticky-button-selected {
+    border-image: url("../buttons/button-hover.svg") 7;
+    background-gradient-direction: none;
+    height: 24px;
+    width: 24px;
+    color: #dcdcdc;
+}
+
+.sticky-button-box {
+    padding: 0;
+    height: 24px;
+}
+
+.sticky-main-box-staples {
+    border-image: url("../background-assets/popup.svg") 7;
+    background-color: transparent;
+    border-radius: 0;
+    text-shadow: none;
+    min-width: 210px;
+    padding: 4px 10px;
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+.sticky-main-box-none {
+    border-image: url("../background-assets/popup.svg") 7;
+    background-color: transparent;
+    border-radius: 0;
+    text-shadow: none;
+    min-width: 210px;
+    padding: 4px 10px;
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+.sticky-top-box {
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+.sticky-bottom-box {
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+.sticky-title-label {
+    padding: 0 4px 0 4px;
+    max-width: 100px;
+    text-align: center;
+}
+
+.sticky-information-label {
+    padding: 0 4px 0 4px;
+}
+
+.sticky-text-box {
+    background-gradient-direction: none;
+    box-shadow: inset 0 0 transparent;
+    border: 0 transparent;
+    border-radius: 0;
+    border-image: url("../misc-assets/entry.svg") 7;
+    padding: 6px;
+}
+
+.sticky-text-box:active {
+    background-gradient-direction: none;
+    box-shadow: inset 0 0 transparent;
+    border: 0 transparent;
+    border-radius: 0;
+    border-image: url("../misc-assets/entry-focused.svg") 7;
+    padding: 6px;
+}
+
+#sticky-note-entry {
+    padding: 6px;
+    color: #dcdcdc;
+    selected-color: #fff;
+    caret-color: #dcdcdc;
+    caret-size: 1px;
+    selection-background-color: #1a80b6;
+}

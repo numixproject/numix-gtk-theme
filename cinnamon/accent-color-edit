@@ -1,0 +1,17 @@
+Make sure you have sed installed. (sudo apt-get install sed)
+
+
+
+Open a terminal in this directory; right-click-->open in terminal, or navigate to it from within the terminal.
+MAKE SURE YOU ARE IN THIS DIRECTORY!
+
+Execute the following line:
+
+find ./ -type f \( -iname '*.svg' -o -iname '*.css' \) -exec sed -i "s/#d64937/#1a80b6/g" {} \;
+
+
+
+#d64937 is the default accent color.
+
+Replace #1A80B6 with the color of your choice. Restart cinnamon.
+You can use rgba, hex, or standard css color names.

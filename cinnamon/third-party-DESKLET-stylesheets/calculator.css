@@ -1,0 +1,89 @@
+.calc-button {
+    border-image: url("../buttons/button.svg") 7;
+    height: 40px;
+    width: 50px;
+    margin: 20px;
+    color: #dcdcdc;
+}
+
+.calc-button:hover {
+    border-image: url("../buttons/button-hover.svg") 7;
+    height: 40px;
+    width: 50px;
+    margin: 20px;
+    color: #dcdcdc;
+}
+
+.calc-button:active {
+    border-image: url("../buttons/button-pressed.svg") 7;
+    height: 40px;
+    width: 50px;
+    margin: 20px;
+    color: #dcdcdc;
+}
+
+.calc-button-padding {
+    padding: 2px;
+}
+
+.calc-mainBox {
+    padding: 2px;
+}
+
+.calc-displayArea {
+    padding: 3px;
+}
+
+.calc-displayWindow {
+    border-image: url("../misc-assets/entry-focused.svg") 7;
+    padding: 10px;
+}
+
+.calc-displayWindow-rpn {
+    border-image: url("../misc-assets/entry-focused.svg") 7;
+    padding: 10px;
+}
+
+.calc-displayText-primary {
+    font-size: 32px;
+    color: #dcdcdc;
+    text-align: right;
+}
+
+.calc-displayText-secondary {
+    font-size: 9px;
+    color: #dcdcdc;
+    text-align: right;
+}
+
+.calc-displayText-operation {
+    font-size: 24px;
+    color: #dcdcdc;
+}
+
+.calc-displayText-status {
+    font-size: 8px;
+    color: #dcdcdc;
+}
+
+.calc-displayText-rpn {
+    color: #dcdcdc;
+}
+
+.calc-stackArea {
+    height: 85px;
+    padding-top: 8px;
+}
+
+.calc-navigation-box {
+    padding: 0 0 0 8px;
+    width: 22px;
+}
+
+.calc-navigation-icon {
+    color: #dcdcdc;
+    icon-size: 16px;
+}
+
+.calc-button .calc-navigation-button {
+}

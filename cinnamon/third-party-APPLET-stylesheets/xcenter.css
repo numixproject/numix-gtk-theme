@@ -1,0 +1,42 @@
+.xCenter-menu .popup-menu-content {
+    padding: 0;
+    max-height: 475px;
+}
+
+.xCenter-mainBox {
+    padding: 0;
+    spacing: 0;
+}
+
+.xCenter-mainBox .popup-menu-item {
+    padding: .4em 1.5em;
+}
+
+.xCenter-mainBox .popup-menu-item:active {
+    border-image: url("../background-assets/hover.svg") 7;
+}
+
+.xCenter-mainBox StScrollBar {
+    padding: 3px;
+    padding-right: 8px;
+}
+
+.xCenter-title {
+    border: 0 solid transparent;
+    border-bottom-width: 4px;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+.xCenter-pane {
+    border-image: url("../misc-assets/separator-vertical.svg") 11;
+    padding: 7px 0;
+}
+
+.xCenter-pane:last-child {
+    border-image: none;
+}
+
+.xCenter-menuItemLabel {
+    max-width: 12em;
+}

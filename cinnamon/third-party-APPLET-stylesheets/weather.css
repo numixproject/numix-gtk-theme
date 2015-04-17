@@ -1,0 +1,89 @@
+.weather-menu .popup-menu-content {
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+.weather-menu .popup-separator-menu-item {
+}
+
+.current {
+    padding-top: 0;
+}
+
+.forecast {
+}
+
+.weather-current-location-link {
+    font-size: 12pt;
+}
+
+.weather-current-location-link:selected,
+.weather-current-location-link:hover {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255, 255, 255, 0.0);
+    background-gradient-end: rgba(255, 255, 255, 0.0);
+    color: #1a80b6;
+}
+
+.weather-current-summarybox {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.weather-current-summary {
+    font-size: 35px;
+}
+
+.weather-current-databox {
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 9pt;
+}
+
+.weather-current-icon {
+    padding: 0 30px;
+    padding-bottom: 15px;
+}
+
+.weather-current-iconbox {
+    padding: 1em;
+}
+
+.weather-icon {
+    padding-right: 5px;
+}
+
+.weather-icon-rtl {
+    padding-left: 5px;
+}
+
+.weather-current-databox-captions {
+    padding: 0;
+    padding-right: 5px;
+    spacing: 0;
+    font-size: 9pt;
+    color: #1a80b6;
+    text-align: right;
+}
+
+.weather-current-astronomy {
+    color: rgba(255, 255, 255, .3);
+    font-size: 9pt;
+}
+
+.weather-forecast-icon {
+    padding: 10px 15px 0 30px;
+    color: #dcdcdc;
+}
+
+.weather-forecast-databox {
+    padding: 14px 30px 0 0;
+    color: #dcdcdc;
+}
+
+.weather-forecast-day {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #1a80b6;
+}

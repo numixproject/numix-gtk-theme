@@ -1,0 +1,147 @@
+.grid-panel {
+    border-image: url("../background-assets/popup.svg") 7;
+    width:240px;
+    padding: 6px;
+}
+
+.grid-title {
+    padding: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #dcdcdc;
+    text-align:center;
+}
+
+.table {
+}
+
+.table-element {
+    background-color: #3d3d3d;
+    border: 1px solid #535353;
+    border-radius: 2px;
+}
+
+.table-element:hover, .table-element:activate {
+    background-color: #1a80b6;
+    border: 1px solid #1a80b6;
+    border-radius: 2px;
+}
+
+.top-box {
+    padding: 4px;
+}
+
+.bottom-box {
+    padding: 10px;
+    display: block;
+}
+
+.very-bottom-box {
+    padding: 60px;
+    display: block;
+}
+
+.settings-label {  
+}
+
+.settings-label:hover {
+}
+
+.grid-preview {
+     background-color: transparent;
+     border-color: transparent;
+}
+
+.grid-preview:activate {
+    background-color: rgba(214, 73, 55, .4);
+    border: 1px solid rgba(214, 73, 55, .8);
+}
+
+
+/*---buttons---*/
+
+.settings-button {
+    border-image: url("../buttons/button.svg") 7;
+    padding: 3px;
+    width: 44px;
+    height: 32px;
+    color: #dcdcdc;
+}
+
+.settings-button:activate {
+    border-image: url("../buttons/button-focused.svg") 7;
+    color: #dcdcdc;
+}
+
+.settings-button:activate:hover {
+    border-image: url("../buttons/button-focused.svg") 7;
+    color: #dcdcdc;
+}
+
+.settings-button:hover {
+    border-image: url("../buttons/button-hover.svg") 7;
+    color: #dcdcdc;
+}
+
+.close-button {
+    border-image: url("../buttons/button.svg") 7;
+    color: #dcdcdc;
+    background-image: url("../misc-assets/auto-close.svg");
+    color: #dcdcdc;
+    width: 24px;
+    height: 24px;
+}
+
+.close-button:hover {
+    border-image: url("../buttons/button-hover.svg") 7;
+    background-image: url("../misc-assets/auto-close.svg");
+    width: 24px;
+    height: 24px;
+}
+
+
+/*---icons---*/
+
+.tiling-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.tiling-icon:hover {
+    width: 24px;
+    height: 24px;
+}
+
+.tiling-icon:activate {
+    width: 24px;
+    height: 24px;
+}
+
+.animation-icon {
+    background-image: url("../misc-assets/animation.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.auto-close-icon {
+    background-image: url("../misc-assets/auto-close.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.action-main-list {
+    background-image: url("../misc-assets/auto-tile-1.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.action-two-list {
+    background-image: url("../misc-assets/auto-tile-2.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.action-scale {
+    width: 24px;
+    height: 24px;
+}
