@@ -83,8 +83,7 @@
 @import url("gtk-widgets-assets.css");
 @import url("apps/gnome-applications.css");
 @import url("apps/granite-widgets.css");
-@import url("apps/unity.css");
 @import url("apps/xfce.css");
-@import url("apps/nemo.css");
 @import url("apps/synaptic.css");
 @import url("apps/lightdm-gtk-greeter.css");
+@import url("apps/nemo.css");

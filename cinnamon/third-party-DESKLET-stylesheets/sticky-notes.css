@@ -73,6 +73,7 @@
     border-radius: 0;
     border-image: url("../misc-assets/entry.svg") 7;
     padding: 6px;
+    color: #414141;
 }
 
 .sticky-text-box:active {

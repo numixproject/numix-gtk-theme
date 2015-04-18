@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Numix Frost
+Name=Numix-Frost
 Comment=A modern flat theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Numix Frost
-MetacityTheme=Numix Frost
+GtkTheme=Numix-Frost
+MetacityTheme=Numix-Frost
 ButtonLayout=:minimize,maximize,close
