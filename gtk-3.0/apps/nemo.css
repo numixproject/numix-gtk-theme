@@ -61,7 +61,7 @@ NemoWindow NemoIconView {
 	background-color: @base_color;
 }
 
-NemoPlacesTreeView {
+.sidebar NemoPlacesTreeView {
 	-NemoPlacesTreeView-disk-full-bg-color: shade(@toolbar_bg_color, 0.8);
 	-NemoPlacesTreeView-disk-full-fg-color: @theme_selected_bg_color;
 	-NemoPlacesTreeView-disk-full-bar-width: 2px;
@@ -70,52 +70,68 @@ NemoPlacesTreeView {
 	-NemoPlacesTreeView-disk-full-max-length: 70px;
 }
 
-NemoPlacesTreeView:selected {
+.sidebar NemoPlacesTreeView:selected {
 	-NemoPlacesTreeView-disk-full-bg-color: @theme_selected_fg_color;
 	-NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 1.4);
 	color: @theme_selected_bg_color;
 	border-color: transparent;
+background-color: transparent;
 }
 
-NemoPlacesTreeView:hover {
+.sidebar NemoPlacesTreeView:hover {
 	color: @theme_selected_bg_color;
 
 }
 
-NemoPlacesTreeView:selected:hover {
+.sidebar NemoPlacesTreeView:selected:hover {
 	color: @theme_selected_fg_color;
 	text-shadow: 1px 1px 1px @theme_selected_bg_color;
 
 }
+NemoWindow .dialog-vbox .notebook tab.top {
+padding: 8px 15px;
+}
+
 
 /*********************
  * Toolbar           *
  *********************/
-NemoToolbar .button.image-button {
-padding: 6px 8px;
+NemoToolbar GtkButton.button.image-button {
+	padding-left: 7px;
+	padding-right: 8px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 /*********************
  * Menubar           *
  *********************/
 NemoWindow .menubar {
- background-color @bg_color;
-	color @fg_color;
+	background-color: @bg_color;
+}
+
+NemoWindow .menubar > .menuitem {
+	color: @fg_color;
+}
+
+NemoWindow .menubar > .menuitem:hover {
+	border-color: mix(@bg_color, @fg_color, 0.21);
+	background-color: mix(@bg_color, @fg_color, 0.21);
+	background-image: none;
+	color: shade(@fg_color, 0.85);
+}
+NemoStatusBar .button.image-button {
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 4px;
+padding-bottom: 4px;
 }
 
 /*********************
  * Cinnamon Settings *
  *********************/
 
-.section-bg {
-	background-color: @theme_base_color;
-	box-shadow: inset 0 3px white,
-	inset -2px 0 @border,
-	inset 0 -2px @border,
-	inset 0 2px shade(@border, 1.15),
-	inset 2px 0 @border,
-	inset -1px 0 shade(@theme_bg_color, 0.93),
-	inset 1px 0 shade(@theme_bg_color, 0.93),
-	inset 0 1px @theme_bg_color,
-	inset 0 -1px shade(@theme_bg_color, 0.85);
+.section-bg.frame {
+	background-color: @bg_color;
+	box-shadow: none;
 }
