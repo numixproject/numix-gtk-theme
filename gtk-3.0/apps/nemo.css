@@ -60,7 +60,7 @@ NemoWindow NemoIconView {
 	background-color: @base_color;
 }
 
-.sidebar > NemoPlacesSidebar NemoPlacesTreeView {
+.sidebar > NemoPlacesSidebar NemoPlacesTreeView row {
 	-NemoPlacesTreeView-disk-full-bg-color: shade(@toolbar_bg_color, 0.8);
 	-NemoPlacesTreeView-disk-full-fg-color: @theme_selected_bg_color;
 	-NemoPlacesTreeView-disk-full-bar-width: 2px;
@@ -69,7 +69,7 @@ NemoWindow NemoIconView {
 	-NemoPlacesTreeView-disk-full-max-length: 70px;
 }
 
-.sidebar > NemoPlacesSidebar NemoPlacesTreeView:selected {
+.sidebar > NemoPlacesSidebar NemoPlacesTreeView row:selected {
 	-NemoPlacesTreeView-disk-full-bg-color: @theme_selected_fg_color;
 	-NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 1.4);
 	color: @theme_selected_bg_color;
@@ -77,12 +77,12 @@ NemoWindow NemoIconView {
 	background-color: transparent;
 }
 
-.sidebar > NemoPlacesSidebar NemoPlacesTreeView:hover {
+.sidebar > NemoPlacesSidebar NemoPlacesTreeView row:hover {
 	color: @theme_selected_bg_color;
 
 }
 
-.sidebar > NemoPlacesSidebar NemoPlacesTreeView:selected:hover {
+.sidebar > NemoPlacesSidebar NemoPlacesTreeView row:selected:hover {
 	color: @theme_selected_fg_color;
 	text-shadow: 1px 1px 1px @theme_selected_bg_color;
 }
