@@ -60,7 +60,7 @@ NemoWindow NemoIconView {
 	background-color: @base_color;
 }
 
-.sidebar NemoPlacesTreeView {
+.sidebar > NemoPlacesSidebar NemoPlacesTreeView {
 	-NemoPlacesTreeView-disk-full-bg-color: shade(@toolbar_bg_color, 0.8);
 	-NemoPlacesTreeView-disk-full-fg-color: @theme_selected_bg_color;
 	-NemoPlacesTreeView-disk-full-bar-width: 2px;
@@ -69,7 +69,7 @@ NemoWindow NemoIconView {
 	-NemoPlacesTreeView-disk-full-max-length: 70px;
 }
 
-.sidebar NemoPlacesTreeView:selected {
+.sidebar > NemoPlacesSidebar NemoPlacesTreeView:selected {
 	-NemoPlacesTreeView-disk-full-bg-color: @theme_selected_fg_color;
 	-NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 1.4);
 	color: @theme_selected_bg_color;
@@ -77,12 +77,12 @@ NemoWindow NemoIconView {
 	background-color: transparent;
 }
 
-.sidebar NemoPlacesTreeView:hover {
+.sidebar > NemoPlacesSidebar NemoPlacesTreeView:hover {
 	color: @theme_selected_bg_color;
 
 }
 
-.sidebar NemoPlacesTreeView:selected:hover {
+.sidebar > NemoPlacesSidebar NemoPlacesTreeView:selected:hover {
 	color: @theme_selected_fg_color;
 	text-shadow: 1px 1px 1px @theme_selected_bg_color;
 }
@@ -95,7 +95,7 @@ NemoWindow .dialog-vbox .notebook tab.top {
 /*********************
  * Toolbar           *
  *********************/
-NemoToolbar GtkButton.button.image-button {
+NemoToolbar .toolbar .button.image-button {
 	padding-left: 7px;
 	padding-right: 8px;
 	padding-top: 6px;
