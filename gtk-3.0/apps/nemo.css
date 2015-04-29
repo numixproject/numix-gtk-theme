@@ -27,6 +27,10 @@
 /***********************
  * pathbar breadcrumbs *
  ***********************/
+
+NemoToolbar > GtkToolItem {
+	margin-left: 15px;
+}
 NemoPathbarButton {
 	border-color: shade(@toolbar_bg_color, 0.8);
 	background-color: shade(@toolbar_bg_color, 1.08);
@@ -60,7 +64,7 @@ NemoWindow NemoIconView {
 	background-color: @base_color;
 }
 
-.sidebar > NemoPlacesSidebar NemoPlacesTreeView row {
+NemoPlacesTreeView row {
 	-NemoPlacesTreeView-disk-full-bg-color: shade(@toolbar_bg_color, 0.8);
 	-NemoPlacesTreeView-disk-full-fg-color: @theme_selected_bg_color;
 	-NemoPlacesTreeView-disk-full-bar-width: 2px;
@@ -69,7 +73,7 @@ NemoWindow NemoIconView {
 	-NemoPlacesTreeView-disk-full-max-length: 70px;
 }
 
-.sidebar > NemoPlacesSidebar NemoPlacesTreeView row:selected {
+NemoPlacesTreeView row:selected {
 	-NemoPlacesTreeView-disk-full-bg-color: @theme_selected_fg_color;
 	-NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 1.4);
 	color: @theme_selected_bg_color;
@@ -77,20 +81,15 @@ NemoWindow NemoIconView {
 	background-color: transparent;
 }
 
-.sidebar > NemoPlacesSidebar NemoPlacesTreeView row:hover {
+NemoPlacesTreeView row:hover {
 	color: @theme_selected_bg_color;
 
 }
 
-.sidebar > NemoPlacesSidebar NemoPlacesTreeView row:selected:hover {
+NemoPlacesTreeView row:selected:hover {
 	color: @theme_selected_fg_color;
 	text-shadow: 1px 1px 1px @theme_selected_bg_color;
 }
-
-NemoWindow .dialog-vbox .notebook tab.top {
-	padding: 8px 15px;
-}
-
 
 /*********************
  * Toolbar           *
@@ -120,9 +119,9 @@ NemoWindow .menubar > .menuitem:hover {
 	color: shade(@fg_color, 0.85);
 }
 
-NemoStatusBar .button.image-button {
-	padding-left: 10px;
-	padding-right: 10px;
+NemoStatusBar.toolbar .button.image-button {
+	padding-left: 8px;
+	padding-right: 8px;
 	padding-top: 4px;
 	padding-bottom: 4px;
 }
