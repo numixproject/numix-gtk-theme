@@ -212,7 +212,7 @@ GtkAssistant .sidebar {
     padding: 4px;
     border-width: 0 1px 0 0;
     border-style: solid;
-    border-right-color: shade(@theme_bg_color, 0.6);
+    border-right-color: shade(@theme_bg_color, 0.7);
     border-radius: 0;
     background-color: @theme_bg_color;
     color: mix(@theme_fg_color, @theme_bg_color, 0.1);
@@ -229,14 +229,14 @@ GtkAssistant .sidebar {
     border-width: 1px;
     border-radius: 2px;
     border-style: solid;
-    border-color: shade(@theme_bg_color, 0.6);
+    border-color: shade(@theme_bg_color, 0.7);
     background-color: shade(@theme_bg_color, 1.08);
     background-image: none;
     color: @theme_fg_color;
 }
 
 .button:hover {
-    border-color: shade(@theme_bg_color, 0.5);
+    border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 1.10);
     background-image: none;
 }
@@ -250,7 +250,7 @@ GtkAssistant .sidebar {
 
 .button:active:hover,
 .button:checked:hover {
-    border-color: shade(@theme_bg_color, 0.7);
+    border-color: shade(@theme_bg_color, 0.6);
 }
 
 .button:focus,
