@@ -643,7 +643,7 @@ StScrollBar StButton#hhandle {
 }
 
 .desklet-drag-placeholder { 
-    border: 0 solid #ccc;
+    border: 0 solid #8b8b8b;
     border-radius: 0;
     background: none;
 }
