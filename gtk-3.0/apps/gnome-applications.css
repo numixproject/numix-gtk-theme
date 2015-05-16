@@ -122,6 +122,13 @@ NautilusNotebook.notebook {
     border-left-width: 0;
     border-bottom-width: 0;
 }
+NautilusWindow NautilusCanvasView {
+    background: transparent;
+}
+
+NautilusWindow NautilusCanvasViewContainer {
+    background: #ffffff;
+}
 
 NautilusNotebook .frame {
     border-width: 0;
