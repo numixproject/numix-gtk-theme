@@ -6,7 +6,7 @@
     .sidebar {
         &, &.view, .view, GtkScrolledWindow {
             background-color: $bg_color;
-            color: mix($fg_color, $bg_color, .1);
+            color: mix($fg_color, $bg_color, .9);
 
             &.separator {
                 &, &:hover, &:focus {
@@ -51,7 +51,7 @@
             border-right-color: border_normal($bg_color);
             border-radius: 0;
             background-color: $bg_color;
-            color: mix($fg_color, $bg_color, .1);
+            color: mix($fg_color, $bg_color, .9);
 
             &:dir(ltr) { border-width: 0 1px 0 0; }
 
@@ -60,7 +60,7 @@
             .label {
                 padding: $spacing ($spacing * 2);
 
-                &.highlight { background-color: mix($bg_color, $fg_color, .8); }
+                &.highlight { background-color: mix($bg_color, $fg_color, .2); }
             }
 
             &.csd .sidebar { border-top-style: none; }

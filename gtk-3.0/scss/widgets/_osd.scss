@@ -73,13 +73,13 @@
             .trough { background-color: $osd_bg; }
 
             .slider {
-                border: 1px solid mix(shade($osd_bg, .87), $osd_fg, .21);
+                border: 1px solid mix(shade($osd_bg, .87), $osd_fg, .89);
                 border-radius: 0;
-                background-color: mix($osd_bg, $osd_fg, .21);
+                background-color: mix($osd_bg, $osd_fg, .89);
 
                 &:hover {
-                    border-color: mix(shade($osd_bg, .87), $osd_fg, .31);
-                    background-color: mix($osd_bg, $osd_fg, .31);
+                    border-color: mix(shade($osd_bg, .87), $osd_fg, .79);
+                    background-color: mix($osd_bg, $osd_fg, .79);
                 }
 
                 &:active {
@@ -92,7 +92,7 @@
         GtkIconView.cell {
             &:selected, &:selected:focus {
                 background-color: transparent;
-                border: 3px solid mix(shade($osd_bg, .87), $osd_fg, .21);
+                border: 3px solid mix(shade($osd_bg, .87), $osd_fg, .89);
                 border-radius: $roundness;
                 outline-color: transparent;
             }
