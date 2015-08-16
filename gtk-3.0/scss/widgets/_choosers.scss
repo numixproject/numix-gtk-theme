@@ -5,12 +5,12 @@
 @include exports("colorchooser") {
     GtkColorSwatch {
         &, &:selected {
-            border: 1px solid alpha($black, .1);
+            border: 1px solid fade-out($black, .9);
             border-radius: $roundness - 1px;
             background-color: transparent;
             background-clip: border-box;
 
-            &:hover { border-color: alpha($black, .3); }
+            &:hover { border-color: fade-out($black, .7); }
         }
 
         &.color-light:selected:hover, &.color-dark:selected:hover { background-image: none; }
@@ -42,19 +42,19 @@
 
             &.color-dark:hover, &.color-light:hover {
                 background-image: none;
-                border-color: alpha($black, .3);
+                border-color: fade-out($black, .7);
             }
         }
     }
 
     GtkColorChooserWidget #add-color-button {
         background-clip: padding-box;
-        border-color: alpha($black, .1);
+        border-color: fade-out($black, .9);
         background-color: shade($bg_color, .95);
         color: $fg_color;
 
         &:hover {
-            border-color: alpha($black, .3);
+            border-color: fade-out($black, .7);
             background-color: shade($bg_color, .9);
             color: $fg_color;
         }
@@ -69,15 +69,15 @@
 
         &.color-light {
             &, &:hover {
-                border-color: alpha($black, .3);
-                color: alpha($black, .3);
+                border-color: fade-out($black, .7);
+                color: fade-out($black, .7);
             }
         }
 
         &.color-dark {
             &, &:hover {
-                border-color: alpha($white, .3);
-                color: alpha($white, .3);
+                border-color: fade-out($white, .7);
+                color: fade-out($white, .7);
             }
         }
     }
@@ -99,9 +99,9 @@
             -GtkWidget-vertical-separator: 0;
         }
 
-        GtkLabel:last-child { color: alpha(currentColor, .7); }
+        GtkLabel:last-child { color: fade-out(currentColor, .3); }
 
-        GtkImage:last-child { color: alpha(currentColor, .7); }
+        GtkImage:last-child { color: fade-out(currentColor, .3); }
     }
 
     GtkFileChooser {

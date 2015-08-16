@@ -8,8 +8,8 @@
         background-image: none;
         color: $white;
         font: bold;
-        text-shadow: 0 1px alpha($black, .5);
-        icon-shadow: 0 1px alpha($black, .5);
+        text-shadow: 0 1px fade-out($black, .5);
+        icon-shadow: 0 1px fade-out($black, .5);
 
         .menubar {
             &, > .menuitem {
@@ -17,19 +17,19 @@
                 background-image: none;
                 color: $white;
                 font: bold;
-                text-shadow: 0 1px alpha($black, .5);
-                icon-shadow: 0 1px alpha($black, .5);
+                text-shadow: 0 1px fade-out($black, .5);
+                icon-shadow: 0 1px fade-out($black, .5);
 
                 *:hover { color: $white; }
 
                 &:hover {
                     border-style: none;
-                    background-color: alpha($white, .2);
+                    background-color: fade-out($white, .8);
                     background-image: none;
                     color: $white;
                 }
 
-                &:insensitive { color: alpha($white, .7); }
+                &:insensitive { color: fade-out($white, .3); }
 
                 .menu {
                     border-radius: 1px;
@@ -111,10 +111,10 @@
             &:focus, &:hover {
                 border-color: shade($lightdm_bg_color, .7);
 
-                box-shadow: inset 1px 0 alpha($dark_shadow, .1),
-                            inset 0 1px alpha($dark_shadow, .12),
-                            inset -1px 0 alpha($dark_shadow, .1),
-                            inset 0 -1px alpha($dark_shadow, .05);
+                box-shadow: inset 1px 0 fade-out($dark_shadow, .9),
+                            inset 0 1px fade-out($dark_shadow, .98),
+                            inset -1px 0 fade-out($dark_shadow, .9),
+                            inset 0 -1px fade-out($dark_shadow, .05);
             }
         }
     }
@@ -143,10 +143,10 @@
         border-radius: $roundness;
         background-color: shade($lightdm_bg_color, .9);
         background-image: none;
-        box-shadow: inset 1px 0 alpha($dark_shadow, .07),
-                    inset 0 1px alpha($dark_shadow, .08),
-                    inset -1px 0 alpha($dark_shadow, .07),
-                    inset 0 -1px alpha($dark_shadow, .05);
+        box-shadow: inset 1px 0 fade-out($dark_shadow, .03),
+                    inset 0 1px fade-out($dark_shadow, .02),
+                    inset -1px 0 fade-out($dark_shadow, .03),
+                    inset 0 -1px fade-out($dark_shadow, .05);
     }
 
     #buttonbox_frame {

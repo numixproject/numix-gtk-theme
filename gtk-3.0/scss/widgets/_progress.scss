@@ -7,7 +7,7 @@
         padding: 0;
         border-radius: $roundness;
         font-size: smaller;
-        color: alpha($fg_color, .6);
+        color: fade-out($fg_color, .4);
 
         -GtkProgressBar-min-horizontal-bar-height: 6;
         -GtkProgressBar-min-vertical-bar-width: 6;
@@ -19,7 +19,7 @@
         }
 
         &.trough {
-            border: 1px solid alpha(border_normal($bg_color), .5);
+            border: 1px solid fade-out(border_normal($bg_color), .5);
             background-color: shade($bg_color, 1.08);
             background-image: none;
         }
@@ -72,7 +72,7 @@
         &.trough {
             @include linear-gradient(shade($bg_color, 1.08), to top);
 
-            border: 1px solid alpha(border_normal($bg_color), .5);
+            border: 1px solid fade-out(border_normal($bg_color), .5);
             border-radius: $roundness;
         }
 
@@ -126,7 +126,7 @@
             border-radius: 8px;
             border-width: 1px;
             border-style: solid;
-            box-shadow: 0 1px 2px -1px alpha($dark_shadow, .3);
+            box-shadow: 0 1px 2px -1px fade-out($dark_shadow, .7);
 
             &:insensitive { @include linear-gradient(shade($bg_color, .9)); }
         }
@@ -141,14 +141,14 @@
             }
         }
 
-        &.mark { border-color: alpha(border_normal($bg_color), .5); }
+        &.mark { border-color: fade-out(border_normal($bg_color), .5); }
 
 
         &.trough {
             @include linear-gradient(shade($bg_color, 1.08));
 
             margin: 7px 0;
-            border: 1px solid alpha(border_normal($bg_color), .5);
+            border: 1px solid fade-out(border_normal($bg_color), .5);
             border-radius: $roundness;
 
             &:insensitive { @include linear-gradient(shade($bg_color, .9)); }

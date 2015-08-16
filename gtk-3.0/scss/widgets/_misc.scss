@@ -81,17 +81,17 @@
     }
 
     .expander {
-        color: alpha(currentColor, .7);
-        border: alpha(currentColor, .7);
+        color: fade-out(currentColor, .3);
+        border: fade-out(currentColor, .3);
 
         &:hover {
-            color: alpha(currentColor, .8);
-            border-color: alpha(currentColor, .8);
+            color: fade-out(currentColor, .2);
+            border-color: fade-out(currentColor, .2);
         }
 
         &:active {
-            color: alpha(currentColor, .9);
-            border-color: alpha(currentColor, .9);
+            color: fade-out(currentColor, .1);
+            border-color: fade-out(currentColor, .1);
         }
     }
 }
@@ -103,9 +103,9 @@
 
 @include exports("symbolicimage") {
     .image {
-        color: alpha(currentColor, .5);
+        color: fade-out(currentColor, .5);
 
-        &:hover { color: alpha(currentColor, .9); }
+        &:hover { color: fade-out(currentColor, .1); }
 
         &:selected, &:selected:hover { color: $selected_fg_color; }
     }

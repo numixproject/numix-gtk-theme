@@ -79,11 +79,11 @@
     @extend %linked_button;
 
     box-shadow: inset -1px 0 border_normal(rgba(0, 0, 0, .12 + $border_strength)),
-                0 1px 2px -1px alpha($dark_shadow, .12 + $shadow_strength);
+                0 1px 2px -1px fade-out($dark_shadow, .98 + $shadow_strength);
 
     &:focus, &:hover {
         box-shadow: inset -1px 0 border_focus(rgba(0, 0, 0, .12 + $border_strength)),
-                    0 1px 2px -1px alpha($dark_shadow, .32 + $shadow_strength);
+                    0 1px 2px -1px fade-out($dark_shadow, .78 + $shadow_strength);
     }
 
     &:active, &:active:hover,
@@ -91,15 +91,15 @@
     &:checked, &:checked:hover,
     &:checked:focus, &:checked:hover:focus {
         box-shadow: inset -1px 0 border_active(rgba(0, 0, 0, .12 + $border_strength)),
-                    inset 0 1px alpha($dark_shadow, .07),
-                    inset 0 -1px alpha($dark_shadow, .05);
+                    inset 0 1px fade-out($dark_shadow, .13),
+                    inset 0 -1px fade-out($dark_shadow, .15);
     }
 
     &:insensitive { box-shadow: inset -1px 0 shade($bg, .8); }
 
-    &:last-child, &:only-child { box-shadow: 0 1px 2px -1px alpha($dark_shadow, .12 + $shadow_strength); }
+    &:last-child, &:only-child { box-shadow: 0 1px 2px -1px fade-out($dark_shadow, .98 + $shadow_strength); }
 
-    &:last-child:hover, &:only-child:hover { box-shadow: 0 1px 2px -1px alpha($dark_shadow, .32 + $shadow_strength); }
+    &:last-child:hover, &:only-child:hover { box-shadow: 0 1px 2px -1px fade-out($dark_shadow, .78 + $shadow_strength); }
 
     &:insensitive:last-child, &:insensitive:only-child,
     &:active:insensitive:last-child, &:active:insensitive:only-child,
@@ -107,15 +107,15 @@
 
     &:active:last-child, &:active:last-child:focus, &:active:last-child:hover, &:active:last-child:hover:focus,
     &:checked:last-child, &:checked:last-child:focus, &:checked:last-child:hover, &:checked:last-child:hover:focus, {
-        box-shadow: inset 0 1px alpha($dark_shadow, .07),
-                    inset -1px 0 alpha($dark_shadow, .06);
+        box-shadow: inset 0 1px fade-out($dark_shadow, .13),
+                    inset -1px 0 fade-out($dark_shadow, .14);
     }
 
     &:active:only-child, &:active:only-child:focus, &:active:only-child:hover, &:active:only-child:hover:focus,
     &:checked:only-child, &:checked:only-child:focus, &:checked:only-child:hover, &:checked:only-child:hover:focus {
-        box-shadow: inset 1px 0 alpha($dark_shadow, .06),
-                    inset 0 1px alpha($dark_shadow, .07),
-                    inset -1px 0 alpha($dark_shadow, .06);
+        box-shadow: inset 1px 0 fade-out($dark_shadow, .14),
+                    inset 0 1px fade-out($dark_shadow, .13),
+                    inset -1px 0 fade-out($dark_shadow, .14);
     }
 }
 
@@ -130,11 +130,11 @@
     @include border(rgba(0, 0, 0, .12 + $border_strength));
 
     color: $fg;
-    box-shadow: 0 1px 2px -1px alpha($dark_shadow, .12 + $shadow_strength);
+    box-shadow: 0 1px 2px -1px fade-out($dark_shadow, .12 + $shadow_strength);
 
     &.flat {
-        border-color: alpha($button_bg, 0);
-        background-color: alpha($button_bg, 0);
+        border-color: fade-out($button_bg, 1);
+        background-color: fade-out($button_bg, 1);
         background-image: none;
         box-shadow: none;
     }
@@ -144,17 +144,17 @@
             @include linear-gradient(shade($button_bg, 1.2));
             @include border(rgba(0, 0, 0, .2 + $border_strength));
 
-            box-shadow: 0 1px 2px -1px alpha($dark_shadow, .32 + $shadow_strength);
+            box-shadow: 0 1px 2px -1px fade-out($dark_shadow, .78 + $shadow_strength);
         }
 
         &:active, &:checked {
             @include linear-gradient(shade($button_bg, .7), to top);
 
             color: $white;
-            box-shadow: inset 1px 0 alpha($dark_shadow, .06),
-                        inset 0 1px alpha($dark_shadow, .07),
-                        inset -1px 0 alpha($dark_shadow, .06),
-                        inset 0 -1px alpha($dark_shadow, .05);
+            box-shadow: inset 1px 0 fade-out($dark_shadow, .14),
+                        inset 0 1px fade-out($dark_shadow, .13),
+                        inset -1px 0 fade-out($dark_shadow, .14),
+                        inset 0 -1px fade-out($dark_shadow, .15);
 
             &:focus, &:hover {
                 @include linear-gradient(shade($button_bg, .65), to top);
@@ -176,7 +176,7 @@
             @if (lightness($button_bg) > 50) {
                 @include linear-gradient(shade($button_bg, .95));
             } @else {
-                @include linear-gradient(alpha($button_bg, .3));
+                @include linear-gradient(fade-out($button_bg, .7));
             }
 
             color: mix($bg, $fg, .5);
@@ -212,15 +212,15 @@
         box-shadow: none;
 
         &:focus, &:hover {
-            border: 1px solid alpha($black, .3);
-            background-color: alpha($white, .2);
+            border: 1px solid fade-out($black, .7);
+            background-color: fade-out($white, .8);
             background-image: none;
             box-shadow: none;
         }
 
         &:active, &:checked, &:active:hover, &:checked:hover {
-            border: 1px solid alpha($black, .3);
-            background-color: alpha($black, .1);
+            border: 1px solid fade-out($black, .4);
+            background-color: fade-out($black, .9);
             background-image: none;
             box-shadow: none;
         }

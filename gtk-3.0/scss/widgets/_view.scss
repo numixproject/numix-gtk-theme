@@ -45,7 +45,7 @@
         &.view {
             background-color: $base_color;
 
-            &:prelight { background-color: alpha($selected_bg_color, .6); }
+            &:prelight { background-color: fade-out($selected_bg_color, .4); }
 
             &:selected, &:active { background-color: $selected_bg_color; }
 
@@ -77,20 +77,20 @@
     }
 
     .dim-label {
-        &, &.view { color: alpha(currentColor, .5); }
+        &, &.view { color: fade-out(currentColor, .5); }
     }
 
     .dnd { border: 1px solid $selected_bg_color; }
 
     .grip { background-color: transparent; }
 
-    .arrow { color: alpha(currentColor, .7); }
+    .arrow { color: fade-out(currentColor, .3); }
 
     .rubberband {
         &, &.view, &.content-view.view {
             border: 1px solid $selected_bg_color;
             border-radius: 0;
-            background-color: alpha($selected_bg_color, .3);
+            background-color: fade-out($selected_bg_color, .7);
         }
     }
 

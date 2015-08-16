@@ -11,7 +11,7 @@
     -GtkWindow-resize-grip-width: 0;
     -WnckTasklist-fade-overlay-rect: 0;
 
-    outline-color: alpha($selected_bg_color, .5);
+    outline-color: fade-out($selected_bg_color, .5);
     outline-style: dashed;
     outline-width: 1px;
     outline-offset: -1px;
@@ -62,7 +62,7 @@
 }
 
 .gtkstyle-fallback {
-    background-color: alpha($bg_color, .5);
+    background-color: fade-out($bg_color, .5);
     color: $fg_color;
 
     &:prelight {

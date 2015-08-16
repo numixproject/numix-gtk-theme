@@ -10,7 +10,7 @@
 
     .osd {
         &.background {
-            background-color: alpha($osd_bg, .8);
+            background-color: fade-out($osd_bg, .2);
             color: $osd_fg;
         }
 

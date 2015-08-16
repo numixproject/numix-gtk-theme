@@ -7,8 +7,8 @@
 
 .lightdm.menu {
     background-image: none;
-    background-color: alpha($black, 0.6);
-    border-color: alpha($white, 0.2);
+    background-color: fade-out($black, 0.4);
+    border-color: fade-out($white, 0.8);
     border-radius: 4px;
     padding: 1px;
 
@@ -31,7 +31,7 @@
 
 .lightdm.menubar {
     background-image: none;
-    background-color: alpha(#00ff00, 0.5);
+    background-color: fade-out(#00ff00, 0.5);
 }
 
 
@@ -42,16 +42,16 @@
     
     .lightdm.button{
         background-image: none;
-        background-color: alpha($black, 0.3);
-        border-color: alpha($white, 0.9);
+        background-color: fade-out($black, 0.7);
+        border-color: fade-out($white, 0.1);
         border-radius: 5px;
         padding: 5px;
         color: $white;
         }
     .lightdm.button:hover {
         background-image: none;
-        background-color: alpha($white, 0.3);
-        border-color: alpha($white, 0.6);
+        background-color: fade-out($white, 0.7);
+        border-color: fade-out($white, 0.4);
         border-radius: 5px;
         padding: 5px;
         color: $white;
@@ -63,8 +63,8 @@
 
     .lightdm.entry {
         background-image: none;
-        background-color: alpha($black, 0.3);
-        border-color: alpha($white, 0.6);
+        background-color: fade-out($black, 0.7);
+        border-color: fade-out($white, 0.4);
         border-radius: 5px;
         padding: 7px;
         color: $white;
@@ -77,13 +77,13 @@
         border-image: none;
     }
     .lightdm.entry:focused {
-        border-color: alpha($white, 0.6);
+        border-color: fade-out($white, 0.4);
         border-width: 1px;
         border-style: solid;
         color: $white;
     }
     .lightdm.entry:selected {
-        background-color: alpha($white, 0.2);
+        background-color: fade-out($white, 0.8);
     }
 
     @keyframes dashentry_spinner {
@@ -106,13 +106,13 @@
         border-width: 0;
     }
     .lightdm.toggle-button.selected:hover {
-        background-color: alpha($white, 0.3);
-        border-color: alpha($white, 0.3);
+        background-color: fade-out($white, 0.7);
+        border-color: fade-out($white, 0.7);
         border-width: 1px;
     }
     .lightdm.toggle-button.selected {
-        background-color: alpha($black, 0.3);
-        border-color: alpha($white, 0.3);
+        background-color: fade-out($black, 0.7);
+        border-color: fade-out($white, 0.7);
         border-width: 1px;
     }
 }

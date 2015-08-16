@@ -79,7 +79,7 @@ $suffix: if($variant == "dark", "-dark", "");
             @include linear-gradient(shade($bg_color, 1.2));
 
             border: 1px solid rgba(0, 0, 0, .2);
-            box-shadow: 0 1px 2px -1px alpha($dark_shadow, .12);
+            box-shadow: 0 1px 2px -1px fade-out($dark_shadow, .08);
 
             &:insensitive {
                 border-color: rgba(0, 0, 0, .1);
@@ -93,10 +93,10 @@ $suffix: if($variant == "dark", "-dark", "");
 
             border: 1px solid border_normal($bg_color);
             color: $fg_color;
-            box-shadow: inset 1px 0 alpha($dark_shadow, .07),
-                        inset 0 1px alpha($dark_shadow, .08),
-                        inset -1px 0 alpha($dark_shadow, .07),
-                        inset 0 -1px alpha($dark_shadow, .05);
+            box-shadow: inset 1px 0 fade-out($dark_shadow, .13),
+                        inset 0 1px fade-out($dark_shadow, .12),
+                        inset -1px 0 fade-out($dark_shadow, .13),
+                        inset 0 -1px fade-out($dark_shadow, .15);
 
             &:active {
                 @include linear-gradient($selected_bg_color, to top);

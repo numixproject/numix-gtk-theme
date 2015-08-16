@@ -25,14 +25,14 @@
     $_small_gradient: -gtk-gradient(radial,
                                     $_position, 0,
                                     $_position, .5,
-                                    to(alpha($_small_gradient_color, .35)),
-                                    to(alpha($_small_gradient_color, .25)));
+                                    to(fade-out($_small_gradient_color, .75)),
+                                    to(fade-out($_small_gradient_color, .85)));
 
     $_big_gradient: -gtk-gradient(radial,
                                   $_position, 0,
                                   $_position, .6,
-                                  from(alpha($_big_gradient_color, .2)),
-                                  to(alpha($_big_gradient_color, 0)));
+                                  from(fade-out($_big_gradient_color, .8)),
+                                  to(fade-out($_big_gradient_color, 1)));
 
     @if $type == normal {
         background-image: $_small_gradient, $_big_gradient;
@@ -51,8 +51,8 @@
 }
 
 @mixin undershoot($position) {
-    $_undershoot_color_dark: alpha($black, .2);
-    $_undershoot_color_light: alpha($white, .2);
+    $_undershoot_color_dark: fade-out($black, .8);
+    $_undershoot_color_light: fade-out($white, .8);
 
     $_gradient_dir: left;
     $_dash_bg_size: 10px 1px;

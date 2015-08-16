@@ -8,14 +8,6 @@ $modules: () !default;
     }
 }
 
-@function alpha($color, $amount) {
-    @if type-of($color) == "color" {
-        @return fade-out($color, (1 - $amount));
-    } @else {
-        @return unquote("alpha(#{$color},#{$amount})");
-    }
-}
-
 @function shade($color, $amount) {
     @if type-of($color) == "color" {
         @if ($amount > 1) {

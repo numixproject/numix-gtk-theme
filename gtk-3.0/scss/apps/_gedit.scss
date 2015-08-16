@@ -34,19 +34,19 @@
         }
 
         .prelight-row .button {
-            border-color: alpha($black, .1);
-            color: alpha($white, .8);
+            border-color: fade-out($black, .9);
+            color: fade-out($white, .2);
 
             &:active {
-                border-color: alpha($black, .2);
-                background-color: alpha($black, .08);
+                border-color: fade-out($black, .8);
+                background-color: fade-out($black, .02);
                 color: $white;
             }
         }
 
         list-row, .prelight-row {
             .button:hover {
-                border-color: alpha($black, .1);
+                border-color: fade-out($black, .9);
                 color: $white;
             }
         }
@@ -68,14 +68,14 @@
     }
 
     .gedit-document-panel-dragged-row {
-        border: 1px solid alpha($black, .1);
-        background-color: alpha($black, .5);
+        border: 1px solid fade-out($black, .9);
+        background-color: fade-out($black, .5);
         color: $white;
     }
 
     .gedit-document-panel-placeholder-row {
         border: 0;
-        background-color: alpha($black, .08);
+        background-color: fade-out($black, .02);
         transition: all 200ms ease-in;
     }
 

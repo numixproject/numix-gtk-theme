@@ -25,7 +25,7 @@
                 border-radius: 0;
                 background-color: transparent;
                 background-image: none;
-                color: alpha($fg_color, .5);
+                color: fade-out($fg_color, .5);
             }
         }
 
