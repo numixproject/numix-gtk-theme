@@ -79,7 +79,7 @@
     @extend %linked_button;
 
     box-shadow: inset -1px 0 border_normal(rgba(0, 0, 0, .12 + $border_strength)),
-                0 1px 2px -1px fade-out($dark_shadow, .98 + $shadow_strength);
+                0 1px 2px -1px fade-out($dark_shadow, .88 + $shadow_strength);
 
     &:focus, &:hover {
         box-shadow: inset -1px 0 border_focus(rgba(0, 0, 0, .12 + $border_strength)),
@@ -97,7 +97,7 @@
 
     &:insensitive { box-shadow: inset -1px 0 shade($bg, .8); }
 
-    &:last-child, &:only-child { box-shadow: 0 1px 2px -1px fade-out($dark_shadow, .98 + $shadow_strength); }
+    &:last-child, &:only-child { box-shadow: 0 1px 2px -1px fade-out($dark_shadow, .88 + $shadow_strength); }
 
     &:last-child:hover, &:only-child:hover { box-shadow: 0 1px 2px -1px fade-out($dark_shadow, .78 + $shadow_strength); }
 

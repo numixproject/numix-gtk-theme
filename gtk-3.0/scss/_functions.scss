@@ -20,10 +20,6 @@ $modules: () !default;
     }
 }
 
-@function mix($color1, $color2, $amount) {
-    @return unquote("mix(#{$color1},#{$color2},#{$amount})");
-}
-
 @function border_normal($color) {
     @return shade($color, $contrast);
 }

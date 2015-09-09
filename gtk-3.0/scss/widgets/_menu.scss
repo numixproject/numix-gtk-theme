@@ -238,7 +238,7 @@
 
     GtkModelButton.button {
         &, &:backdrop {
-            @include button(transparent, currentColor);
+            @include button(transparent, $menu_fg_color);
 
             &:focus:hover, &:active:hover, &:hover, &:selected {
                 background-image: none;

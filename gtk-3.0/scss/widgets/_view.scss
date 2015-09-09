@@ -77,14 +77,14 @@
     }
 
     .dim-label {
-        &, &.view { color: fade-out(currentColor, .5); }
+        &, &.view { opacity: .3; }
     }
 
     .dnd { border: 1px solid $selected_bg_color; }
 
     .grip { background-color: transparent; }
 
-    .arrow { color: fade-out(currentColor, .3); }
+    .arrow { opacity: .3; }
 
     .rubberband {
         &, &.view, &.content-view.view {

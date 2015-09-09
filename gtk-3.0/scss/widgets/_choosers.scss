@@ -99,9 +99,9 @@
             -GtkWidget-vertical-separator: 0;
         }
 
-        GtkLabel:last-child { color: fade-out(currentColor, .3); }
+        GtkLabel:last-child { color: currentColor; }
 
-        GtkImage:last-child { color: fade-out(currentColor, .3); }
+        GtkImage:last-child { color: currentColor; }
     }
 
     GtkFileChooser {
