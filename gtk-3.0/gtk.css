@@ -6,7 +6,7 @@
 /* default color scheme */
 @define-color bg_color #e7e7e7;
 @define-color fg_color #555555;
-@define-color base_color #f9f9f9;
+@define-color base_color #ececec;
 @define-color text_color #333333;
 @define-color selected_bg_color #1a80b6;
 @define-color selected_fg_color #f9f9f9;

@@ -2246,11 +2246,11 @@ GtkColorButton.button {
 }
 
 .header-bar .button.text-button {
-    padding: 4px;
+    padding: 8px 5px;
 }
 
 .header-bar .button.image-button {
-    padding: 6px;
+    padding: 7px;
 }
 
 .header-bar .title {

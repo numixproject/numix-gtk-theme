@@ -163,6 +163,14 @@ NautilusQueryEditor .search-bar.toolbar:only-child {
 	border-bottom-color: shade(@toolbar_bg_color, 0.8);
 }
 
+GtkPlacesSidebar .sidebar-row {
+	padding: 5px 13px;
+}
+
+GtkPlacesSidebar .sidebar-row .sidebar-icon {
+	padding-right: 5px;
+}
+
 /******************
  * gnome terminal *
  ******************/
