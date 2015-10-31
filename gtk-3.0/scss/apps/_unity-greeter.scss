@@ -19,7 +19,6 @@
     background-color: shade($dark_bg_color, 1.08);
     border-radius: 0px;
     padding: 0px;
-
     color: $white;
 }
 
@@ -33,7 +32,10 @@
     background-image: none;
     background-color: fade-out(#00ff00, 0.5);
 }
-
+ .lightdm.menubar .menuitem {
+     color: $menubar_bg_color;
+     padding: 0px 5px 0px 5px;
+ }
 
     .lightdm-combo.combobox-entry .button,
     .lightdm-combo .cell,
