@@ -5,37 +5,37 @@
 @include exports("unity-greeter") {
 
 
-.lightdm.menu {
-    background-image: none;
-    background-color: fade-out($black, 0.4);
-    border-color: fade-out($white, 0.8);
-    border-radius: 4px;
-    padding: 1px;
+    .lightdm.menu {
+        background-image: none;
+        background-color: fade-out($black, 0.4);
+        border-color: fade-out($white, 0.8);
+        border-radius: 4px;
+        padding: 1px;
 
-    color: $white;
-}
+        color: $white;
+    }
 
-.lightdm-combo .menu {
-    background-color: shade($dark_bg_color, 1.08);
-    border-radius: 0px;
-    padding: 0px;
-    color: $white;
-}
+    .lightdm-combo .menu {
+        background-color: shade($dark_bg_color, 1.08);
+        border-radius: 0px;
+        padding: 0px;
+        color: $white;
+    }
 
-.lightdm.menu .menuitem *,
-.lightdm.menu .menuitem.check:active,
-.lightdm.menu .menuitem.radio:active {
-    color: $white;
-}
+    .lightdm.menu .menuitem *,
+    .lightdm.menu .menuitem.check:active,
+    .lightdm.menu .menuitem.radio:active {
+        color: $white;
+    }
 
-.lightdm.menubar {
-    background-image: none;
-    background-color: fade-out(#00ff00, 0.5);
-}
- .lightdm.menubar .menuitem {
-     color: $menubar_bg_color;
-     padding: 0px 5px 0px 5px;
- }
+    .lightdm.menubar {
+        background-image: none;
+        background-color: fade-out(#00ff00, 0.5);
+    }
+    .lightdm.menubar .menuitem {
+        color: $menubar_bg_color;
+        padding: 0 5px;
+    }
 
     .lightdm-combo.combobox-entry .button,
     .lightdm-combo .cell,
