@@ -804,3 +804,7 @@ widget "xfwm4-tabwin*" style "xfwm-tabwin"
 widget "xfwm4-tabwin*GtkButton*" style "xfwm-tabwin-button"
 widget_class "*XfsmLogoutDialog*" style "xfsm-logout"
 widget_class "*XfsmLogoutDialog*GtkButton" style "xfsm-logout-button"
+
+# Includes
+include "apps/panel-menus.rc"
+include "apps/mintmenu.rc"
