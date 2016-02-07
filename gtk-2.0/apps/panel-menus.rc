@@ -1,0 +1,29 @@
+#whiskers menu colours 
+style "darkback"
+{
+	bg[NORMAL] = "#2D2D2D"
+	bg[ACTIVE] = "#B53E2F"
+	bg[PRELIGHT] = "#d64937"
+	fg[NORMAL] = "#ccc"
+	fg[ACTIVE] = "#fff"
+	fg[PRELIGHT] = "#fff"
+}
+widget "whiskermenu-window*" style "darkback"
+#whiskers menu colours -- copy/paste on your   /home/.gtkrc-2.0
+
+#panel-menus colours
+style "panel-menus"
+{
+	bg[NORMAL] = "#2D2D2D"
+	bg[ACTIVE] = "#d64937"
+	bg[PRELIGHT] = "#B53E2F"
+	fg[NORMAL] = "#ccc"
+	fg[ACTIVE] = "#fff"
+	fg[PRELIGHT] = "#fff"
+}
+
+#mintmenu colours
+widget "mintmenu*"			 style "panel-menus"
+
+#preferred theme
+gtk-theme-name="Numix"
