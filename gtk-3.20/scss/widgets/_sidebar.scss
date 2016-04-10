@@ -107,10 +107,10 @@
                 background-image: image(border_normal($bg_color)), image(border_normal($bg_color));
                 background-size: 1px 1px, 1px 1px;
 
-              &:backdrop {
-                  background-color: $backdrop_bg_color;
-                  background-image: image($backdrop_borders_color),
-                                    image($backdrop_borders_color);
+                &:backdrop {
+                    background-color: $backdrop_bg_color;
+                    background-image: image($backdrop_borders_color),
+                                      image($backdrop_borders_color);
               }
            }
         }

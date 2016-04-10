@@ -49,7 +49,7 @@
         background-color: $menu_bg_color;
         color: $menu_fg_color;
 
-        .csd & { border: none; }  // axes borders in a composited env
+        .csd & { border: 0; }  // axes borders in a composited env
 
         &:selected { background-color: $selected_bg_color; }
 
@@ -173,7 +173,7 @@
         }
 
         window decoration {
-            box-shadow: 0 2px 3px rgba(0,0,0,.2);
+            box-shadow: 0 2px 3px alpha($black, .2);
         }
 
         entry { @include entry($menu_bg_color, $menu_fg_color); }
@@ -239,9 +239,9 @@
             }
 
             &, &:backdrop {
-            	background-color: shade($menu_bg_color, ($contrast + .5));
-            	background-image: none;
-            	color: $menu_fg_color;
+                background-color: shade($menu_bg_color, ($contrast + .5));
+                background-image: none;
+                color: $menu_fg_color;
                 border-color: border_normal($menu_bg_color);
             }
         }
