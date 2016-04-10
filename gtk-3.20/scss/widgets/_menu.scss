@@ -53,13 +53,19 @@
 
         &:selected { background-color: $selected_bg_color; }
 
-        /*button {
+        button {
             &, &:hover, &:active, &:active *:disabled, &:disabled {
                 border-width: 0;
                 background-color: transparent;
                 background-image: none;
             }
-        }*/
+        }
+
+        separator {
+            padding: 0;
+            border-style: none;
+            background-color: shade($menu_bg_color, ($contrast + .1));
+        }
 
         menuitem {
             min-height: 16px;
@@ -69,8 +75,6 @@
             border-radius: 0;
             //background-color: transparent;
             //background-image: none;
-
-            //-GtkMenuItem-arrow-scaling: .5;
 
             &:active, &:hover {
                 border: 0;
@@ -148,9 +152,9 @@
                 -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
             }
 
-            //&:hover { background-color: mix($fg_color, $base_color, 10%); }
+            &:hover { background-color: mix($fg_color, $base_color, .1); }
 
-            //&:backdrop { background-color: $backdrop_menu_color; }
+            &:backdrop { background-color: $backdrop_menu_color; }
 
             &:disabled {
                 color: transparent;
@@ -159,6 +163,8 @@
             }
         }
     }
+
+    .context-menu { font: initial; }
 
     menuitem {
         accelerator {
@@ -175,12 +181,6 @@
 
             &:dir(ltr) { margin-right: 7px; }
             &:dir(rtl) { margin-left: 7px; }
-        }
-
-        separator {
-            padding: 0;
-            border-style: none;
-            background-color: shade($menu_bg_color, ($contrast + .1));
         }
 
         window decoration {
@@ -240,9 +240,15 @@
             background-color: shade($menu_bg_color, ($contrast + .5));
             background-image: none;
             color: $menu_fg_color;
+
+            &:hover {
+                background-image: none;
+                background-color: $selected_bg_color;
+                color: $selected_fg_color;
+            }
         }
 
-        .list-row, list row {
+        list row {
             &, & .button {
                 background-color: transparent;
                 background-image: none;
