@@ -53,14 +53,6 @@
 
         &:selected { background-color: $selected_bg_color; }
 
-        button {
-            &, &:hover, &:active, &:active *:disabled, &:disabled {
-                border-width: 0;
-                background-color: transparent;
-                background-image: none;
-            }
-        }
-
         separator {
             padding: 0;
             border-style: none;
@@ -71,10 +63,7 @@
             min-height: 16px;
             min-width: 40px;
             padding: $spacing;
-            //border: 0;
             border-radius: 0;
-            //background-color: transparent;
-            //background-image: none;
 
             &:active, &:hover {
                 border: 0;
@@ -236,15 +225,24 @@
             }
         }
 
-        view, .view, list {
-            background-color: shade($menu_bg_color, ($contrast + .5));
-            background-image: none;
-            color: $menu_fg_color;
+        treeview.view {
+            &:hover, &:selected, &:selected:focus, &:backdrop:selected, &:backdrop:selected:focus { border-top-color: $selected_bg_color; }
 
+            &, &:backdrop { border-top-color: shade($menu_bg_color, ($contrast + .4)); }
+        }
+
+        view, .view, list {
             &:hover {
                 background-image: none;
                 background-color: $selected_bg_color;
                 color: $selected_fg_color;
+            }
+
+            &, &:backdrop {
+            	background-color: shade($menu_bg_color, ($contrast + .5));
+            	background-image: none;
+            	color: $menu_fg_color;
+                border-color: border_normal($menu_bg_color);
             }
         }
 
@@ -272,13 +270,6 @@
         button { @include button($menu_bg_color, $menu_fg_color);  }
 
         > list, > view, > toolbar { background-color: transparent; }
-
-        separator {
-            border: 0;
-            background-color: shade($menu_bg_color, ($contrast + .1));
-            font-size: 80%;
-            font-weight: bold;
-        }
     }
 
     modelbutton {
