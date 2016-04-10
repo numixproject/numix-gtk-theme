@@ -7,22 +7,15 @@
 
 @include exports("notebook") {
     notebook {
-        padding: 0;
-        border-width: 1px 0 0;
-        border-style: solid;
-        border-color: border_normal($base_color);
-        border-radius: 0;
-        background-color: $base_color;
-        background-image: none;
-        background-clip: border-box;
-        color: $text_color;
-
-        &.frame { border-width: 1px; }
-
         > header {
+            padding: 0;
             margin: 0;
             border-width: 0;
+            border-radius: 0;
+            background-image: none;
+            background-clip: border-box;
             background-color: shade($base_color, .9);
+            color: $text_color;
 
             &.frame {
                 border-color: border_normal($base_color);
@@ -48,7 +41,7 @@
         }
 
         tab {
-            padding: ($spacing + 1px) ($spacing * 2);
+            padding: ($spacing + 1) ($spacing * 2);
             border: 1px solid transparent;
             background-color: transparent;
             background-image: none;
@@ -91,6 +84,29 @@
                 border-bottom-right-radius: 0;
             }
 
+            button.flat {
+                &:hover { color: shade(currentColor, .95); }
+
+                &, &:backdrop { color: gtkalpha(currentColor, 0.3); }
+
+                padding: 0;
+                margin-top: 4px;
+                margin-bottom: 4px;
+                // FIXME: generalize .small-button?
+                min-width: 20px;
+                min-height: 20px;
+
+                &:last-child {
+                    margin-left: 4px;
+                    margin-right: -4px;
+                }
+
+                &:first-child {
+                    margin-left: -4px;
+                    margin-right: 4px;
+                }
+            }
+
             label { color: mix($text_color, $base_color, .3); }
 
             /* close button styling */
@@ -108,8 +124,8 @@
         .reorderable-page {
             &:hover {
                 background-color: shade($base_color, .85);
-                border-left: 0;
-                border-right: 0;
+                //border-left: 0; // TODO: I turned it off because it made the tabs to collide, eg gedit. It needs fixing.
+                //border-right: 0;
                 /* using box shadows instead of borders due to slanted edges */
                 box-shadow: inset 0 3px alpha($black, .03), inset 0 2px alpha($black, .03), inset 0 1px alpha($black, .03),
                             inset 1px 0 shade($base_color, .7), inset -1px 0 shade($base_color, .7);
@@ -117,8 +133,8 @@
 
             &:checked {
                 background-color: shade($base_color, .9);
-                border-left: 0;
-                border-right: 0;
+                //border-left: 0;
+                //border-right: 0;
                 box-shadow: inset 0 3px alpha($black, .03), inset 0 2px alpha($black, .03), inset 0 1px alpha($black, .03),
                             inset 1px 0 shade($base_color, .75), inset -1px 0 shade($base_color, .75);
             }
