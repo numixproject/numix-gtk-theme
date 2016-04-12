@@ -281,7 +281,7 @@
 
 @include exports("separator") {
     separator { // vbox and hbox separators
-        background: shade($bg_color, ($contrast + .1));
+        background: transparentize(black, .9);
         min-width: 1px;
         min-height: 1px;
     }
