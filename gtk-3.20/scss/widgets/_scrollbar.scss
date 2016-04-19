@@ -52,9 +52,9 @@
                 min-height: 7px;
             }
 
-            &.horizontal slider { border-width: 1px 1px; }
+            &.horizontal slider { border-width: 1px; }
 
-            &.vertical slider { border-width: 1px 1px; }
+            &.vertical slider { border-width: 1px; }
         }
 
         &.overlay-indicator {
