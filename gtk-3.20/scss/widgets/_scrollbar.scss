@@ -4,7 +4,7 @@
 
 @include exports("scrollbar") {
     scrollbar {
-        $_slider_min_length: 20px;
+        $_slider_min_length: 40px;
 
         // disable steppers
         @at-root * {
@@ -31,8 +31,8 @@
         slider {
             min-width: 7px;
             min-height: 7px;
-            margin: -1px;
-            border: 2px solid transparent;
+            margin: 0;
+            border: 1px solid transparent;
             border-radius: $roundness;
             background-clip: padding-box;
             background-color: $scrollbar_slider_color;
@@ -52,14 +52,15 @@
                 min-height: 7px;
             }
 
-            &.horizontal slider { border-width: 1px 2px; }
-            &.vertical slider { border-width: 2px 1px; }
+            &.horizontal slider { border-width: 1px 1px; }
+
+            &.vertical slider { border-width: 1px 1px; }
         }
 
         &.overlay-indicator {
             &:not(.dragging):not(.hovering) {
                 border-color: transparent;
-                opacity: 0.4;
+                opacity: .4;
                 background-color: transparent;
 
                 slider {
@@ -106,12 +107,13 @@
             }
 
             &.dragging,
-            &.hovering { opacity: 0.8; }
+            &.hovering { opacity: .8; }
         }
 
         &.horizontal slider { min-width: $_slider_min_length; }
 
         &.vertical slider { min-height: $_slider_min_length; }
+
         // button styling
         button {
             padding: 0;
@@ -152,10 +154,5 @@
                 &.up { -gtk-icon-source: -gtk-icontheme('pan-left-symbolic'); }
             }
         }
-    }
-
-    treeview ~ scrollbar.vertical {
-        border-top: 1px solid $borders_color;
-        margin-top: -1px;
     }
 }
