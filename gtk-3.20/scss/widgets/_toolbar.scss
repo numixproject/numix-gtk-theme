@@ -41,9 +41,9 @@
     }
 
     // toolbar separators
-    &.horizontal separator { margin: 0 $spacing 1px $spacing; }
+    &.horizontal separator { margin: 0 ($spacing + 2px) 1px ($spacing + 2px); }
 
-    &.vertical separator { margin: $spacing 1px $spacing 0; }
+    &.vertical separator { margin: ($spacing + 2px) 1px ($spacing + 2px) 0; }
 
     separator, separator:disabled {
         color: shade($bg, ($contrast + .1));
