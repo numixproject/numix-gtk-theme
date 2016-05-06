@@ -24,7 +24,7 @@ $suffix: if($variant == "dark", "-dark", "");
     }
 
     menuitem &, modelbutton & {
-        -gtk-icon-source: url("../assets/menuitem-#{$type}-checked-insensitive.png");
+        -gtk-icon-source: if($type == "radio", none, url("../assets/menuitem-#{$type}-checked-insensitive.png"));
 
         &:disabled { -gtk-icon-source: none; }
 
