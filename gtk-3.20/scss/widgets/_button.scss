@@ -43,7 +43,7 @@
     }
 
     %button {
-        padding: $spacing ($spacing + 2px);
+        padding: $spacing ($spacing * 1.4);
         border-width: 1px;
         border-style: solid;
         border-radius: $roundness;
@@ -363,8 +363,6 @@
     }
 
     button {
-        min-height: 22px;
-        min-width: 24px;
         @include button(shade($bg_color, 1.2), $fg_color);
 
         &.linked, .linked & { @include linked_button(shade($bg_color, 1.2)); }
@@ -373,7 +371,6 @@
 
         spinbutton & {
             color: mix($text_color, $base_color, .4);
-            padding: $spacing ($spacing * 2);
             border: 0;
             border-radius: 0;
             border-style: none;
@@ -463,8 +460,7 @@
         button.combo {
             // otherwise the arrow placement is not symmetric
             min-width: 0;
-            padding-left: 8px;
-            padding-right: 8px;
+            padding: ($spacing - 2px) ($spacing + 1px);
         }
 
         arrow {
@@ -475,7 +471,6 @@
 
         box button, box entry {
             @extend %linked_button;
-            padding: ($spacing - 2px) ($spacing + 1px);
         }
 
         .linked:not(.vertical) > & > box > button.combo {
