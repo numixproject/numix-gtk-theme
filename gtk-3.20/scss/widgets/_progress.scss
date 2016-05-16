@@ -90,6 +90,7 @@
         block {
             @include linear-gradient($selected_bg_color);
 
+            border-color: transparent;
             border-radius: 0;
 
             &.low {
