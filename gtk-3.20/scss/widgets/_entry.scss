@@ -87,7 +87,6 @@
 }
 
 %entry {
-    padding: $spacing;
     border-width: 1px;
     border-style: solid;
     border-radius: $roundness;
@@ -124,6 +123,8 @@
     @include linear-gradient($bg, to top);
     @include border($bg);
 
+    padding: $spacing;
+
     color: $fg;
     caret-color: $fg;
 
@@ -143,7 +144,7 @@
         .linked:not(.vertical) > & { @extend %linked_entry; }
         .linked:not(.vertical) > &:focus + &,
         .linked:not(.vertical) > &:focus + button,
-        .linked:not(.vertical) > &:focus + combobox > box > button.combo { border-left-color: entry_focus_border(); }
+        .linked:not(.vertical) > &:focus + combobox > box > button.combo { border-left-color: border_focus($borders_color); }
 
         .linked:not(.vertical) > &:drop(active) + &,
         .linked:not(.vertical) > &:drop(active) + button,
@@ -165,7 +166,7 @@
 
             // color back the top border of a linked focused entry following another entry.
             // :not(:only-child) is a specificity bump hack.
-            + entry:focus:not(:only-child) { border-top-color: entry_focus_border(); }
+            + entry:focus:not(:only-child) { border-top-color: border_focus($borders_color); }
 
             + entry:drop(active):not(:only-child) { border-top-color: $drop_target_color; }
 
@@ -174,7 +175,7 @@
             &:focus:not(:only-child) {
                 + entry,
                 + button,
-                + combobox > box > button.combo { border-top-color: entry_focus_border(); }
+                + combobox > box > button.combo { border-top-color: border_focus($borders_color); }
             }
 
             &:drop(active):not(:only-child) {
