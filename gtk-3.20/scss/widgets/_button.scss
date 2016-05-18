@@ -430,9 +430,9 @@
                     &:dir(rtl) { border-style: none solid none none; }
                 }
 
-                &:dir(rtr):first-child { border-radius: $roundness 0 0 $roundness; }
+                &:dir(rtl):first-child { border-radius: $roundness 0 0 $roundness; }
 
-                &:dir(ltl):last-child { border-radius: 0 $roundness $roundness 0; }
+                &:dir(ltr):last-child { border-radius: 0 $roundness $roundness 0; }
             }
         }
 
