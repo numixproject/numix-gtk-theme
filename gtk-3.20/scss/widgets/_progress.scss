@@ -337,107 +337,58 @@
 
         &.color {
             trough {
-                background-image: image($borders_color);
-                background-repeat: no-repeat;
+                padding: 0;
+                border-color: none;
+                background-image: none;
             }
 
+            highlight, fill { margin: 0; }
+
             &.horizontal {
-                padding: 0 0 15px 0;
+                padding: 0 0 6px 0;
 
                 trough {
-                    padding-bottom: 4px;
-                    background-position: 0 -3px;
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
                 }
 
                 slider {
                     &:hover, &:backdrop, &:disabled, &:backdrop:disabled, & {
-                        margin-bottom: -11px;
-                        margin-top: 6px;
+                        margin-bottom: 0;
+                        margin-top: 0;
                     }
                 }
             }
 
             &.vertical {
                 &:dir(ltr) {
-                    padding: 0 0 0 15px;
+                    padding: 0 0 0 6px;
 
                     trough {
-                        padding-left: 4px;
-                        background-position: 3px 0;
                         border-bottom-right-radius: 0;
                         border-top-right-radius: 0;
                     }
 
                     slider {
                         &:hover, &:backdrop, &:disabled, &:backdrop:disabled, & {
-                            margin-left: -11px;
-                            margin-right: 6px;
+                            margin-left: 0;
+                            margin-right: 0;
                         }
                     }
                 }
 
                 &:dir(rtl) {
-                    padding: 0 15px 0 0;
+                    padding: 0 6px 0 0;
 
                     trough {
-                        padding-right: 4px;
-                        background-position: -3px 0;
                         border-bottom-left-radius: 0;
                         border-top-left-radius: 0;
                     }
 
                     slider {
                         &:hover, &:backdrop, &:disabled, &:backdrop:disabled, & {
-                            margin-right: -11px;
-                            margin-left: 6px;
-                        }
-                    }
-                }
-            }
-
-            &.fine-tune {
-                &.horizontal {
-                    padding: 0 0 12px 0;
-
-                    trough {
-                        padding-bottom: 7px;
-                        background-position: 0 -6px;
-                    }
-
-                    slider {
-                        margin-bottom: -11px;
-                        margin-top: 6px;
-                    }
-                }
-
-                &.vertical {
-                    &:dir(ltr) {
-                        padding: 0 0 0 12px;
-
-                        trough {
-                            padding-left: 7px;
-                            background-position: 6px 0;
-                        }
-
-                        slider {
-                            margin-left: -11px;
-                            margin-right: 6px;
-                        }
-                    }
-
-                    &:dir(rtl) {
-                        padding: 0 12px 0 0;
-
-                        trough {
-                            padding-right: 7px;
-                            background-position: -6px 0;
-                        }
-
-                        slider {
-                            margin-right: -11px;
-                            margin-left: 6px;
+                            margin-right: 0;
+                            margin-left: 0;
                         }
                     }
                 }
