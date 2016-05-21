@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   id="svg4395"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="checkbox-radiobox-assets.svg"
+   inkscape:export-filename=""
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4397" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="32"
+     inkscape:cx="4.7919543"
+     inkscape:cy="8.3004053"
+     inkscape:document-units="px"
+     inkscape:current-layer="radio-mixed-insensitive"
+     showgrid="false"
+     units="px"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true" />
+  <metadata
+     id="metadata4400">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="backgrounds"
+     inkscape:label="backgrounds"
+     style="display:inline">
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_bg_normal_dark"
+       inkscape:label="checkbox_bg_normal_dark"
+       style="display:inline">
+      <rect
+         rx="0.94740176"
+         y="0.5"
+         x="0.5"
+         height="15"
+         width="15"
+         id="rect5001"
+         style="display:inline;opacity:1;fill:#3d3d3d;fill-opacity:1;stroke:#373737;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_bg_insensitive_dark"
+       inkscape:label="checkbox_bg_insensitive_dark"
+       style="display:inline">
+      <rect
+         style="display:inline;opacity:1;fill:#3d3d3d;fill-opacity:1;stroke:#3d3d3d;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4243"
+         width="15"
+         height="15"
+         x="0.5"
+         y="0.5"
+         rx="0.94740176" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_bg_normal"
+       inkscape:label="checkbox_bg_normal"
+       style="display:inline">
+      <rect
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c8c8c8;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5002"
+         width="15"
+         height="15"
+         x="0.5"
+         y="0.5"
+         rx="0.94740176" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_bg_insensitive"
+       inkscape:label="checkbox_bg_insensitive"
+       style="display:inline">
+      <rect
+         rx="0.94740176"
+         y="0.5"
+         x="0.5"
+         height="15"
+         width="15"
+         id="rect5003"
+         style="display:inline;opacity:1;fill:#aaaaaa;fill-opacity:1;stroke:#aaaaaa;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="radiobutton_bg_normal"
+       inkscape:label="radiobutton_bg_normal"
+       style="display:inline">
+      <circle
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c8c8c8;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circ5001"
+         cx="8"
+         cy="8"
+         r="7.5" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="radiobutton_bg_insensitive"
+       inkscape:label="radiobutton_bg_insensitive"
+       style="display:inline">
+      <circle
+         r="7.5"
+         cy="8"
+         cx="8"
+         id="circ5002"
+         style="display:inline;opacity:1;fill:#aaaaaa;fill-opacity:1;stroke:#aaaaaa;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="radiobutton_bg_normal_dark"
+       inkscape:label="radiobutton_bg_normal_dark"
+       style="display:inline">
+      <circle
+         r="7.5"
+         cy="8"
+         cx="8"
+         id="circ5003"
+         style="display:inline;opacity:1;fill:#3d3d3d;fill-opacity:1;stroke:#373737;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="radiobutton_bg_insensitive_dark"
+       inkscape:label="radiobutton_bg_insensitive_dark"
+       style="display:inline">
+      <circle
+         style="display:inline;opacity:1;fill:#3d3d3d;fill-opacity:1;stroke:#3d3d3d;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circ5004"
+         cx="8"
+         cy="8"
+         r="7.5" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="sprites"
+     inkscape:label="sprites"
+     style="display:inline">
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_dash_red"
+       inkscape:label="checkbox_dash_red"
+       style="display:inline">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5001"
+         d="M 4.5893657,8 11.410634,8"
+         style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#f0544c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_checkmark_red"
+       inkscape:label="checkbox_checkmark_red"
+       style="display:inline">
+      <path
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#f0544c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 3.4524851,8.2391708 2.87563,2.8756002 6.2193999,-6.2194002"
+         id="path5002"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_dash_darkgray"
+       inkscape:label="checkbox_dash_darkgray"
+       style="display:inline">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5003"
+         d="M 4.5893657,8 11.410634,8"
+         style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#888888;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_checkmark_darkgray"
+       inkscape:label="checkbox_checkmark_darkgray"
+       style="display:inline">
+      <path
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#888888;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 3.4524851,8.2391708 2.87563,2.8756002 6.2193999,-6.2194002"
+         id="path5004"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_dash_gray"
+       inkscape:label="checkbox_dash_gray"
+       style="display:inline">
+      <path
+         style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cbcbcb;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 4.5893657,8 11.410634,8"
+         id="path5005"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="checkbox_checkmark_gray"
+       inkscape:label="checkbox_checkmark_gray"
+       style="display:inline">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5006"
+         d="m 3.4524851,8.2391708 2.87563,2.8756002 6.2193999,-6.2194002"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#cbcbcb;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="radiobutton_bullet_red"
+       inkscape:label="radiobutton_bullet_red"
+       style="display:inline">
+      <circle
+         style="display:inline;opacity:1;fill:#f0544c;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4171"
+         cx="8"
+         cy="8"
+         r="3" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="radiobutton_bullet_gray"
+       inkscape:label="radiobutton_bullet_gray"
+       style="display:inline">
+      <circle
+         r="3"
+         cy="8"
+         cx="8"
+         id="circle4174"
+         style="display:inline;opacity:1;fill:#cbcbcb;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="radiobutton_bullet_darkgray"
+       inkscape:label="radiobutton_bullet_darkgray"
+       style="display:inline">
+      <circle
+         style="display:inline;opacity:1;fill:#888888;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4177"
+         cx="8"
+         cy="8"
+         r="3" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-unchecked"
+     inkscape:label="checkbox-unchecked"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_normal"
+       id="use4188"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-checked"
+     inkscape:label="checkbox-checked"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_normal"
+       id="use4184"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_checkmark_red"
+       id="use4186"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-mixed"
+     inkscape:label="checkbox-mixed"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_normal"
+       id="use4192"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_dash_red"
+       id="use4195"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-unchecked-insensitive"
+     inkscape:label="checkbox-unchecked-insensitive"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_insensitive"
+       id="use4201"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-checked-insensitive"
+     inkscape:label="checkbox-checked-insensitive"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_insensitive"
+       id="use4204"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_checkmark_gray"
+       id="use4198"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-mixed-insensitive"
+     inkscape:label="checkbox-mixed-insensitive"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_insensitive"
+       id="use4202"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_dash_gray"
+       id="use4205"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-unchecked"
+     inkscape:label="radio-unchecked"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_normal"
+       id="use5001"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-checked"
+     inkscape:label="radio-checked"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_normal"
+       id="use5002"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bullet_red"
+       id="use5003"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-mixed"
+     inkscape:label="radio-mixed"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_normal"
+       id="use5004"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_dash_red"
+       id="use5005"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-unchecked-insensitive"
+     inkscape:label="radio-unchecked-insensitive"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_insensitive"
+       id="use5006"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-checked-insensitive"
+     inkscape:label="radio-checked-insensitive"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_insensitive"
+       id="use5007"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bullet_gray"
+       id="use5008"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-mixed-insensitive"
+     inkscape:label="radio-mixed-insensitive"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_insensitive"
+       id="use5009"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_dash_gray"
+       id="use5010"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-unchecked-dark"
+     inkscape:label="checkbox-unchecked-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_normal_dark"
+       id="use5388"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-checked-dark"
+     inkscape:label="checkbox-checked-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_normal_dark"
+       id="use5384"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_checkmark_red"
+       id="use5386"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-mixed-dark"
+     inkscape:label="checkbox-mixed-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_normal_dark"
+       id="use5392"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_dash_red"
+       id="use5395"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-unchecked-insensitive-dark"
+     inkscape:label="checkbox-unchecked-insensitive-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_insensitive_dark"
+       id="use5301"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-checked-insensitive-dark"
+     inkscape:label="checkbox-checked-insensitive-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_insensitive_dark"
+       id="use5304"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_checkmark_darkgray"
+       id="use5398"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="checkbox-mixed-insensitive-dark"
+     inkscape:label="checkbox-mixed-insensitive-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_bg_insensitive_dark"
+       id="use5302"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_dash_darkgray"
+       id="use5305"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-unchecked-dark"
+     inkscape:label="radio-unchecked-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_normal_dark"
+       id="use5101"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-checked-dark"
+     inkscape:label="radio-checked-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_normal_dark"
+       id="use5102"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bullet_red"
+       id="use5103"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-mixed-dark"
+     inkscape:label="radio-mixed-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_normal_dark"
+       id="use5104"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_dash_red"
+       id="use5105"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-unchecked-insensitive-dark"
+     inkscape:label="radio-unchecked-insensitive-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_insensitive_dark"
+       id="use5106"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-checked-insensitive-dark"
+     inkscape:label="radio-checked-insensitive-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_insensitive_dark"
+       id="use5107"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bullet_darkgray"
+       id="use5108"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="radio-mixed-insensitive-dark"
+     inkscape:label="radio-mixed-insensitive-dark"
+     style="display:inline">
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#radiobutton_bg_insensitive_dark"
+       id="use5109"
+       width="100%"
+       height="100%" />
+    <use
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#checkbox_dash_darkgray"
+       id="use5110"
+       width="100%"
+       height="100%" />
+  </g>
+</svg>
