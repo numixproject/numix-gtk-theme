@@ -4,19 +4,15 @@
 
 @include exports("nemo") {
     .nemo-desktop, .nemo-desktop * {
-        color: $white;
-        text-shadow: 1px 1px $black;
+        &, &:backdrop {
+            color: $white;
+            text-shadow: 1px 1px $black;
 
-        &:active {
-            color: $fg_color;
-        }
+            &:active { color: $fg_color; }
 
-        &:selected {
-            color: $selected_fg_color;
-        }
+            &:selected { color: $selected_fg_color; }
 
-        &:active, &:hover, &:selected {
-            text-shadow: none;
+            &:active, &:hover, &:selected { text-shadow: none; }
         }
     }
 
