@@ -192,6 +192,7 @@
 
 @include exports("popover") {
     popover.background {
+        padding: $spacing - 2px;
         border-radius: $roundness;
         background-clip: border-box;
         background-color: $menu_bg_color;
