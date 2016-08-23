@@ -4,7 +4,7 @@
 
 @include exports("lightdm") {
     #panel_window {
-        background-color: transparent;
+        background-color: $lightdm_bg_color;
         background-image: none;
         color: $white;
         font: bold;
