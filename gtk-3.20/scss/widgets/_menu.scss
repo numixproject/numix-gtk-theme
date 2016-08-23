@@ -43,7 +43,7 @@
 
 @include exports("menu") {
     menu, .menu {
-        padding: $spacing;
+        padding: 0;
         border-radius: 0;
         border: 0;
         background-color: $menu_bg_color;
@@ -192,8 +192,7 @@
 
 @include exports("popover") {
     popover.background {
-        margin: 10px;
-        padding: $spacing;
+        padding: $spacing - 2px;
         border-radius: $roundness;
         background-clip: border-box;
         background-color: $menu_bg_color;
@@ -260,9 +259,9 @@
             border-radius: $roundness;
         }
 
-        entry { @include entry($menu_bg_color, $menu_fg_color);  }
+        entry { @include entry($menu_bg_color, $menu_fg_color); }
 
-        button { @include button($menu_bg_color, $menu_fg_color);  }
+        button { @include button($menu_bg_color, $menu_fg_color); }
 
         > list, > .view, > toolbar {
             border-style: none;
@@ -280,7 +279,9 @@
             //@extend %undecorated_button;
 
             &:hover { background-color: $selected_bg_color; color: $selected_fg_color }
+
             &:active, &:selected { &, arrow { @extend %selected_items; } }
+
             &:checked { color: $fg_color; }
 
             // FIXME: temporary workaround
@@ -292,6 +293,7 @@
 
             &.flat arrow {
                 &.left { -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
+
                 &.right { -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
             }
         }
