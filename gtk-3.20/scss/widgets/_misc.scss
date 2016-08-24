@@ -40,13 +40,20 @@
 ************/
 
 @include exports("dialogs") {
-    messagedialog, .message-dialog, .prompt {
-        -GtkDialog-content-area-border: 0;
+    messagedialog {
         -GtkDialog-action-area-border: $spacing;
         -GtkDialog-button-spacing: 0;
 
-        margin: 0;
-        padding: 0;
+        .titlebar {
+            min-height: 20px;
+            background-image: none;
+            background-color: $bg_color;
+            border-style: none;
+            border-top-left-radius: $roundness;
+            border-top-right-radius: $roundness;
+
+            &:backdrop { @include linear-gradient($backdrop_bg_color); }
+        }
     }
 
     printdialog {
