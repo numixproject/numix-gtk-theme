@@ -36,3 +36,6 @@
 @import "apps/xfce";
 @import "apps/unity";
 @import "apps/lightdm";
+
+// Fixed bug: https://github.com/numixproject/numix-gtk-theme/issues/430
+@import "widgets/extend";
