@@ -77,7 +77,7 @@ $suffix: if($variant == "dark", "-dark", "");
                   (':backdrop:checked', '-checked') {
         .view.content-view.check#{$s}:not(list) {
             -gtk-icon-shadow: none;
-            -gtk-icon-source: url("../assets/grid-selection#{$as}#{$suffix}.svg");
+            -gtk-icon-source: url("../assets/grid-selection#{$as}#{$suffix}.png");
             background-color: transparent;
         }
     }
