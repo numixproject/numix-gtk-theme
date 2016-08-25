@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-    <title>assets/checkbox-checked-dark</title>
+    <title>assets/radio-checked</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="16" height="16" rx="2"></rect>
+        <rect id="path-1" x="0" y="0" width="16" height="16" rx="8"></rect>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
             <feGaussianBlur stdDeviation="0.75" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
             <feOffset dx="0" dy="-0.5" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
@@ -13,16 +13,16 @@
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="checkbox-dark-sheet" transform="translate(-88.000000, -16.000000)">
-            <g id="assets/checkbox-checked-dark" transform="translate(88.000000, 16.000000)">
-                <g id="checkbox-base-selected">
-                    <g id="checkbox-base">
+        <g id="radio-light-sheet" transform="translate(-88.000000, -16.000000)">
+            <g id="assets/radio-checked" transform="translate(88.000000, 16.000000)">
+                <g id="radio-base-selected">
+                    <g id="radio-base">
                         <use fill="#F1544D" fill-rule="evenodd" xlink:href="#path-1"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                     </g>
                 </g>
-                <g id="mark-check" transform="translate(3.000000, 4.000000)" fill="#FFFFFF">
-                    <path d="M3.83136349,5.41618823 L1.70352219,3.28834693 C1.32182397,2.90664871 0.686353878,2.9043436 0.295829586,3.29486789 C-0.0974173695,3.68811484 -0.0976142393,4.31563762 0.289308625,4.70256049 L3.13077767,7.54402953 C3.51247588,7.92572775 4.14794598,7.92803287 4.53847027,7.53750857 C4.56713284,7.50884601 4.59370732,7.47893885 4.61819602,7.44797098 C4.64887921,7.4237686 4.67847145,7.3975074 4.70678874,7.36919011 L10.3701518,1.70582704 C10.7518008,1.32417805 10.7574217,0.685392179 10.3668974,0.294867887 C9.97365044,-0.0983790686 9.34466518,-0.0971134544 8.95593825,0.291613476 L3.83136349,5.41618823 Z"></path>
+                <g id="mark-radio" transform="translate(5.000000, 5.000000)" fill="#FFFFFF">
+                    <circle cx="3" cy="3" r="3"></circle>
                 </g>
             </g>
         </g>

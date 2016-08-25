@@ -1,6 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g transform="translate(0 -1012.3622)">
-<rect width="37.5" x="1.429" y="1013.791" rx="1" height="37.5" style="fill:#f9f9f9"/>
-<path style="fill:#aaa" d="m 5,1012.3622 c -2.77,0 -5,2.23 -5,5 l 0,30 c 0,2.77 2.23,5 5,5 l 30,0 c 2.77,0 5,-2.23 5,-5 l 0,-30 c 0,-2.77 -2.23,-5 -5,-5 z m 0,2.0536 30,0 c 1.385,0 3.035714,1.5614 3.035714,2.9464 l 0,30 c 0,1.385 -1.650714,3.0357 -3.035714,3.0357 l -30,0 c -1.385,0 -2.9464286,-1.6507 -2.9464286,-3.0357 l 0,-30 c 0,-1.385 1.5614286,-2.9464 2.9464286,-2.9464 z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/grid-selection-unchecked</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="32" height="32" rx="4"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0.75" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-0.5" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="32" height="32" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="grid-selection-light-sheet" transform="translate(-24.000000, -22.000000)">
+            <g id="assets/grid-selection-unchecked" transform="translate(24.000000, 22.000000)">
+                <g id="checkbox-base">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke-opacity="0.1" stroke="#000000" mask="url(#mask-3)" stroke-width="2" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

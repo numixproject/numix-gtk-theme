@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g transform="translate(0 -1036.3622)">
-<path style="fill:#f9f9f9;line-height:normal;color:#000" d="m 11.653408,1040.2805 c -0.365873,0.01 -0.727323,0.1623 -0.985551,0.4266 l -4.0292904,3.8367 -1.3822187,-1.5489 c -0.4918947,-0.656 -1.5705595,-0.7265 -2.1406524,-0.14 -0.5700929,0.5865 -0.4910061,1.6854 0.1569519,2.1808 l 2.3831825,2.5599 c 0.9369248,0.9369 1.3590497,0.8116 2.3049741,-0.1343 0,0 3.250459,-3.9103 5.155609,-5.232 0.421127,-0.3992 0.596878,-0.5102 0.377676,-1.0522 -0.219202,-0.542 -1.265927,-0.916 -1.840681,-0.8966 z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/menuitem-checkbox-checked-hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menuitem-sheet" transform="translate(-87.000000, -24.000000)">
+            <g id="menuitem-checkbox" transform="translate(24.000000, 24.000000)">
+                <g id="menuitem-checkbox-checked-hover" transform="translate(63.000000, 0.000000)">
+                    <g id="menuitem-base" fill-opacity="0" fill="#000000">
+                        <rect x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                    <g id="mark-check-hover" transform="translate(3.000000, 4.000000)" fill="#FFFFFF">
+                        <path d="M3.83136349,5.41618823 L1.70352219,3.28834693 C1.32182397,2.90664871 0.686353878,2.9043436 0.295829586,3.29486789 C-0.0974173695,3.68811484 -0.0976142393,4.31563762 0.289308625,4.70256049 L3.13077767,7.54402953 C3.51247588,7.92572775 4.14794598,7.92803287 4.53847027,7.53750857 C4.56713284,7.50884601 4.59370732,7.47893885 4.61819602,7.44797098 C4.64887921,7.4237686 4.67847145,7.3975074 4.70678874,7.36919011 L10.3701518,1.70582704 C10.7518008,1.32417805 10.7574217,0.685392179 10.3668974,0.294867887 C9.97365044,-0.0983790686 9.34466518,-0.0971134544 8.95593825,0.291613476 L3.83136349,5.41618823 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
