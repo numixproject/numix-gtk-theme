@@ -87,7 +87,7 @@
 }
 
 %entry {
-    min-height: 22px;
+    min-height: 16px;
     border-width: 1px;
     border-style: solid;
     border-radius: $roundness;
@@ -124,7 +124,7 @@
     @include linear-gradient($bg, to top);
     @include border($bg);
 
-    padding: ($spacing - 3px) ($spacing + 3px);
+    padding: ($spacing + 1px) ($spacing + 3px);
 
     color: $fg;
     caret-color: $fg;

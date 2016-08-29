@@ -43,9 +43,9 @@
     }
 
     %button {
-        min-height: 22px;
-        min-width: 20px;
-        padding: ($spacing - 3px) ($spacing + 1px);
+        min-height: 16px;
+        min-width: 16px;
+        padding: ($spacing + 1px) $spacing;
         border-width: 1px;
         border-style: solid;
         border-radius: $roundness;
@@ -344,7 +344,7 @@
     }
 
     &.image-button {
-        min-width: 24px;
+        min-width: 16px;
         padding-left: $spacing;
         padding-right: $spacing;
     }
@@ -374,7 +374,7 @@
 
 @include exports("button") {
     %close_button {
-        min-height: 22px;
+        min-height: 16px;
         min-width: 16px;
         border: 1px solid transparent;
         background-color: transparent;
@@ -417,12 +417,39 @@
         &.circular,
         &.circular-button { // FIXME: aggregate to buttons
             padding: 0;
-            min-width: 26px;
-            min-height: 26px;
+            min-width: 28px;
+            min-height: 28px;
             border-radius: 9999px; // Fixed: https://github.com/GNOME/gtk/commit/a6409458f0d50d673a4dc370b9251993b7835b6b
             -gtk-outline-radius: 9999px;
 
             label { padding: 0; }
+        }
+    }
+
+    .path-bar button {
+        &.text-button, &.image-button, & {
+            padding-left: $spacing;
+            padding-right: $spacing;
+        }
+
+        &.text-button.image-button label {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &.text-button.image-button, & {
+            label:last-child { padding-right: $spacing * 2; }
+            label:first-child { padding-left: $spacing * 2; }
+        }
+
+        image {
+            padding-left: $spacing;
+            padding-right: $spacing;
+        }
+
+        &.slider-button {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 
@@ -537,7 +564,7 @@
 
         box button, box entry {
             @extend %linked_button;
-            padding: ($spacing - 3px) ($spacing + 1px);
+            padding: ($spacing + 1px) $spacing;
         }
 
         .linked:not(.vertical) > & > box > button.combo {
