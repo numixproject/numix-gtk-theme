@@ -140,7 +140,14 @@
     }
 
     button.color {
-        padding: $spacing - 1px;
+        padding: $spacing - 3px;
+
+        colorswatch:first-child:last-child {
+            &, overlay {
+                margin: $spacing - 1px;
+                border-radius: 0;
+            }
+        }
 
         colorswatch:only-child {
             &, overlay { border-radius: 0; }
