@@ -45,10 +45,6 @@
                 border-color: currentColor;
                 -GtkWidget-window-dragging: true;
             }
-
-            &.primary-toolbar button {
-                padding: 5px 6px;
-            }
             
             /* Path Bar */
             toolitem stack {
@@ -65,11 +61,6 @@
         /* Status Bar */
         grid {
             > widget:last-child {
-                button {
-                    min-height: 15px;
-                    min-width: 20px;
-                }
-
                 button:first-child {
                     margin-left: 20px;
                 }
