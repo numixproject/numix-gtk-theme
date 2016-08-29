@@ -45,6 +45,11 @@
                 border-color: currentColor;
                 -GtkWidget-window-dragging: true;
             }
+
+            &.primary-toolbar button {
+                min-width: 28px;
+                padding: 3px;
+            }
             
             /* Path Bar */
             toolitem stack {
