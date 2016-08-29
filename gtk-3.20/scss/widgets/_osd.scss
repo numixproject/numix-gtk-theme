@@ -19,9 +19,6 @@
             background-origin: border-box;
         }
 
-        button { @include button($osd_bg, $osd_fg); }
-
-
         toolbar {
             -GtkToolbar-button-relief: normal;
 
