@@ -61,6 +61,12 @@
         /* Status Bar */
         grid {
             > widget:last-child {
+                button {
+                    min-height: 16px;
+                    min-width: 16px;
+                    padding: ($spacing - 1px);
+                }
+
                 button:first-child {
                     margin-left: 20px;
                 }
