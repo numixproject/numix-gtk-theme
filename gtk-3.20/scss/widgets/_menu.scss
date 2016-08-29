@@ -287,7 +287,9 @@
     }
 
     modelbutton {
-        padding: $spacing ($spacing + 2px);
+        min-height: 24px;
+        padding-left: ($spacing + 3px);
+        padding-right: ($spacing + 3px);
         border: none;
         transition: 150ms ease;
         outline-color: transparent;

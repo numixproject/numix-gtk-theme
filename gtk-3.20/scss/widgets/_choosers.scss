@@ -140,7 +140,7 @@
     }
 
     button.color {
-        padding: $spacing;
+        padding: $spacing - 1px;
 
         colorswatch:only-child {
             &, overlay { border-radius: 0; }
