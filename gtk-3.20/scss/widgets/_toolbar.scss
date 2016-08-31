@@ -96,7 +96,12 @@
         spinbutton,
         separator,
         switch,
-        button {
+        button { // Size height
+            margin-top: $spacing + 2px;
+            margin-bottom: $spacing + 2px;
+        }
+
+        switch { // Size height
             margin-top: $spacing + 1px;
             margin-bottom: $spacing + 1px;
         }
