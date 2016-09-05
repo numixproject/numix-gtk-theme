@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 744.09448819 1052.3622047"
+   width="92"
+   height="452"
+   viewBox="0 0 92.000001 452.00001"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="asset_slice.svg">
+   sodipodi:docname="all-assets.svg">
   <defs
      id="defs4">
     <clipPath
@@ -1981,11 +1981,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6488505"
-     inkscape:cx="58.825395"
-     inkscape:cy="533.81354"
+     inkscape:zoom="0.58295669"
+     inkscape:cx="-796.08061"
+     inkscape:cy="194.67767"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="2560"
      inkscape:window-height="1054"
@@ -1993,56 +1993,63 @@
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
-       id="grid6508" />
+       id="grid6508"
+       originx="-30"
+       originy="-339.99999" />
     <sodipodi:guide
-       position="29,536.00001"
+       position="-1.0000002,196.00002"
        orientation="0,1"
        id="guide6546" />
     <sodipodi:guide
-       position="42,520.00001"
+       position="12,180.00002"
        orientation="0,1"
        id="guide6548" />
     <sodipodi:guide
-       position="30,533.00001"
+       position="-2.3255615e-07,193.00002"
        orientation="1,0"
        id="guide6550" />
     <sodipodi:guide
-       position="46,532.00001"
+       position="16,192.00002"
        orientation="1,0"
        id="guide6552" />
     <sodipodi:guide
-       position="60,528.00001"
+       position="30,188.00002"
        orientation="1,0"
        id="guide6554" />
     <sodipodi:guide
-       position="76.000001,527.00001"
+       position="46.000001,187.00002"
        orientation="1,0"
        id="guide6556" />
     <sodipodi:guide
-       position="90.000001,529.00001"
+       position="60.000001,189.00002"
        orientation="1,0"
        id="guide6558" />
     <sodipodi:guide
-       position="106,525.00001"
+       position="76,185.00002"
        orientation="1,0"
        id="guide6560" />
     <sodipodi:guide
-       position="74.000001,506.00001"
+       position="44.000001,166.00002"
        orientation="0,1"
        id="guide6562" />
     <sodipodi:guide
-       position="75.000001,490.00001"
+       position="45.000001,150.00002"
        orientation="0,1"
        id="guide6564" />
     <sodipodi:guide
-       position="32,476.00001"
+       position="1.9999998,136.00002"
        orientation="0,1"
        id="guide6566" />
     <sodipodi:guide
-       position="33,460.00001"
+       position="2.9999998,120.00002"
        orientation="0,1"
        id="guide6568" />
   </sodipodi:namedview>
@@ -2062,7 +2069,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-30,-260.3622)">
     <g
        id="g4165"
        transform="matrix(1.25,0,0,-1.25,0,463.79076)" />
@@ -4093,7 +4101,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="slices"
-     style="display:none;opacity:0.3">
+     style="display:none;opacity:0.3"
+     transform="translate(-30,-260.3622)">
     <rect
        style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:4.89685059;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="EXP-grid-selection-unchecked"
