@@ -169,7 +169,9 @@
         // Click-and-hold the slider to activate
         &.fine-tune {
             // Make the trough grow in fine-tune mode
-            slider { margin: -6px; }
+            slider { margin: -7px; }
+
+            highlight { background-color: shade($selected_bg_color, 1.1); }
 
             fill,
             highlight,
