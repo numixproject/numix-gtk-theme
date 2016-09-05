@@ -1,16 +1,9 @@
 #!/bin/bash
 
-if [[ -z $1 ]] ; then
- echo "Usage: $0 [FILE]"
- exit 0
-else
- FILENAME=$1
-fi
+SVGTABLE="assets/all-assets.svg"
+IDPRFX="EXP-"
 
-PREFIX=EXP-
-
-for ID in `grep -o "id=\"$PREFIX.*\"" $FILENAME | cut -d\" -f2` ; do
- OUTPUT=${ID#$PREFIX}.png
- echo "Exporting area $ID to $OUTPUT..."
- inkscape --export-id=$ID --export-png=$OUTPUT --file=$FILENAME
+for ID in $(sed -n 's/.*id="\('"$IDPRFX"'[^"]\+\)".*/\1/p' $SVGTABLE); do
+    echo "Generating 'assets/${ID#$IDPRFX}.png' ..."
+    inkscape --without-gui --export-id=$ID --export-png=assets/${ID#$IDPRFX}.png $SVGTABLE
 done
