@@ -16,6 +16,7 @@ css:
 	$(SASS) --update $(SASSFLAGS) $(SCSS_DIR320):$(DIST_DIR320)
 
 gresource: css
+	scripts/generate-assets.sh
 	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(RES_DIR) $(RES_DIR)/gtk.gresource.xml
 	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(RES_DIR320) $(RES_DIR320)/gtk.gresource.xml
 
@@ -30,6 +31,7 @@ clean:
 	rm -f $(RES_DIR)/gtk.gresource
 	rm -rf $(DIST_DIR320)
 	rm -f $(RES_DIR320)/gtk.gresource
+	rm -f assets/*.png
 
 install: all
 	install -d -m755 $(INSTALL_DIR)
