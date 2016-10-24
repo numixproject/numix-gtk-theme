@@ -155,7 +155,7 @@
                 > box,
                 > label,
                 > widget > box {
-                    padding: ($spacing - 1px) (($spacing - 1px) * 2); // top/bottom | left/right
+                    padding: $spacing $spacing * 2; // top/bottom | left/right
                     border-width: 2px;
                     border-style: solid;
                     border-color: transparent;
@@ -166,7 +166,7 @@
                     > box,
                     > label,
                     > widget > box {
-                        padding: ($spacing - 1px) (($spacing - 1px) * 2); // top | right | bottom | left
+                        padding: $spacing $spacing * 2; // top | right | bottom | left
                     }
                 }
 
