@@ -17,10 +17,9 @@
         color: $menubar_fg_color;
 
         > menuitem {
-            min-height: 16px;
             padding: ($spacing - 1px) ($spacing - 1px) * 2;
-            border: 1px solid transparent;
-            background-color: transparent;
+            border: solid transparent;
+            border-width: 0;
             background-image: none;
             color: $menubar_fg_color;
 
