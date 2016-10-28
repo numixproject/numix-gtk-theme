@@ -72,7 +72,7 @@
 
         row {
             // Needs overriding of the GtkListBoxRow padding
-            min-height: 30px;
+            min-height: 32px;
             padding: 0;
 
             // Using margins/padding directly in the SidebarRow
@@ -110,8 +110,8 @@
 
                 //@extend %button_selected.flat;
 
-                min-height: 22px;
-                min-width: 22px;
+                min-height: 20px;
+                min-width: 20px;
                 margin-top: 2px;
                 margin-bottom: 2px;
                 padding: 0;
