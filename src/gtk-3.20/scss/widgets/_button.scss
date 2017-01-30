@@ -273,14 +273,14 @@
     $border_strength: if(lightness($bg) > 50, 0, .1);
     $shadow_strength: if(lightness($bg) > 50, 0, .1);
 
-    $button_bg: if(hue($bg) == 0deg, shade($bg, 1.2), $bg);
+    $button_bg: if(hue($bg) == 0deg, shade($bg, 1.08), $bg);
 
     @extend %button;
     @include linear-gradient($button_bg);
-    @include border(rgba(0, 0, 0, .12 + $border_strength));
+    border-color: border_normal($button_bg);
 
     color: $fg;
-    box-shadow: 0 1px 2px -1px alpha($dark_shadow, .12 + $shadow_strength);
+    //box-shadow: 0 1px 2px -1px alpha($dark_shadow, .12 + $shadow_strength); //making it flatter
 
     &.flat {
         border-color: alpha($button_bg, 0);
@@ -292,7 +292,7 @@
     &, &.flat {
         &:focus, &:hover {
             @include linear-gradient(shade($button_bg, 1.2));
-            @include border(rgba(0, 0, 0, .2 + $border_strength));
+            @include border(rgba(0, 0, 0, .25 + $border_strength));
 
             box-shadow: 0 1px 2px -1px alpha($dark_shadow, .32 + $shadow_strength);
         }
@@ -379,12 +379,12 @@
     }
 
     button {
-        @include button(shade($bg_color, 1.2), $fg_color);
+        @include button($bg_color, $fg_color);
 
         .inline-toolbar &,
-        .linked > & { @include linked_button(shade($bg_color, 1.2)); }
+        .linked > & { @include linked_button($bg_color); }
 
-        .linked.vertical > & { @include linked_vertical_button(shade($bg_color, 1.2)); }
+        .linked.vertical > & { @include linked_vertical_button($bg_color); }
 
         &.circular,
         &.circular-button { // FIXME: aggregate to buttons
