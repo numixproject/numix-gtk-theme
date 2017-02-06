@@ -309,11 +309,19 @@
             
 
         &:checked, &:active {
-            @include linear-gradient(shade($button_bg, .7), to top);
+            @if (lightness($button_bg) > 50) {
+                @include linear-gradient(shade($button_bg, .8), to top);
+            } @else {
+                @include linear-gradient(shade($button_bg, .7), to top);
+            }
             color: $white;
 
             &:focus, &:hover {
-                @include linear-gradient(shade($button_bg, .65), to top);
+		@if (lightness($button_bg) > 50) {
+                    @include linear-gradient(shade($button_bg, .75), to top);
+                } @else {
+		    @include linear-gradient(shade($button_bg, .65), to top);
+                }
                 color: $white;
             }
         }
