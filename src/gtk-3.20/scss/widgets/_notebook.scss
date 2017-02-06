@@ -179,7 +179,7 @@
                     min-width: 16px;
                     padding: 0;
                     margin-left: $spacing * 2;
-                    border: 1px solid transparent;
+                    //border: 1px solid transparent;
                     transition: all .1s linear;
                 }
 
@@ -187,15 +187,15 @@
                     background-color: shade($base_color, .93);
                     border-color: transparent;
                     outline: none;
-
-                    button,
-                    button.flat {
-                        border: 1px solid alpha($bg_color, .1);
-                    }
                 }
 
                 &:checked {
-                    background-color: mix($bg_color, $base_color, .4);
+                    @if (lightness($bg_color) > 50) {
+                        background-color: mix($bg_color, $base_color, .7);
+                    } @else {
+                        background-color: mix($bg_color, $base_color, .4);
+                    }
+
                     border-bottom-color: transparent;
                     outline: none;
 
@@ -204,7 +204,11 @@
                     }
 
                     &:hover {
-                        background-color: mix($bg_color, $base_color, .6);
+                        @if (lightness($bg_color) > 50) {
+                            background-color: mix($bg_color, $base_color, .9);
+                        } @else {
+                            background-color: mix($bg_color, $base_color, .6);
+                        }
                     }
                 }
 
