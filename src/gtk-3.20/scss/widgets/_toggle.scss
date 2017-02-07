@@ -104,18 +104,22 @@ $suffix: if($variant == "dark", "-dark", "");
 
 @include exports("switch") {
     switch {
-        border-radius: $roundness;
+        min-height: 16px;
         padding: $spacing - 2px;
+        border-radius: $roundness;
         border: none;
         outline: none;
         transition: background-color .3s linear;
-        min-width: 48px;
-        min-height: 16px;
+
         background-color: $switch_bg_color;
         color: $switch_fg_color;
         box-shadow: inset 1px -1px 0 alpha($dark_shadow, .06), inset -1px 1px 0 alpha($dark_shadow, .06);
 
         slider {
+            min-height: 18px;
+    	    min-width: 26px;
+	    padding: 0 2px;
+
             background-color: $switch_slider_bg_color;
             transition: all 0.3s ease-in;
             box-shadow: 0 1px 2px 0 alpha($dark_shadow, .07), 1px 0 2px 0 alpha($dark_shadow, .07);
