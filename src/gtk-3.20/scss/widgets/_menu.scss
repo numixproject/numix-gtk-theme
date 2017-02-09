@@ -73,7 +73,7 @@
     .context-menu {
         border: 0;
         border-radius: 0;
-        padding: 2px 0;
+        padding: 0;
         background-color: $menu_bg_color;
         color: $menu_fg_color;
 
@@ -85,7 +85,7 @@
         separator,
         .csd & separator {
             background-color: shade($menu_bg_color, ($contrast + .1));
-            margin: ($spacing - 2px) 0;
+            margin: 1px 0;
         }
 
         // Firefox workaround
@@ -93,7 +93,7 @@
         .csd & .separator { color: shade($menu_bg_color, ($contrast + .1)); }
 
         menuitem {
-            min-height: 16px;
+            min-height: 14px;
             min-width: 40px;
             padding: $spacing - 1px;
             border-radius: 0;
@@ -111,8 +111,8 @@
 
             // submenu indicators
             arrow {
-                min-height: 16px;
-                min-width: 16px;
+                min-height: 14px;
+                min-width: 14px;
 
                 &:dir(ltr) {
                     -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
@@ -152,8 +152,8 @@
         > arrow {
             //@include button(undecorated);
 
-            min-height: 16px;
-            min-width: 16px;
+            min-height: 14px;
+            min-width: 14px;
             padding: $spacing;
             background-color: $menu_bg_color;
             border-radius: 0;
@@ -196,8 +196,8 @@
         }
 
         check, radio {
-            min-height: 16px;
-            min-width: 16px;
+            min-height: 14px;
+            min-width: 14px;
 
             &:dir(ltr) { margin-right: 7px; }
             &:dir(rtl) { margin-left: 7px; }
@@ -288,7 +288,7 @@
 
     modelbutton.flat,
     menuitem.button.flat {
-        padding: $spacing ($spacing + 2px);
+        padding: ($spacing - 1px) ($spacing + 1px);
         outline-color: transparent;
         transition: none;
 
