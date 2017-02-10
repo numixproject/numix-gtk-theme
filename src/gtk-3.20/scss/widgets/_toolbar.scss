@@ -97,13 +97,13 @@
         spinbutton,
         separator,
         button { // Size height
-            margin-top: $spacing + 3px;
-            margin-bottom: $spacing + 3px;
+            margin-top: $spacing;
+            margin-bottom: $spacing;
         }
 
         switch { // Size height
-            margin-top: $spacing + 1px;
-            margin-bottom: $spacing + 1px;
+            margin-top: $spacing - 2px;
+            margin-bottom: $spacing - 2px;
         }
 
         window:not(.tiled):not(.maximized) separator:first-child + &, // tackles the paned container case
@@ -119,7 +119,7 @@
         border-radius: $roundness $roundness 0 0;
         color: mix($titlebar_fg_color, $titlebar_bg_color, .1);
         padding: 0 $spacing;
-        min-height: 42px;
+        min-height: 38px;
 
         &:backdrop {
             @include linear-gradient($titlebar_bg_color);
