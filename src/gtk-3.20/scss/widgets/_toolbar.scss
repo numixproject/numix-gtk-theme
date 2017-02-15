@@ -5,7 +5,7 @@
  ! Toolbar
 **********/
 
-@mixin toolbar($bg, $fg) {
+@mixin titlebar($bg, $fg) {
     @include linear-gradient($bg);
     @include border($bg);
 
@@ -13,7 +13,6 @@
 
     &:disabled {
         @include linear-gradient(shade($bg, .9));
-
         color: mix($fg, $bg, .5);
     }
 
@@ -28,22 +27,65 @@
     }
 
     button { @include button($bg, $fg); }
-
     .linked > button { @include linked_button($bg); }
 
-    combobox, button {
-        padding: $spacing;
+    combobox { padding: 4px; }
 
-        &.text-button { padding: $spacing; }
+    separator {
+        &, &:disabled {
+            color: shade($bg, ($contrast - .2));
+            border-color: currentColor;
+            -GtkWidget-window-dragging: true;
+        }
+    }
+}
 
-        &.image-button { padding: $spacing; }
+
+
+
+
+@mixin toolbar($bg, $fg) {
+    @include linear-gradient($bg);
+    @include border($bg);
+
+    color: $fg;
+
+    &:disabled {
+        @include linear-gradient(shade($bg, .9));
+        color: mix($fg, $bg, .5);
+    }
+
+    .title {
+        font-weight: bold;
+        padding: 0 ($spacing * 2);
+    }
+
+    .subtitle {
+        font-size: smaller;
+        padding: 0 ($spacing * 2);
+    }
+
+    button { @include button($bg, $fg); }
+    .linked > button { @include linked_button($bg); }
+
+    &.horizontal combobox { padding: 4px; }
+    
+    &.horizontal button {
+        padding: 4px;
+        &.text-button { padding: 4px; }
+        &.image-button { padding: 4px; }
+    }
+
+    &.vertical button {
+        padding: 5px;
+        &.text-button { padding: 5px; }
+        &.image-button { padding: 5px; }
     }
 
     separator {
         &, &:disabled {
             color: shade($bg, ($contrast - .2));
             border-color: currentColor;
-
             -GtkWidget-window-dragging: true;
         }
     }
@@ -81,6 +123,7 @@
     %toolbar {
         padding: $spacing - 1px;
         border-style: none;
+        -gtk-icon-style: symbolic;
 
         // toolbar separators
         &.horizontal separator { margin: 0 ($spacing + 2px) 1px; }
@@ -99,6 +142,11 @@
         button { // Size height
             margin-top: $spacing + 3px;
             margin-bottom: $spacing + 3px;
+            &.popup { padding: 5px; }
+            &.image-button { padding: 5px; }
+            &.text-button.image-button { padding: 5px; }
+            &.text-button { padding: 5px; }
+
         }
 
         switch { // Size height
@@ -113,7 +161,7 @@
     }
 
     %titlebar { // Default headerbar and titlebar code.
-        @include toolbar($titlebar_bg_color, $titlebar_fg_color);
+        @include titlebar($titlebar_bg_color, $titlebar_fg_color);
         @include linear-gradient($titlebar_bg_color);
 
         border-radius: $roundness $roundness 0 0;
@@ -186,7 +234,6 @@
 @include exports("toolbar") {
     toolbar {
         @include toolbar($toolbar_bg_color, $toolbar_fg_color);
-
         @extend %toolbar;
 
         &.inline-toolbar { @include inline-toolbar($toolbar_bg_color, $toolbar_fg_color); }
