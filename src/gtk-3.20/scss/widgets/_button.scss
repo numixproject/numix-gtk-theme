@@ -43,9 +43,9 @@
     }
 
     %button {
-        min-height: 16px;
-        min-width: 16px;
-        padding: $spacing ($spacing + 2px);
+        //min-height: 16px;
+        //min-width: 16px;
+        padding: $spacing ($spacing + 1);
         border-width: 1px;
         border-style: solid;
         border-radius: $roundness;
@@ -525,8 +525,8 @@
         button.combo {
             // otherwise the arrow placement is not symmetric
             min-width: 0;
-            padding-left: $spacing + 2px;
-            padding-right: $spacing + 2px;
+            //padding-left: $spacing + 1px;
+            //padding-right: $spacing + 1px;
         }
 
         arrow {
@@ -537,8 +537,10 @@
 
         box button, box entry {
             @extend %linked_button;
-            padding: $spacing ($spacing + 2px);
         }
+
+        //hack to get rid of extra +1px height in linked combobox
+        //.linked:not(.vertical) button.combo { padding: 4px; }
 
         .linked:not(.vertical) > & > box > button.combo {
             // the combo is a composite widget so the way we do button linked doesn't
