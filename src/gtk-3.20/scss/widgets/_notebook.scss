@@ -145,28 +145,21 @@
 
             tab {
                 padding: 0;
-                border-style: solid;
-                border-width: 1px;         // for reorderable tabs
-                border-color: transparent; //
-                background-image: none;
-                box-shadow: none;
                 outline: none;
 
                 > box,
                 > label,
                 > widget > box {
-                    padding: $spacing $spacing * 2; // top/bottom | left/right
-                    border-width: 2px;
-                    border-style: solid;
-                    border-color: transparent;
-                    transition: border-color .2s linear;
+                    padding: ($spacing + 2px) $spacing * 2; // top/bottom | left/right
+                    box-shadow: 1px 1px transparent; //duplicate shadows used for transition?
+                    transition: box-shadow .2s linear;
                 }
 
                 &.reorderable-page {
                     > box,
                     > label,
                     > widget > box {
-                        padding: $spacing $spacing * 2; // top | right | bottom | left
+                        padding: ($spacing + 2px) $spacing * 2; // top | right | bottom | left
                     }
                 }
 
@@ -217,88 +210,28 @@
                 }
             }
 
-            &.top tab,
-            &.bottom tab {
-                &:hover {
-                    &:not(:first-child):not(:last-child):not(:only-child) {
-                        box-shadow: 1px 0 1px shade($base_color, .85), -1px 0 1px shade($base_color, .85);
-                    }
-
-                    &:last-child:not(:only-child) {
-                        box-shadow: -1px 0 1px shade($base_color, .85);
-                    }
-
-                    &:first-child:not(:only-child) {
-                        box-shadow: 1px 0 1px shade($base_color, .85);
-                    }
-                }
-
-                &:checked {
-                    &:not(:first-child):not(:last-child):not(:only-child) {
-                        box-shadow: 1px 0 1px shade($base_color, .8), -1px 0 1px shade($base_color, .8);
-                    }
-
-                    &:last-child:not(:only-child) {
-                        box-shadow: -1px 0 1px shade($base_color, .8);
-                    }
-
-                    &:first-child:not(:only-child) {
-                        box-shadow: 1px 0 1px shade($base_color, .8);
-                    }
-                }
-            }
-
-            &.right tab,
-            &.left tab {
-                &:hover {
-                    &:not(:first-child):not(:last-child):not(:only-child) {
-                        box-shadow: 0 1px 1px shade($base_color, .85), 0 -1px 1px shade($base_color, .85);
-                    }
-
-                    &:last-child:not(:only-child) {
-                        box-shadow: 0 -1px 1px shade($base_color, .85);
-                    }
-
-                    &:first-child:not(:only-child) {
-                        box-shadow: 0 1px 1px shade($base_color, .85);
-                    }
-                }
-
-                &:checked {
-                    &:not(:first-child):not(:last-child):not(:only-child) {
-                        box-shadow: 0 1px 1px shade($base_color, .8), 0 -1px 1px shade($base_color, .8);
-                    }
-
-                    &:last-child:not(:only-child) {
-                        box-shadow: 0 -1px 1px shade($base_color, .8);
-                    }
-
-                    &:first-child:not(:only-child) {
-                        box-shadow: 0 1px 1px shade($base_color, .8);
-                    }
-                }
-            }
 
             &.top tab {
-                border-style: solid;
-                border-color: $borders_color;
-                border-width: 0;
-                border-bottom-width: 1px;
-                transition: border-bottom-color .2s linear;
+                box-shadow: inset 0 -1px $borders_color; 
+                transition: box-shadow .2s ease-out;
 
                 &:hover {
-                    outline: none;
+                    outline: none; 
+                    &:not(:first-child):not(:last-child):not(:only-child) {
+                        box-shadow: 1px 0 1px shade($base_color, .85), -1px 0 1px shade($base_color, .85), inset 0 -1px $borders_color;
+                    }
+
+                    &:last-child:not(:only-child) {
+                        box-shadow: -1px 0 1px shade($base_color, .85), inset 0 -1px $borders_color;
+                    }
+
+                    &:first-child:not(:only-child) {
+                        box-shadow: 1px 0 1px shade($base_color, .85), inset 0 -1px $borders_color;
+                    }       
                 }
 
                 &:checked {
-                    border-bottom-color: $selected_bg_color;
                     outline: none;
-
-                    > box,
-                    > label,
-                    > widget > box {
-                        border-bottom-color: $selected_bg_color;
-                    }
 
                     label {
                         margin-bottom: 0;
@@ -308,29 +241,45 @@
                     &:hover {
                         background-color: mix($bg_color, $base_color, .6);
                     }
+
+                    &:not(:first-child):not(:last-child):not(:only-child) {
+                        box-shadow: 1px 0 1px shade($base_color, .8), -1px 0 1px shade($base_color, .8), inset 0 -2px $selected_bg_color;
+                    }
+
+                    &:last-child:not(:only-child) {
+                        box-shadow: -1px 0 1px shade($base_color, .8), inset 0 -2px $selected_bg_color;
+
+                    }
+
+                    &:first-child:not(:only-child) {
+                        box-shadow: 1px 0 1px shade($base_color, .8), inset 0 -2px $selected_bg_color;
+
+                    }
                 }
             }
 
             &.right tab {
-                border-style: solid;
-                border-color: $borders_color;
-                border-width: 0;
-                border-left-width: 1px;
-                transition: border-left-color .3s ease-out;
+                box-shadow: inset 1px 0 $borders_color;
+                transition: box-shadow .3s ease-out;
 
                 &:hover {
                     outline: none;
+
+                    &:not(:first-child):not(:last-child):not(:only-child) {
+                        box-shadow: 0 1px 1px shade($base_color, .85), 0 -1px 1px shade($base_color, .85), inset 1px 0 $borders_color;
+                    }
+
+                    &:last-child:not(:only-child) {
+                        box-shadow: 0 -1px 1px shade($base_color, .85), inset 1px 0 $borders_color;
+                    }
+
+                    &:first-child:not(:only-child) {
+                        box-shadow: 0 1px 1px shade($base_color, .85), inset 1px 0 $borders_color;
+                    }
                 }
 
                 &:checked {
-                    border-left-color: $selected_bg_color;
                     outline: none;
-
-                    > box,
-                    > label,
-                    > widget > box {
-                        border-left-color: $selected_bg_color;
-                    }
 
                     label {
                         margin-left: 0;
@@ -340,29 +289,42 @@
                     &:hover {
                         background-color: mix($bg_color, $base_color, .6);
                     }
+
+                    &:not(:first-child):not(:last-child):not(:only-child) {
+                        box-shadow: 0 1px 1px shade($base_color, .8), 0 -1px 1px shade($base_color, .8), inset 2px 0 $selected_bg_color;
+                    }
+
+                    &:last-child:not(:only-child) {
+                        box-shadow: 0 -1px 1px shade($base_color, .8), inset 2px 0 $selected_bg_color;
+                    }
+
+                    &:first-child:not(:only-child) {
+                        box-shadow: 0 1px 1px shade($base_color, .8), inset 2px 0 $selected_bg_color;
+                    }
                 }
             }
 
             &.bottom tab {
-                border-style: solid;
-                border-color: $borders_color;
-                border-width: 0;
-                border-top-width: 1px;
-                transition: border-top-color .3s ease-out;
+                box-shadow: inset 0 1px $borders_color;
+                transition: box-shadow .3s ease-out;
 
                 &:hover {
                     outline: none;
+                    &:not(:first-child):not(:last-child):not(:only-child) {
+                        box-shadow: 1px 0 1px shade($base_color, .85), -1px 0 1px shade($base_color, .85), inset 0 1px $borders_color;
+                    }
+
+                    &:last-child:not(:only-child) {
+                        box-shadow: -1px 0 1px shade($base_color, .85), inset 0 1px $borders_color;
+                    }
+
+                    &:first-child:not(:only-child) {
+                        box-shadow: 1px 0 1px shade($base_color, .85), inset 0 1px $borders_color;
+                    }
                 }
 
                 &:checked {
-                    border-top-color: $selected_bg_color;
                     outline: none;
-
-                    > box,
-                    > label,
-                    > widget > box {
-                        border-top-color: $selected_bg_color;
-                    }
 
                     label {
                         margin-top: 0;
@@ -372,29 +334,43 @@
                     &:hover {
                         background-color: mix($bg_color, $base_color, .6);
                     }
+
+                    &:not(:first-child):not(:last-child):not(:only-child) {
+                        box-shadow: 1px 0 1px shade($base_color, .8), -1px 0 1px shade($base_color, .8), inset 0 2px $selected_bg_color;
+                    }
+
+                    &:last-child:not(:only-child) {
+                        box-shadow: -1px 0 1px shade($base_color, .8), inset 0 2px $selected_bg_color;
+                    }
+
+                    &:first-child:not(:only-child) {
+                        box-shadow: 1px 0 1px shade($base_color, .8), inset 0 2px $selected_bg_color;
+                    }
                 }
             }
 
             &.left tab {
-                border-style: solid;
-                border-color: $borders_color;
-                border-width: 0;
-                border-right-width: 1px;
-                transition: border-right-color .3s ease-out;
+                box-shadow: inset -1px 0 $borders_color;
+                transition: box-shadow .3s ease-out; 
 
                 &:hover {
                     outline: none;
+
+                    &:not(:first-child):not(:last-child):not(:only-child) {
+                        box-shadow: 0 1px 1px shade($base_color, .85), 0 -1px 1px shade($base_color, .85), inset -1px 0 $borders_color;
+                    }
+
+                    &:last-child:not(:only-child) {
+                        box-shadow: 0 -1px 1px shade($base_color, .85), inset -1px 0 $borders_color;
+                    }
+
+                    &:first-child:not(:only-child) {
+                        box-shadow: 0 1px 1px shade($base_color, .85), inset -1px 0 $borders_color;
+                    }
                 }
 
                 &:checked {
-                    border-right-color: $selected_bg_color;
                     outline: none;
-
-                    > box,
-                    > label,
-                    > widget > box {
-                        border-right-color: $selected_bg_color;
-                    }
 
                     label {
                         margin-right: 0;
@@ -403,6 +379,18 @@
 
                     &:hover {
                         background-color: mix($bg_color, $base_color, .6);
+                    }
+
+                    &:not(:first-child):not(:last-child):not(:only-child) {
+                        box-shadow: 0 1px 1px shade($base_color, .8), 0 -1px 1px shade($base_color, .8), inset -2px 0 $selected_bg_color;
+                    }
+
+                    &:last-child:not(:only-child) {
+                        box-shadow: 0 -1px 1px shade($base_color, .8), inset -2px 0 $selected_bg_color;
+                    }
+
+                    &:first-child:not(:only-child) {
+                        box-shadow: 0 1px 1px shade($base_color, .8), inset -2px 0 $selected_bg_color;
                     }
                 }
             }
