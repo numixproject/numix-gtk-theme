@@ -4,13 +4,13 @@
 
 ## Install It
 
-### Official Distro Packages
+### Distro Packages
 |Distro|Install Command/Links|
 |:----:|:----:|
-|![arch](https://dl.dropboxusercontent.com/u/60521097/archlogo26x26.png)&nbsp;![antergos](https://dl.dropboxusercontent.com/u/60521097/logo-square26x26.png)|`sudo pacman -S numix-themes`|
-|![openSUSE](https://dl.dropboxusercontent.com/u/60521097/Geeko-button-bling7.png)|[1 Click Install](http://software.opensuse.org/ymp/openSUSE:Factory/standard/numix-gtk-theme.ymp) &nbsp;\|&nbsp; [OBS Repo](http://software.opensuse.org/download.html?project=openSUSE%3AFactory&package=numix-gtk-theme)|
-|![fedora](https://dl.dropboxusercontent.com/u/60521097/fedora-logo.png)|`sudo dnf install numix-gtk-theme`|
-|[![debian](https://www.debian.org/logos/openlogo-nd-25.jpg)](https://www.debian.org/)&nbsp;![ubuntu](https://dl.dropboxusercontent.com/u/60521097/ubuntu_orange_hex.png)|`sudo apt install numix-gtk-theme`|
+|![arch][arch] &nbsp;![antergos][antergos]|`sudo pacman -S numix-themes`|
+|![opensuse][opensuse]|[1 Click Install](http://software.opensuse.org/ymp/openSUSE:Factory/standard/numix-gtk-theme.ymp) &nbsp;\|&nbsp; [OBS Repo](http://software.opensuse.org/download.html?project=openSUSE%3AFactory&package=numix-gtk-theme)|
+|![fedora][fedora]|`sudo dnf install numix-gtk-theme`|
+|![debian][debian] &nbsp;![ubuntu][ubuntu]|`sudo apt install numix-gtk-theme`|
 
 ## Build It
 
@@ -22,28 +22,16 @@ To install Sass, install Ruby and the gem command using your distribution's pack
 
 You'll also need the ```glib-compile-schemas``` and  ```gdk-pixbuf-pixdata``` commands in your path to generate the gresource binary. Install them using your distribution's package manager.
 
-#### Debian, Ubuntu
+|Distro|Commands|
+|:----:|:----:|
+|![arch][arch] &nbsp;![antergos][antergos]|`sudo pacman -S glib2 gdk-pixbuf2`|
+|![opensuse][opensuse]|`sudo zipper install glib2-devel gdk-pixbuf-devel`|
+|![fedora][fedora]|`sudo dnf install glib2-devel gdk-pixbuf2-devel`|
+|[![debian][debian] &nbsp;![ubuntu][ubuntu]|`sudo apt-get install libglib2.0-dev libgdk-pixbuf2.0-dev libxml2-utils`|
 
- ```sh
-sudo apt-get install libglib2.0-dev libgdk-pixbuf2.0-dev libxml2-utils
-```
-
-#### Fedora
-
-```sh
-sudo dnf install glib2-devel gdk-pixbuf2-devel
-```
-
-#### Arch Linux
+After installing all the dependencies, change to the cloned directory and, run the following in Terminal,
 
 ```sh
-sudo pacman -S glib2 gdk-pixbuf2
-```
-
-After installing all the dependencies, switch to the cloned directory and, run the following in Terminal,
-
-```sh
-make
 sudo make install
 ```
 
@@ -86,3 +74,12 @@ Murrine theme engine
 Report bugs or contribute at [GitHub](https://github.com/numixproject/numix-gtk-theme)
 
 License: GPL-3.0+
+
+
+[antergos]: https://www.dropbox.com/s/tju7maccr328w87/logo-square26x26.png?dl=1 "antergos"
+[arch]: https://www.dropbox.com/s/q8ypd345cqcd0b5/archlogo26x26.png?dl=1 "arch"
+[fedora]: https://www.dropbox.com/s/b8q448vuwopb0cl/fedora-logo.png?dl=1 "fedora"
+[openSUSE]: https://www.dropbox.com/s/jhirpw85ztgl59h/Geeko-button-bling7.png?dl=1 "openSUSE"
+[ubuntu]: https://www.dropbox.com/s/nev98nld2u1qbgl/ubuntu_orange_hex.png?dl=1 "ubuntu"
+[debian]: https://www.dropbox.com/s/jg7pypm1zk9qjt6/openlogo-nd-25.png?dl=1 "debian"
+
