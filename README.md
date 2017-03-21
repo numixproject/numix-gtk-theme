@@ -27,7 +27,7 @@ You'll also need the ```glib-compile-schemas``` and  ```gdk-pixbuf-pixdata``` co
 |![arch][arch] &nbsp;![antergos][antergos]|`sudo pacman -S glib2 gdk-pixbuf2`|
 |![opensuse][opensuse]|`sudo zipper install glib2-devel gdk-pixbuf-devel`|
 |![fedora][fedora]|`sudo dnf install glib2-devel gdk-pixbuf2-devel`|
-|[![debian][debian] &nbsp;![ubuntu][ubuntu]|`sudo apt-get install libglib2.0-dev libgdk-pixbuf2.0-dev libxml2-utils`|
+|![debian][debian] &nbsp;![ubuntu][ubuntu]|`sudo apt-get install libglib2.0-dev libgdk-pixbuf2.0-dev libxml2-utils`|
 
 After installing all the dependencies, change to the cloned directory and, run the following in Terminal,
 
