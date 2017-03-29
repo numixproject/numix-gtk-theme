@@ -200,7 +200,7 @@
                         background-color: mix($backdrop_base_color, $selected_bg_color, .9);
                     }
 
-		    &:disabled { background-color: shade($selected_bg_color, 1.08); } //required if disabled state is turned on
+                    &:disabled { background-color: shade($selected_bg_color, 1.08); } //required if disabled state is turned on
                 }
             }
 
@@ -220,7 +220,7 @@
 
         &.trough { // progress bar trough in treeviews
             border-radius: $roundness;
-	    border: 1px solid alpha(border_normal($bg_color), .5);
+            border: 1px solid alpha(border_normal($bg_color), .5);
             background-color: shade($bg_color, 1.1);
 
             &:selected {
@@ -228,11 +228,11 @@
                     background-color: if($variant == 'light', shade($bg_color, 1.1), darken($selected_bg_color, .1));
                     @if $variant == 'light' { border: 1px solid $selected_borders_color; }
 
-		    &:disabled { background-color: shade($bg_color, 1.08); }
+                    &:disabled { background-color: shade($bg_color, 1.08); }
                 }
             }
 
-	    &:disabled { background-color: shade($bg_color, 1.08); }
+            &:disabled { background-color: shade($bg_color, 1.08); }
         }
 
         header {
