@@ -22,7 +22,7 @@
 
         trough {
             border: 1px solid alpha(border_normal($bg_color), .5);
-            background-color: shade($bg_color, 1.08);
+            background-color: shade($bg_color, 1.1);
             background-image: none;
             border-radius: $roundness;
         }

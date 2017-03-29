@@ -199,14 +199,12 @@
 
                         background-color: mix($backdrop_base_color, $selected_bg_color, .9);
                     }
+
+		    &:disabled { background-color: shade($selected_bg_color, 1.08); } //required if disabled state is turned on
                 }
             }
 
-	    // Do not use different progressbar color for disabled state,
-            /*&:disabled {
-                @include linear-gradient($bg_color);
-                border-color: border_insensitive($bg_color);
-            }*/
+            &:disabled { background-color: shade($selected_bg_color, 1.08);  }
 
             &:backdrop {
                 @if $variant == 'light' {
@@ -223,14 +221,18 @@
         &.trough { // progress bar trough in treeviews
             border-radius: $roundness;
 	    border: 1px solid alpha(border_normal($bg_color), .5);
-            background-color: transparentize($fg_color, .9);
+            background-color: shade($bg_color, 1.1);
 
             &:selected {
                 &:focus, & {
-                    background-color: if($variant == 'light', transparentize($bg_color, .7), darken($selected_bg_color, .1));
+                    background-color: if($variant == 'light', shade($bg_color, 1.1), darken($selected_bg_color, .1));
                     @if $variant == 'light' { border: 1px solid $selected_borders_color; }
+
+		    &:disabled { background-color: shade($bg_color, 1.08); }
                 }
             }
+
+	    &:disabled { background-color: shade($bg_color, 1.08); }
         }
 
         header {
