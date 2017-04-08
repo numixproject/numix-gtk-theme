@@ -33,7 +33,7 @@
         .solid-csd & {
             border-radius: 0;
             margin: 1px;
-            background-color: $bg_color;
+            background-color: $titlebar_bg_color;
             // Unity/compiz regression: Issue: https://github.com/numixproject/numix-gtk-theme/issues/206
             box-shadow: none;
         }
