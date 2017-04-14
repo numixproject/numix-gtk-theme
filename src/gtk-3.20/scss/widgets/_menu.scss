@@ -286,6 +286,39 @@
         }
     }
 
+    //gnome-calendar-fix
+    popover.events {
+        grid.vertical {
+            &, & list, & list row, & list box {
+                margin: 0; 
+                border-radius: 0;
+                background-color: $menu_bg_color; 
+            }
+        }
+
+        grid.vertical box.vertical {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+
+    popover {
+        list.calendar-list row { padding: 0px; }
+
+        datechooser {
+            & grid.vertical navigator button {
+                min-height: 20px;
+                min-width: 20px;
+                margin: 5px;
+            }
+ 
+            & grid.horizontal day.day {
+                min-height: 24px;
+                min-width: 24px;
+            }
+        }
+    }
+
     modelbutton.flat,
     menuitem.button.flat {
         padding: ($spacing - 1px) ($spacing + 1px);
