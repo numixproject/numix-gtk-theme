@@ -7,7 +7,7 @@
 ### Distro Packages
 |Distro|Install Command/Links|
 |:----:|:----:|
-|![arch][arch] &nbsp;![antergos][antergos]|`sudo pacman -S numix-themes`|
+|![arch][arch] &nbsp;![antergos][antergos]|`sudo pacman -S numix-gtk-theme`|
 |![opensuse][opensuse]|[1 Click Install](http://software.opensuse.org/ymp/openSUSE:Factory/standard/numix-gtk-theme.ymp) &nbsp;\|&nbsp; [OBS Repo](http://software.opensuse.org/download.html?project=openSUSE%3AFactory&package=numix-gtk-theme)|
 |![fedora][fedora]|`sudo dnf install numix-gtk-theme`|
 |![debian][debian] &nbsp;![ubuntu][ubuntu]|`sudo apt install numix-gtk-theme`|
