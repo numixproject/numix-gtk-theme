@@ -1,3 +1,5 @@
+@import "widgets/button";
+
 /**********************
  ! Genome Terminal *
 ***********************/
@@ -33,5 +35,18 @@
                 &:disabled { background-color: transparent; }
             }
         }
+    }
+}
+
+
+/**********************
+	! Tilix *
+***********************/
+
+@include exports("tilix") {
+    .terminal-titlebar:active {
+        border-width: 0 0 2px 0;
+        border-style: solid;
+        border-color: #d64937;
     }
 }
