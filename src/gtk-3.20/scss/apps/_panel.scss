@@ -54,7 +54,11 @@
         color: $black;
     }
 
-    #clock-applet-button { &, &:backdrop { @extend %panelbutton; } }
+    #clock-applet-button,
+    #tasklist-button,
+    #showdesktop-button {
+        &, &:backdrop { @extend %panelbutton; }
+    }
 
     panel-applet {
         border: 0;
