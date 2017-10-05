@@ -76,10 +76,10 @@ Report bugs or contribute at [GitHub](https://github.com/numixproject/numix-gtk-
 License: GPL-3.0+
 
 
-[antergos]: https://www.dropbox.com/s/tju7maccr328w87/logo-square26x26.png?dl=1 "antergos"
-[arch]: https://www.dropbox.com/s/q8ypd345cqcd0b5/archlogo26x26.png?dl=1 "arch"
-[fedora]: https://www.dropbox.com/s/b8q448vuwopb0cl/fedora-logo.png?dl=1 "fedora"
-[openSUSE]: https://www.dropbox.com/s/jhirpw85ztgl59h/Geeko-button-bling7.png?dl=1 "openSUSE"
-[ubuntu]: https://www.dropbox.com/s/nev98nld2u1qbgl/ubuntu_orange_hex.png?dl=1 "ubuntu"
-[debian]: https://www.dropbox.com/s/jg7pypm1zk9qjt6/openlogo-nd-25.png?dl=1 "debian"
+[antergos]: https://antergos.com/distro-logos/logo-square26x26.png "antergos"
+[arch]: https://antergos.com/distro-logos/archlogo26x26.png "arch"
+[fedora]: https://antergos.com/distro-logos/fedora-logo.png "fedora"
+[openSUSE]: https://antergos.com/distro-logos/Geeko-button-bling7.png "openSUSE"
+[ubuntu]: https://antergos.com/distro-logos/ubuntu_orange_hex.png "ubuntu"
+[debian]: https://antergos.com/distro-logos/openlogo-nd-25.png "debian"
 
