@@ -57,3 +57,22 @@
         }
     }
 }
+
+
+/****************
+ ! Geary *
+*****************/
+
+@include exports("geary") {
+   .geary-expanded .geary-message-summary {
+	    background-color: shade($base_color, 0.95);
+    }
+    
+    .geary-folder-popover-list-row {
+        border-color: shade($menu_bg_color, 1.2);
+        box-shadow: None;
+        
+        & > label { color: $bg_color; }
+    }
+    
+}
