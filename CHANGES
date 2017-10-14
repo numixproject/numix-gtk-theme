@@ -1,3 +1,47 @@
+-------------->>>> 2.6.7 <<<<-------------------------->>>> 2.6.7 <<<<-------------------------->>>> 2.6.7 <<<<--------------
+[2017-10-14 13:52:32 +0530]  Gtk-3.20: Add message summary and popover-list styles for geary         Khurshid Alam  {fd8e657}
+[2017-10-14 13:49:06 +0530]  Update readme for Ubuntu and Debian                                     Khurshid Alam  {5d031a3}
+[2017-10-05 10:27:02 -0500]  Update README.md                                                       Dustin Falgout  {8d99a96}
+[2017-10-05 10:23:02 -0500]  Update urls for distro logo images in README.md                        Dustin Falgout  {a0bd7d1}
+[2017-08-30 00:16:16 +0100]  Xfwm4: improve accessibility (wider bottom edge)                       Andrew Chadwick {6057a2d}
+[2017-07-26 02:03:28 -0500]  Update CONTRIBUTING.md                                                 Dustin Falgout  {858e629}
+[2017-07-26 02:01:53 -0500]  Delete CODE_OF_CONDUCT.md                                              Dustin Falgout  {68d01fe}
+[2017-07-26 02:01:29 -0500]  Create CODE_OF_CONDUCT.md                                              Dustin Falgout  {88632d8}
+[2017-06-15 14:27:30 +0530]  [Gnome-Panel-3.24] Add style for tasklist-button                        Khurshid Alam  {f2425ca}
+[2017-06-13 20:10:05 +0530]  [Gtk-2.0] Set inkscape-decoration & gtk--small-toolbar icon to 16px..   Khurshid Alam  {abf6111}
+[2017-06-13 02:39:50 +0530]  [Gtk-3.20] Tilix: Do not bottom-border color                            Khurshid Alam  {06be2fa}
+[2017-06-13 02:34:23 +0530]  [Gtk-3.20] Tilix: Add bottom border for active titlebar. Fixes #657     Khurshid Alam  {82568c7}
+[2017-06-06 12:53:28 +0530]  [Gtk-3.20] Metacity: Use normal geometry-style for nautilus dialogs..   Khurshid Alam  {deed3fb}
+[2017-05-14 21:20:12 -0500]  Update README.md                                                       Dustin Falgout  {30ae59b}
+[2017-05-10 20:03:46 +0530]  Fix syntax error in previous commit                                     Khurshid Alam  {402fd48}
+[2017-05-10 14:05:55 +0530]  [Gtk-3.18] Fix white border on tilix. Fixes #655                        Khurshid Alam  {4289b97}
+[2017-04-16 19:49:09 -0400]  README: update Arch package name (#663)                                 Ronan Jouchet  {582f09f}
+[2017-04-14 22:11:26 +0530]  [Gtk-3.22] Tweaks in  popover.events list for gnome-calendar            Khurshid Alam  {487d8e6}
+[2017-04-08 22:58:43 +0530]  Use darker background for solid-csd window. Fixes #659                  Khurshid Alam  {bf8f3b0}
+[2017-03-29 21:44:29 +0530]   Fix indentation                                                        Khurshid Alam  {35e5463}
+[2017-03-29 21:30:13 +0530]  [Gtk-3.22] Re-Introduce disabled state under treeview.progressbar       Khurshid Alam  {ab172c2}
+[2017-03-29 19:35:48 +0530]  [Gtk-3.22] Progressbar under Treeview: Minor fixes                      Khurshid Alam  {c8828c7}
+[2017-03-21 01:23:40 -0500]  Update README.md                                                       Dustin Falgout  {deddc89}
+[2017-03-21 01:22:27 -0500]  Update README.md                                                       Dustin Falgout  {f55b6a7}
+[2017-03-13 22:38:18 +0530]  [Gtk-3.22] Use box-shadow to draw border on Notebook tab                Khurshid Alam  {d99f46c}
+[2017-02-15 13:29:13 +0530]  [Gtk-3.22] Separate titlebar mixin from toolbar                         Khurshid Alam  {f25d7e0}
+[2017-02-15 12:46:53 +0530]  Attempting to fix >1px height in linked combobox-button                 Khurshid Alam  {f52633e}
+[2017-02-09 22:15:04 +0530]  [Gtk-3.22] Provide gap between buttons in message dialog. 3.22 fix ..   Khurshid Alam  {ec299d4}
+[2017-02-09 22:06:13 +0530]  [Gtk-3.22] Fixing & adjusting menu & modelbutton padding                Khurshid Alam  {653556d}
+[2017-02-08 20:20:55 +0530]  [Gtk-3.20][Gtk-3.22] GtkCalendar under popover menu                     Khurshid Alam  {0220883}
+[2017-02-07 16:06:37 +0530]  [Gtk-3.22][Switches] Make slider to fall in-line with the text          Khurshid Alam  {23f1543}
+[2017-02-06 20:15:39 +0530]  [Button-Redesign] Lighten active a checked state button color for l..   Khurshid Alam  {d2f201b}
+[2017-02-06 18:25:09 +0530]  Fixinng notebook-tab-active color and close button style                Khurshid Alam  {777d586}
+[2017-02-05 10:39:36 +0530]  [Gtk-3.22][Button-Redesign] Spinbutton: Fixing color and entry border   Khurshid Alam  {85138a0}
+[2017-02-04 14:32:13 +0530]  [Gtk-3.22][Button-Redesign] Fixed spinbutton hover-state color          Khurshid Alam  {8670cc0}
+[2017-02-04 00:44:26 +0530]  [Gtk-3.22] Redesign-Buttons (Phase1)                                    Khurshid Alam  {9e4844a}
+[2017-01-30 22:22:09 +0530]  Flatter button. More prominent shadow on hover. Fixing #370             Khurshid Alam  {2363312}
+[2017-01-30 22:09:37 +0530]  [Gtk-3.22] Normalize Switches. Fixes #396                               Khurshid Alam  {3be320f}
+[2017-01-23 12:43:55 +0100]  [Gtk-3.22][Gtk-3.20] Fix iconview background for Unity-Control-Cent..   Csaba Jakosa   {1a8c9bf}
+[2017-01-22 19:20:32 +0100]  [GTK 3.22] Add hover effect for menuitem under Unity-LIM. Fixes #632    Csaba Jakosa   {45210ca}
+[2017-01-12 21:39:54 +0530]  Set Numix as default icon theme for MATE's theme picker. Fixes #488     Khurshid Alam  {92b576f}
+[2016-11-19 16:36:45 -0600]  Update README.md                                                       Dustin Falgout  {0e4a840}
+[2016-11-19 23:34:56 +0100]  Add Debian and Ubuntu official distro package, remove Ubuntu PPA. (..    Léo Andrès    {b24ed9e}
 -------------->>>> 2.6.6 <<<<-------------------------->>>> 2.6.6 <<<<-------------------------->>>> 2.6.6 <<<<--------------
 [2016-11-14 16:22:11 -0600]  update utils.sh script                                                 Dustin Falgout  {795932a}
 [2016-11-10 05:37:27 +0100]  [Gtk-3.20] Fixed gnome-terminal scrollbar color. Disable backdrop m..   Csaba Jakosa   {9574a02}
