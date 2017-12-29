@@ -49,6 +49,8 @@ xfconf-query -c xsettings -p /Net/ThemeName -s "Numix"
 xfconf-query -c xfwm4 -p /general/theme -s "Numix"
 ```
 
+In Openbox you can set the theme with [ObConf](http://openbox.org/wiki/ObConf:About) tool. Alternatively, you can set the theme by changing the `<name> `key value to `Numix` in the `<theme>` section of your rc.xml file.
+
 ### For contributors
 Start by reviewing the [guidelines for contributing](https://github.com/numixproject/numix-gtk-theme/blob/master/.github/CONTRIBUTING.md).
 
