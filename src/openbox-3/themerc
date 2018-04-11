@@ -59,6 +59,9 @@ window.active.button.hover.bg: flat solid
 window.active.button.hover.bg.color: #444444
 window.active.button.hover.image.color: #f06860
 
+window.active.button.toggled.image.color: #eeeeee
+window.active.button.toggled.hover.image.color: #f06860
+
 
 # Inactive window
 window.inactive.border.color: #393939
@@ -92,6 +95,9 @@ window.inactive.button.disabled.image.color: #888888
 window.inactive.button.hover.bg: flat solid
 window.inactive.button.hover.bg.color: #444444
 window.inactive.button.hover.image.color: #f06860
+
+window.inactive.button.toggled.image.color: #888888
+window.inactive.button.toggled.hover.image.color: #f06860
 
 
 # OSD
