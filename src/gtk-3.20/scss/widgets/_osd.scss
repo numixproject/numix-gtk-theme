@@ -23,8 +23,7 @@
         }
     }
 
-    button.osd,
-    #XfceNotifyWindow button {
+    button.osd {
         @include button($osd_bg, $osd_fg);
 
         &.image-button {
@@ -73,8 +72,7 @@
         }
     }
 
-    .osd,
-    #XfceNotifyWindow {
+    .osd {
         background-color: $osd_bg;
         color: $osd_fg;
 
@@ -262,6 +260,23 @@
             // OSD vertical
             &.vertical button:first-child {
                 @include button($osd_bg, $osd_fg);
+            }
+        }
+    }
+
+    #XfceNotifyWindow {
+        .osd {
+            background-color: $osd_bg;
+            color: $osd_fg;
+            border-radius: $roundness;
+            border: 1px solid border_normal($osd_bg);
+        }
+
+        &.osd {
+            label {
+                &#summary {
+                    font-weight: bold;
+                }
             }
         }
     }
