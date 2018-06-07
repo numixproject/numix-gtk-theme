@@ -23,8 +23,7 @@
         }
     }
 
-    button.osd,
-    #XfceNotifyWindow button {
+    button.osd {
         @include button($osd_bg, $osd_fg);
 
         &.image-button {
@@ -73,8 +72,7 @@
         }
     }
 
-    .osd,
-    #XfceNotifyWindow {
+    .osd {
         background-color: $osd_bg;
         color: $osd_fg;
 

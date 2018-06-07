@@ -8,8 +8,7 @@
 @include exports("osd") {
     GtkOverlay.osd { background-color: transparent; }
 
-    .osd,
-    #XfceNotifyWindow {
+    .osd {
         &.background {
             background-color: alpha($osd_bg, .8);
             color: $osd_fg;

@@ -27,4 +27,21 @@
             text-shadow: none;
         }
     }
+
+    #XfceNotifyWindow {
+        .osd {
+            background-color: $osd_bg;
+            color: $osd_fg;
+            border-radius: $roundness;
+            border: 1px solid border_normal($osd_bg);
+        }
+
+        &.osd {
+            label {
+                &#summary {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
 }
