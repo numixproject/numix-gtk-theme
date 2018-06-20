@@ -44,4 +44,48 @@
             }
         }
     }
+
+    #whiskermenu-window {
+		* {
+			border-color: border_normal($dark_bg_color);
+			outline: none;
+        }
+
+        background-color: $dark_bg_color;
+        color: $dark_fg_color;
+
+        entry {
+			background-color: shade($dark_bg_color, 1.2);
+			color: $dark_fg_color;
+        }
+
+        button {
+            font-weight: bold;
+            padding: 6px 12px;
+			margin: 3px 0px;
+			border: none;
+			@include linear_gradient($dark_bg_color);
+			color: $dark_fg_color;
+
+			&:focus, &:hover {
+			    background-color: $selected_bg_color;
+                color: $selected_fg_color;
+			}
+
+			&:checked {
+                background-color: shade($selected_bg_color, .9);
+                color: $selected_fg_color;
+			}
+        }
+
+        treeview {
+            background-color: shade($dark_bg_color, 1.2);
+			color: $dark_fg_color;
+
+			&:selected, &:hover {
+                background-color: $selected_bg_color;
+                color: $selected_fg_color;
+			}
+        }
+    }
 }
