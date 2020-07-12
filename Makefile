@@ -1,5 +1,5 @@
-SASS=scss
-SASSFLAGS=--sourcemap=none
+SASS=sassc
+SASSFLAGS=-M -t expanded
 GLIB_COMPILE_RESOURCES=glib-compile-resources
 RES_DIR=src/gtk-3.0
 SCSS_DIR=$(RES_DIR)/scss
@@ -14,8 +14,12 @@ UTILS=scripts/utils.sh
 all: clean gresource
 
 css:
-	$(SASS) --update $(SASSFLAGS) $(SCSS_DIR):$(DIST_DIR)
-	$(SASS) --update $(SASSFLAGS) $(SCSS_DIR320):$(DIST_DIR320)
+	mkdir $(DIST_DIR)
+	$(SASS) $(SASSFLAGS) $(SCSS_DIR)/gtk.scss $(DIST_DIR)/gtk.css
+	$(SASS) $(SASSFLAGS) $(SCSS_DIR)/gtk-dark.scss $(DIST_DIR)/gtk-dark.css
+	mkdir $(DIST_DIR320)
+	$(SASS) $(SASSFLAGS) $(SCSS_DIR320)/gtk.scss $(DIST_DIR320)/gtk.css
+	$(SASS) $(SASSFLAGS) $(SCSS_DIR320)/gtk-dark.scss $(DIST_DIR320)/gtk-dark.css
 
 gresource: css
 	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(RES_DIR) $(RES_DIR)/gtk.gresource.xml

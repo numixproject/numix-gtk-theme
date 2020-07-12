@@ -16,18 +16,16 @@
 
 First, you need to compile the theme using the [Sass](http://sass-lang.com/) compiler.
 
-To install Sass, install Ruby and the gem command using your distribution's package manager. Then install `sass` with the `gem` command,
-
-`gem install sass` (not needed for Ubuntu/Debian)
+You will need to install SassC (`sassc`) which is likely to be available as a package in your distribution's software repositories.
 
 You'll also need the ```glib-compile-schemas``` and  ```gdk-pixbuf-pixdata``` commands in your path to generate the gresource binary. Install them using your distribution's package manager.
 
 |Distro|Commands|
 |:----:|:----:|
-|![arch][arch] &nbsp;![antergos][antergos]|`sudo pacman -S glib2 gdk-pixbuf2`|
-|![opensuse][opensuse]|`sudo zypper install glib2-devel gdk-pixbuf-devel`|
-|![fedora][fedora]|`sudo dnf install glib2-devel gdk-pixbuf2-devel`|
-|![debian][debian] &nbsp;![ubuntu][ubuntu]|`sudo apt-get install ruby-sass libglib2.0-dev libgdk-pixbuf2.0-dev libxml2-utils`|
+|![arch][arch] &nbsp;![antergos][antergos]|`sudo pacman -S sassc glib2 gdk-pixbuf2`|
+|![opensuse][opensuse]|`sudo zypper install sassc glib2-devel gdk-pixbuf-devel`|
+|![fedora][fedora]|`sudo dnf install sassc glib2-devel gdk-pixbuf2-devel`|
+|![debian][debian] &nbsp;![ubuntu][ubuntu]|`sudo apt-get install sassc libglib2.0-dev libgdk-pixbuf2.0-dev libxml2-utils`|
 
 After installing all the dependencies, change to the cloned directory and, run the following in Terminal,
 
