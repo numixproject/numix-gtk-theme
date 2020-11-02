@@ -1,0 +1,9 @@
+/***********
+ ! Eclipse *
+ ***********/
+
+@include exports("eclipse") {
+	button.flat.image-button > image {
+		padding: 3px;
+	}
+}
