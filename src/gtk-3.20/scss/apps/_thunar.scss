@@ -1,0 +1,17 @@
+@include exports("thunar") {
+.thunar {
+  scrolledwindow.sidebar treeview.view {
+    background: $bg_color;
+    color: $fg_color;
+    
+    &:selected, &:active {
+      background: $selected_bg_color;
+      color: $selected_fg_color;
+    }
+  }
+
+  scrolledwindow.shortcuts-pane {
+    border-top-width: 1;
+  }
+ }
+}
