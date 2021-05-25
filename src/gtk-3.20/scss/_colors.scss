@@ -31,6 +31,7 @@
 @define-color success_color #{"" + $success_color};
 @define-color warning_color #{"" + $warning_color};
 @define-color error_color #{"" + $error_color};
+@define-color text_view_bg #{"" + $base_color};
 
 /* widget colors */
 @define-color titlebar_bg_color @dark_bg_color;
